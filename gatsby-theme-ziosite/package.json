@@ -5,7 +5,7 @@
   "scripts": {
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "clean": "gatsby clean",
     "check": "tsc --noEmit"
   },
