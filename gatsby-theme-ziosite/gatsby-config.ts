@@ -1,8 +1,17 @@
-module.exports = { 
+import { GatsbyConfig } from 'gatsby';
+
+const config : GatsbyConfig = { 
   siteMetadata: {
     title: "The ZIO Gatsby Theme"
   },
   plugins: [
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        resetCSS: true,
+        isUsingColorMode: true,
+      }
+    },
     // Configure the file system plugin for standard pages
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,3 +42,5 @@ module.exports = {
     }
   ]
 }
+
+export default config;
