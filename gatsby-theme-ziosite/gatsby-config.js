@@ -25,15 +25,6 @@ module.exports = {
         path: `${__dirname}/src/docs/`
       }
     },
-    // Use the postcss plugin to configure tailwind as a post processor
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require(`tailwindcss`)
-        ]
-      }
-    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
