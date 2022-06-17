@@ -104,7 +104,6 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
       createSubSitePages(p).then( (qPages) => {
         const pages = <SubSiteResult>qPages
         pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
-          console.log(JSON.stringify(n, null, 2))
           createPage({
             path: n.fields.slug,
             component: path.resolve(p.component),
