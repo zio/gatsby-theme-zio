@@ -1,7 +1,17 @@
-import { Actions, GatsbyNode } from "gatsby";
+import { GatsbyNode, Actions, Node, CreatePageArgs} from "gatsby";
 import { existsSync, mkdirSync } from "fs"; 
 import path from "path";
+import { ProjectRef } from "./src/utils/sitetypes";
+import { projects } from "./projects";
 
+function prjSlug(srcInstance: string, baseSlug : string) : string {
+  const prj =projects.find( (p) => p.sourceInstance === srcInstance )
+  if (typeof prj !== "undefined") { 
+    return slugify(`${prj!.projectName}/${prj!.version}/${baseSlug}`)
+  } else {
+    return slugify(baseSlug)
+  }
+}
 
 /**
  * Turn a given string into a useful slug that can be used as part of a URL.
@@ -37,53 +47,76 @@ export const onCreateNode : GatsbyNode["onCreateNode"] = ({ node, _, actions}) =
   const { createNodeField } = actions
 
   if (node.internal.type && node.internal.type === `File`) { 
-    if (node.sourceInstanceName && node.sourceInstanceName === `docs`) { 
-      createNodeField({
-        node,
-        name: 'slug',
-        value: slugify(`zio-metrics-connectors/2.0.0/${node.relativeDirectory}/${node.name}`)
-      })
-    } else { 
-      createNodeField({
-        node,
-        name: 'slug',
-        value: slugify(`${node.relativeDirectory}/${node.name}`)
-      })
-    }
+    createNodeField({
+      node,
+      name: 'slug',
+      value: prjSlug(`${node.sourceInstanceName}`, `${node.relativeDirectory}/${node.name}`)
+    })
   }
 }
 
 export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions }) => {
+ 
   const { createPage } = actions
 
-  const result : { data? : any } = await graphql(`
-    {
-      allFile(filter: {sourceInstanceName: {eq: "docs"}}) {
-        nodes {
-          fields {
-            slug
-          }
-          children {
-            ... on Mdx {
-              id
+  type SubSiteNode = { 
+    fields: { 
+      slug: string
+    },
+    children: Array<{
+      id: string, 
+      slug: string
+    }>
+  }
+
+  type SubSiteResult = { 
+    data?: {
+      allFile: { 
+        nodes: [SubSiteNode]
+      }
+    }
+  }
+  
+  const createSubSitePages = async (
+    prj : ProjectRef
+  ) => {
+    return await graphql(`
+      {
+        allFile(filter: {sourceInstanceName: {eq: "${prj.sourceInstance}"}}) {
+          nodes {
+            fields {
               slug
+            }
+            children {
+              ... on Mdx {
+                id
+                slug
+              }
             }
           }
         }
       }
-    }
-  `)
+    `)
+  }
 
-  const templatePath = path.resolve(`./src/components/simple.tsx`)
-  
-  result.data.allFile.nodes.forEach((node: any) => {
-    createPage({
-      path: node.fields.slug,
-      component: templatePath,
-      context: {
-        mdxId: node.children[0].id,
-        slug: node.fields.slug,
-      },
+  const createAll = async () => { 
+    await projects.forEach( async (p) => { 
+      createSubSitePages(p).then( (qPages) => {
+        const pages = <SubSiteResult>qPages
+        pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
+          console.log(JSON.stringify(n, null, 2))
+          createPage({
+            path: n.fields.slug,
+            component: path.resolve(p.component),
+            context: {
+              mdxId: n.children[0].id,
+              slug: n.fields.slug,
+            },
+          })
+        })
+      })
     })
-  })
+  }
+
+  createAll()
 }
