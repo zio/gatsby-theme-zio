@@ -3,7 +3,7 @@ node_modules/
 public/
 dist/
 .env
-src/**/*.js
+*/src/**/*.js
 gatsby*.js
 
 *.log
