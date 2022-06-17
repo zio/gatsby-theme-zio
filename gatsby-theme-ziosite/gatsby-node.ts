@@ -1,4 +1,4 @@
-import { GatsbyNode } from "gatsby";
+import { Actions, GatsbyNode } from "gatsby";
 import { existsSync, mkdirSync } from "fs"; 
 import path from "path";
 
@@ -37,7 +37,7 @@ export const onCreateNode : GatsbyNode["onCreateNode"] = ({ node, _, actions}) =
   const { createNodeField } = actions
 
   if (node.internal.type && node.internal.type === `File`) { 
-    if (node.sourceInstanceName && node.sourceInstanceName === `zmx`) { 
+    if (node.sourceInstanceName && node.sourceInstanceName === `docs`) { 
       createNodeField({
         node,
         name: 'slug',
@@ -56,9 +56,9 @@ export const onCreateNode : GatsbyNode["onCreateNode"] = ({ node, _, actions}) =
 export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const result : any = await graphql(`
+  const result : { data? : any } = await graphql(`
     {
-      allFile(filter: {sourceInstanceName: {eq: "zmx"}}) {
+      allFile(filter: {sourceInstanceName: {eq: "docs"}}) {
         nodes {
           fields {
             slug

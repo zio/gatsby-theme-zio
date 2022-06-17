@@ -29,12 +29,6 @@ const config : GatsbyConfig = {
       }
     },
     {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/src/docs/`
-      }
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
