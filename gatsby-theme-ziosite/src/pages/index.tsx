@@ -1,14 +1,13 @@
 import * as React from "react";
-import type { PageProps } from "gatsby";
-import { Box } from "@chakra-ui/react";
+import Layout from "../components/layout";
 
-const IndexPage = ( { path } : PageProps ) => { 
+const IndexPage = () => { 
   return (
-    <main>
-      <h1>Hello World !</h1>
-      <p>Path: {path}</p>
-      <Box bg="primary" color="black">Test !</Box>
-    </main>
+    <Layout>
+      <main>
+        <h1 className="text-red-500">Hello World !</h1>
+      </main>
+    </Layout>
   )
 }
 

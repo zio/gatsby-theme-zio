@@ -1,6 +1,6 @@
 import * as React  from "react";
 import type { ContentPageProps }  from "../utils/sitetypes";
-import { Container } from "@chakra-ui/react";
+import Layout from "./layout";
 
 import { graphql, PageProps } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
@@ -10,12 +10,10 @@ const Simple = ( {data} : PageProps<ContentPageProps> ) => {
   const page = data.mdx;
 
   return (
-    <>
+    <Layout>
       <h1>{page.frontmatter.title}</h1>
-      <Container maxW="90%" m="auto">
-        <MDXRenderer>{page.body}</MDXRenderer>
-      </Container>
-    </>
+      <MDXRenderer>{page.body}</MDXRenderer>
+    </Layout>
   )
 }
 

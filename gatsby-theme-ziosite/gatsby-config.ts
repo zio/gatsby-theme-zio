@@ -5,13 +5,7 @@ const config : GatsbyConfig = {
     title: "The ZIO Gatsby Theme"
   },
   plugins: [
-    {
-      resolve: '@chakra-ui/gatsby-plugin',
-      options: {
-        resetCSS: true,
-        isUsingColorMode: true,
-      }
-    },
+    'gatsby-plugin-postcss',
     // Configure the file system plugin for standard pages
     {
       resolve: `gatsby-source-filesystem`,

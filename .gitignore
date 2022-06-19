@@ -4,6 +4,7 @@ public/
 dist/
 .env
 */src/**/*.js
-gatsby*.js
+gatsby-config.js
+gatsby-node.js
 
 *.log

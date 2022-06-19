@@ -8,7 +8,7 @@ function prjSlug(srcInstance: string, baseSlug : string) : string {
   const prj =projects.find( (p) => p.sourceInstance === srcInstance )
   if (typeof prj !== "undefined") { 
     return slugify(`${prj!.projectName}/${prj!.version}/${baseSlug}`)
-  } else {
+  } else {  
     return slugify(baseSlug)
   }
 }
@@ -17,7 +17,7 @@ function prjSlug(srcInstance: string, baseSlug : string) : string {
  * Turn a given string into a useful slug that can be used as part of a URL.
  * 
  * @param str The input string.
- * @returns The sluggified string
+ * @returns The slugified string
  */
 const slugify = (str: string) => { 
   const basePath = '/';
@@ -38,7 +38,7 @@ export const onPreBootstrap : GatsbyNode["onPreBootstrap"]= ({reporter}) => {
     reporter.info(`Creating directory ${docsPath}.`);
     mkdirSync(docsPath, {recursive: true});
   } else { 
-    reporter.info(`Using exiting src/docs directory`);
+    reporter.info(`Using existing src/docs directory`);
   }
 }
 
@@ -99,23 +99,19 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
     `)
   }
 
-  const createAll = async () => { 
-    await projects.forEach( async (p) => { 
-      createSubSitePages(p).then( (qPages) => {
-        const pages = <SubSiteResult>qPages
-        pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
-          createPage({
-            path: n.fields.slug,
-            component: path.resolve(p.component),
-            context: {
-              mdxId: n.children[0].id,
-              slug: n.fields.slug,
-            },
-          })
+  projects.forEach( async (p) => { 
+    createSubSitePages(p).then( (qPages) => {
+      const pages = <SubSiteResult>qPages
+      pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
+        createPage({
+          path: n.fields.slug,
+          component: path.resolve(p.component),
+          context: {
+            mdxId: n.children[0].id,
+            slug: n.fields.slug,
+          },
         })
       })
     })
-  }
-
-  createAll()
+  })
 }
