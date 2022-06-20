@@ -101,6 +101,7 @@
   "include": [
     "./gatsby-config.ts",  
     "./gatsby-node.ts",  
+    "./gatsby-browser.ts",
     "./src/**/*", 
     "./projects.ts", 
     "./plugins/**/*"

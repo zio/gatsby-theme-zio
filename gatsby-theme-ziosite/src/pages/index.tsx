@@ -1,11 +1,14 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => { 
   return (
     <Layout>
       <main>
-        <h1 className="text-red-500">Hello World !</h1>
+        <div className="container flex flex-row max-w-full w-full relative bg-black">
+          <StaticImage className="relative m-auto" src="../images/jumbotron_pattern.png" alt="Alt" />
+        </div>
       </main>
     </Layout>
   )
