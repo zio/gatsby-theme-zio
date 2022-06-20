@@ -1,0 +1,18 @@
+import { PageProps } from "gatsby";
+import * as React from "react";
+
+export type SocialProps = { 
+  title: string,
+  children?: any
+}
+
+const Social : React.FC<SocialProps> = ({title, children} : SocialProps) => { 
+  return(
+    <div className="flex-initial flex flex-col mx-4">
+      <h1 className="text-center text-lg font-bold w-full">{title}</h1>
+      {children}
+    </div>
+  )
+}
+
+export default Social

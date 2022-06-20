@@ -1,5 +1,6 @@
 import * as React from "react";
 import NavBar from "./navbar";
+import Footer from "./footer"
 
 const Layout = (props : React.PropsWithChildren) => { 
   return(
@@ -10,8 +11,8 @@ const Layout = (props : React.PropsWithChildren) => {
       <section className="bg-primary-100">
         {props.children}
       </section>
-      <footer className="bg-primary-700 text-primary-50">
-        <h1>Footer</h1>
+      <footer>
+        <Footer />
       </footer>
     </div>
   )
