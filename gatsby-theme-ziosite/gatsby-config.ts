@@ -8,6 +8,7 @@ const config : GatsbyConfig = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp', 
+    'gatsby-transformer-sharp',
     // Configure the file system plugin for standard pages
     {
       resolve: `gatsby-source-filesystem`,
