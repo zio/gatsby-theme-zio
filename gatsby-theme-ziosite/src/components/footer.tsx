@@ -8,7 +8,7 @@ const Footer = () => {
   return(
     <div className="container max-w-full w-full bg-primary-700 text-primary-50 flex flex-col">
       <div className="flex flex-col md:flex-row justify-center p-4">
-        <img className="flex-initial mx-4" src="/img/navbar_brand.png" alt="zio" />
+        <img className="flex-initial m-4 max-w-200" src="/img/navbar_brand.png" alt="zio" />
         <Social title="Github">
           <a href="https://github.com/zio/zio" className="m-auto">
             <img src="https://img.shields.io/github/stars/zio/zio?style=social" alt="github" />
