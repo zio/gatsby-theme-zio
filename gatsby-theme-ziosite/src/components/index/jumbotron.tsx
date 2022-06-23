@@ -1,5 +1,4 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 const tagLine = "Type-safe, composable asynchronous and concurrent programming for Scala"

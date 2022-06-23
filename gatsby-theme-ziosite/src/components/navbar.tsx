@@ -1,12 +1,33 @@
 import * as React from "react";
 
+interface NavLink { 
+  name: string,
+  target: string
+}
+
+const links : Array<NavLink> = [
+  { name: "Blog", target: "#"},
+  { name: "Articles",target: "#"},
+  { name: "Projects",target: "#"},
+  { name: "Contribute",target: "#"},
+  { name: "About",target: "#"}
+]
+
 const NavBar = () => { 
+  const inner = links.map( (l) => {
+    return(
+      <a href={l.target} className="flex-initial p-2 hover:bg-primary-700 hover:rounded-md">{l.name}</a>
+    )
+  })
+
   return (
     <nav>
-      <a href="#">Blog</a>
-      <a href="#">Articles</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
+      <div className="w-full my-2 relative flex flex-row justify-between">
+        <img src="/img/navbar_brand.png" alt="Home" className="h-8 w-auto"/>
+        <div className="flex-row my-auto mr-8">
+          {inner}
+        </div>
+      </div>
     </nav>
   )
 }

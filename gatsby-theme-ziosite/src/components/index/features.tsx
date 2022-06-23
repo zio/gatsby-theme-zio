@@ -43,9 +43,9 @@ const features : Array<Feature>= [
 const Features = () => { 
   const inner = features.map( (f) => {
     return (
-      <div className="container p-2">
-        <h1 className="text-center text-secondary-600 font-bold text-lg">{f.title}</h1>
-        <p className="text-center">{f.content}</p>
+      <div className="container p-8">
+        <h1 className="text-center text-secondary-600 font-bold text-2xl">{f.title}</h1>
+        <p className="text-center text-xl mt-4">{f.content}</p>
       </div>
     )
   })

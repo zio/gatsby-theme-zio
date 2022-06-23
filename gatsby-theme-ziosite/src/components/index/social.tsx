@@ -1,7 +1,6 @@
-import { PageProps } from "gatsby";
 import * as React from "react";
 
-export type SocialProps = { 
+type SocialProps = { 
   title: string,
   children?: any
 }

@@ -1,6 +1,5 @@
 import * as React from "react"
-import { } from "react-icons"
-import Social from "./social"
+import Social from "./index/social"
 
 const year = new Date().getFullYear()
 
