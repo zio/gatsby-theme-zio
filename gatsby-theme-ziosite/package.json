@@ -16,6 +16,8 @@
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
+    "@mdx-js/mdx": "v1",
+    "@mdx-js/react": "v1",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",

@@ -4,6 +4,7 @@ import Layout from "./layout";
 
 import { graphql, PageProps } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import MDXDesign from "./mdxdesign/design";
 
 const Simple = ( {data} : PageProps<ContentPageProps> ) => {
 
@@ -11,8 +12,12 @@ const Simple = ( {data} : PageProps<ContentPageProps> ) => {
 
   return (
     <Layout>
-      <h1>{page.frontmatter.title}</h1>
-      <MDXRenderer>{page.body}</MDXRenderer>
+      <MDXDesign>
+        <div className="container mx-auto">
+          <h1 className="text-blue-700 text-4xl underline font-semibold">{page.frontmatter.title}</h1>
+          <MDXRenderer>{page.body}</MDXRenderer>
+        </div>
+      </MDXDesign>
     </Layout>
   )
 }
