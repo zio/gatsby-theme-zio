@@ -3,6 +3,7 @@ import { existsSync, mkdirSync } from "fs";
 import path from "path";
 import { ProjectRef } from "./src/utils/sitetypes";
 import { projects } from "./projects";
+import { create } from "domain";
 
 function prjSlug(srcInstance: string, baseSlug : string) : string {
   const prj =projects.find( (p) => p.sourceInstance === srcInstance )
@@ -42,16 +43,47 @@ export const onPreBootstrap : GatsbyNode["onPreBootstrap"]= ({reporter}) => {
   }
 }
 
-export const onCreateNode : GatsbyNode["onCreateNode"] = ({ node, _, actions}) => { 
+export const onCreateNode : GatsbyNode["onCreateNode"] = (params) => { 
 
-  const { createNodeField } = actions
+  const node = params.node
+  const { createNodeField } = params.actions
 
-  if (node.internal.type && node.internal.type === `File`) { 
-    createNodeField({
-      node,
-      name: 'slug',
-      value: prjSlug(`${node.sourceInstanceName}`, `${node.relativeDirectory}/${node.name}`)
-    })
+  if (node.internal?.type && node.internal?.type === `File`) {
+
+    const src = `${node.sourceInstanceName}`
+    const relFile = `${node.relativeDirectory}/${node.name}`
+    const mType = `${node.internal?.mediaType}`
+
+    if (mType === `text/markdown` || mType === `text/mdx`) { 
+      const slug = prjSlug(src, relFile)
+
+      createNodeField({
+        node,
+        name: 'slug',
+        value: slug
+      })
+    }
+  }
+}
+
+export const onCreatePage : GatsbyNode["onCreatePage"] = (params) => {
+
+  const { createPage, deletePage } = params.actions
+
+  if (`${params.page.component}`.match(/mdx?$/)) { 
+    const oldPage = params.page
+    
+    const newPage = { 
+      ...oldPage,
+      component: path.resolve('./src/components/simple.tsx'),
+      context: { 
+        ...oldPage.context,
+        filePath: `${oldPage.component}`
+      }
+    }
+
+    deletePage(oldPage)
+    createPage(newPage)
   }
 }
 
@@ -65,6 +97,7 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
     },
     children: Array<{
       id: string, 
+      fileAbsolutePath,
       slug: string
     }>
   }
@@ -90,6 +123,7 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
             children {
               ... on Mdx {
                 id
+                fileAbsolutePath
                 slug
               }
             }
@@ -103,14 +137,16 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
     createSubSitePages(p).then( (qPages) => {
       const pages = <SubSiteResult>qPages
       pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
-        createPage({
-          path: n.fields.slug,
-          component: path.resolve(p.component),
-          context: {
-            mdxId: n.children[0].id,
-            slug: n.fields.slug,
-          },
-        })
+        if (n.children.length >= 1) { 
+          const mdxChild = n.children[0]
+          createPage({
+            path: n.fields.slug,
+            component: path.resolve(p.component),
+            context: {
+              filePath: mdxChild.fileAbsolutePath
+            },
+          })
+        }
       })
     })
   })

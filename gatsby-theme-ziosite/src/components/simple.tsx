@@ -19,8 +19,8 @@ const Simple = ( {data} : PageProps<ContentPageProps> ) => {
 export default Simple;
 
 export const query = graphql`
-  query($mdxId: String!) {
-    mdx(id: {eq: $mdxId}) {
+  query($filePath: String!) {
+    mdx(fileAbsolutePath: {eq: $filePath}) {
       id
       slug
       frontmatter {
