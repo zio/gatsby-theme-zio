@@ -10,7 +10,7 @@ const Simple = ( {data} : PageProps<ContentPageProps> ) => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-blue-700 text-4xl underline font-semibold">{page.frontmatter.title}</h1>
+      <h1 className="text-blue-700 text-4xl underline font-semibold mb-4">{page.frontmatter.title}</h1>
       <MDXRenderer>{page.body}</MDXRenderer>
     </div>
   )
