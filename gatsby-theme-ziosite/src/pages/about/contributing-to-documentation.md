@@ -18,8 +18,6 @@ Please read the [Contributor Guideline](contributing.md) before contributing to 
 We encourage contributors to use GitHub's editor for making minor changes to existing documents.
 
 1. On each page, there is a button called _Edit this page_, by clicking this button, we will be redirected to the GitHub editor.
-   1. foo
-   1. bar
 
 ![Edit this page](/img/assets/edit-this-page.png)
 
@@ -47,7 +45,7 @@ ZIO contributors are encouraged to use this approach for introducing new documen
 
 1. First, we need to clone the ZIO project on our machine:
 
-```bash
+```
 git clone git@github.com:zio/zio.git
 cd zio
 ```
@@ -56,7 +54,7 @@ cd zio
 
 3. To generate documentation site from type-checked markdowns we can use the following command:
 
-```bash
+```
 sbt docs/mdoc
 ```
 
@@ -64,14 +62,14 @@ If one of our snippet codes fails to compile, this command doesn't succeed and w
 
 It is recommended to run this command with sbt shell with the `--watch` option. This will start a file watcher and livereload on changes. It's useful when we want to see the intermediate results while we are writing documentation:
 
-```bash
+```
 sbt
 sbt:docs> docs/mdoc --watch
 ```
 
 4. Finally, by the following command we can serve the microsite locally:
 
-```bash
+```none nonum
 cd website
 npm install
 npm run start --watch
