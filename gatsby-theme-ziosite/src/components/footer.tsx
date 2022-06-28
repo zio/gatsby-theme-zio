@@ -27,7 +27,7 @@ const Footer = () => {
           <a href="https://javadoc.io/doc/dev.zio/zio_2.12/" className="m-auto">ScalaDoc of ZIO</a>
         </Social>
       </div>
-      <p className="flex w-full text-sm justify-center pb-4">Copyright © {year} - ZIO Maintainers - Built with <a href="https://www.gatsbyjs.com/">Gatsby</a></p>
+      <p className="flex w-full text-sm justify-center pb-4">Copyright © {year} - ZIO Maintainers - Built with <a className="ml-1 underline" href="https://www.gatsbyjs.com/">Gatsby</a></p>
     </div>
   )
 }

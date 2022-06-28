@@ -10,14 +10,16 @@ Please read the [Contributor Guideline](contributing.md) before contributing to 
 ## Toolchain
 
 1. The documentation is written in [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
-2. During the build process of the microsite, we use [mdoc](https://scalameta.org/mdoc/) to type-check code snippets in Markdown.
-3. Our site generator is [Docusaurus](https://docusaurus.io/).
+1. During the build process of the microsite, we use [mdoc](https://scalameta.org/mdoc/) to type-check code snippets in Markdown.
+1. Our site generator is [Docusaurus](https://docusaurus.io/).
 
 ## Editing with GitHub Editor
 
 We encourage contributors to use GitHub's editor for making minor changes to existing documents.
 
 1. On each page, there is a button called _Edit this page_, by clicking this button, we will be redirected to the GitHub editor.
+   1. foo
+   1. bar
 
 ![Edit this page](/img/assets/edit-this-page.png)
 
@@ -79,10 +81,9 @@ It will be served on [localhost](http://127.0.0.1:3000/) address.
 
 5. When we are finished with the documentation, we can commit those changes and [create a pull request] (contributing.md#create-a-pull-request).
 
-
 ## Giving Feedback
 
 Sometimes we see some problem in the documentation, or we have some idea to make better documentation, but we haven't time or knowledge to do that personally. We can discuss those ideas with the community. There are two ways to do this:
 
 1. Using Discord (https://discord.gg/2ccFBr4) is a great way to share our thoughts with others, discuss them, and brainstorm big ideas.
-2. Opening a new issue (https://github.com/zio/zio/issues/new) is appropriate when we have actionable ideas, such as reorganizing a specific page of a documentation, or a problem with the current documentation. 
+2. Opening a new issue (https://github.com/zio/zio/issues/new) is appropriate when we have actionable ideas, such as reorganizing a specific page of a documentation, or a problem with the current documentation.
