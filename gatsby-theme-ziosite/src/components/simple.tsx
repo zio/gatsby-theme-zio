@@ -25,7 +25,6 @@ export const query = graphql`
       slug
       frontmatter {
         id
-        sidebar_label
         title
       }
       body

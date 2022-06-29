@@ -1,0 +1,15 @@
+const colors = require('tailwindcss/colors')
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: { 
+        primary: colors.stone,
+        secondary: colors.red
+      }
+    }
+  },
+  plugins: [],
+}

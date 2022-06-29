@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import type { ContentPageProps } from "../utils/sitetypes.js";
 import { PageProps } from "gatsby";
 declare const Simple: ({ data }: PageProps<ContentPageProps>) => JSX.Element;

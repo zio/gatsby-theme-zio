@@ -1,11 +1,35 @@
 import { GatsbyNode, Actions, Node, CreatePageArgs} from "gatsby";
-import { existsSync, mkdirSync } from "fs"; 
+import { readFileSync, existsSync, mkdirSync } from "fs"; 
 import path from "path";
 import { ProjectRef } from "./src/utils/sitetypes";
-import { projects } from "./projects";
+
+function findFile(fn: string) : string { 
+  const dirs = [ 
+    ".", 
+    "node_modules/@atooni/gatsby-theme-ziosite", 
+    "../gatsby-theme-ziosite"
+  ]
+
+  const idx = dirs.findIndex ( (d) => { 
+    const fileName = path.resolve(d, fn)
+    const exists = existsSync(fileName)
+    return exists
+  } )
+
+  if (idx >= 0) { 
+    return path.resolve(dirs[idx], fn)
+  } else {
+    return path.resolve(fn)
+  }
+}
+
+const mdxComponent : string = findFile("./src/components/simple.tsx")
+const projectFile = findFile("./projects.json")
+
+const projects : Array<ProjectRef> = JSON.parse(readFileSync(projectFile, "utf-8")).projects
 
 function prjSlug(srcInstance: string, baseSlug : string) : string {
-  const prj =projects.find( (p) => p.sourceInstance === srcInstance )
+  const prj = projects.find( (p) => p.sourceInstance === srcInstance )
   if (typeof prj !== "undefined") { 
     return slugify(`${prj!.projectName}/${prj!.version}/${baseSlug}`)
   } else {  
@@ -74,7 +98,7 @@ export const onCreatePage : GatsbyNode["onCreatePage"] = (params) => {
     
     const newPage = { 
       ...oldPage,
-      component: path.resolve("./src/components/simple.tsx"),
+      component: mdxComponent,
       context: { 
         ...oldPage.context,
         filePath: `${oldPage.component}`
@@ -90,7 +114,7 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
  
   const { createPage } = actions
 
-  type SubSiteNode = { 
+  interface SubSiteNode { 
     fields: { 
       slug: string
     },
@@ -101,7 +125,7 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
     }>
   }
 
-  type SubSiteResult = { 
+  interface SubSiteResult { 
     data?: {
       allFile: { 
         nodes: [SubSiteNode]
@@ -140,7 +164,7 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
           const mdxChild = n.children[0]
           createPage({
             path: n.fields.slug,
-            component: path.resolve(p.component),
+            component: mdxComponent,
             context: {
               filePath: mdxChild.fileAbsolutePath
             },

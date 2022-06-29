@@ -1,0 +1,9 @@
+{
+  "projects": [
+    {
+      "projectName": "ZIO",
+      "version": "1.0.0",
+      "sourceInstance": "zio"
+    }
+  ]
+}

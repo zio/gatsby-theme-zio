@@ -1,8 +1,7 @@
 export type ProjectRef = { 
   sourceInstance : string, 
   projectName : string, 
-  version: string,
-  component: string
+  version: string
 }
 
 export type ContentPageProps = {

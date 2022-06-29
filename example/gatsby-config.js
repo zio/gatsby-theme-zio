@@ -3,9 +3,13 @@ const config = {
     title: "ZIO Sample Site"
   },
   plugins: [
-    // The only plugin we want to see in here is the ZIO theme 
+    'gatsby-plugin-postcss',
+    '@atooni/gatsby-theme-ziosite',
     {
-      resolve: `@atooni/gatsby-theme-ziosite`
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      }
     }
   ]
 }

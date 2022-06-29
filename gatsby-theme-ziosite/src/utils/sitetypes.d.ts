@@ -2,7 +2,6 @@ export declare type ProjectRef = {
     sourceInstance: string;
     projectName: string;
     version: string;
-    component: string;
 };
 export declare type ContentPageProps = {
     mdx: {

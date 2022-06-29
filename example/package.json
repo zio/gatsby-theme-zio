@@ -11,16 +11,39 @@
     "check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "gatsby": "^4.16.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0"
+    "gatsby": "4.16.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.0",
+    "@types/prismjs": "1.26.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "autoprefixer": "10.4.7",
+    "postcss": "8.4.14",
+    "tailwindcss": "3.1.3",
+    "typescript": "4.7.3"
   },
   "dependencies": {
-    "@atooni/gatsby-theme-ziosite": "*",
-    "gatsby": "^4.16.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0"
+    "@atooni/zio-core": "1.0.1",
+    "@atooni/zio-core-2": "npm:@atooni/zio-core@^2.0.0",
+    "@atooni/zio-metrics-connectors": "2.0.0",
+    "@atooni/gatsby-theme-ziosite": "file:../gatsby-theme-ziosite",
+    "@mdx-js/mdx": "v1",
+    "@mdx-js/react": "v1",
+    "gatsby": "4.16.0",
+    "gatsby-plugin-mdx": "3.16.1",
+    "gatsby-plugin-postcss": "5.16.0",
+    "gatsby-plugin-typescript": "4.16.0",
+    "gatsby-source-filesystem": "4.16.0",
+    "graphql": "15.8.0",
+    "graphql-compose": "9.0.8",
+    "prism-themes": "1.9.0",
+    "prismjs": "1.28.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "4.4.0"
   }
 }
