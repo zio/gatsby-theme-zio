@@ -2,5 +2,25 @@
   "private": true,
   "name": "zio-sample-site",
   "version": "0.0.1",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "dev": "gatsby develop",
+    "clean": "gatsby clean",
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0"
+  },
+  "dependencies": {
+    "@atooni/gatsby-theme-ziosite": "*",
+    "gatsby": "^4.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0"
+  }
 }
