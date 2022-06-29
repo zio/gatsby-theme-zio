@@ -3,7 +3,6 @@ import { existsSync, mkdirSync } from "fs";
 import path from "path";
 import { ProjectRef } from "./src/utils/sitetypes";
 import { projects } from "./projects";
-import { create } from "domain";
 
 function prjSlug(srcInstance: string, baseSlug : string) : string {
   const prj =projects.find( (p) => p.sourceInstance === srcInstance )
@@ -75,7 +74,7 @@ export const onCreatePage : GatsbyNode["onCreatePage"] = (params) => {
     
     const newPage = { 
       ...oldPage,
-      component: path.resolve('./src/components/simple.tsx'),
+      component: path.resolve("./src/components/simple.tsx"),
       context: { 
         ...oldPage.context,
         filePath: `${oldPage.component}`

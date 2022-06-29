@@ -6,5 +6,6 @@ dist/
 */src/**/*.js
 projects.js
 gatsby-*.js
+*.map
 
 *.log

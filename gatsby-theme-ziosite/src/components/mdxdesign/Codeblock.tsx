@@ -28,7 +28,7 @@ class Line {
       } else {
         return true
       }
-    }) == -1)
+    }) === -1)
   }
 }
 
@@ -152,7 +152,7 @@ const CodeBlock : React.FC<Props> = (props : Props) => {
     }
   }
 
-  React.useEffect( () => { loadAndTokenize(extraLanguages) }, [])
+  React.useEffect( () => { loadAndTokenize(extraLanguages) })
   
   return(
     <div className="w-11/12 my-2 mx-auto">

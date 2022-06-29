@@ -1,5 +1,5 @@
 import * as React  from "react";
-import type { ContentPageProps }  from "../utils/sitetypes";
+import type { ContentPageProps }  from "../utils/sitetypes.js";
 
 import { graphql, PageProps } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";

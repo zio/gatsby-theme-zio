@@ -1,4 +1,4 @@
-import type { ProjectRef } from "@atooni/gatsby-theme-ziosite/src/utils/sitetypes";
+import type { ProjectRef } from "./src/utils/sitetypes";
 
 export const projects : Array<ProjectRef> = [
   {
