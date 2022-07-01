@@ -17,15 +17,21 @@ jobs:
           yarn install 
           npx gatsby build
         name: Gatsby Build
-      - name: Cache Gradle packages
+      - name: Cache Site Builds
         uses: actions/cache@v3
         with:
-          key: build-${{ matrix.sites }}-$GITHUB_SHA
+          key: build-${{ matrix.sites }}-${{ github.sha }}
           path: ./${{ matrix.sites }}/public
+
   publish:
     runs-on: ubuntu-20.04
     needs: build
     steps:
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: ./example/public
+          key: build-example-${{ github.sha }}
       - name: Release to GitHub Pages
         if: github.event_name == 'push'
         uses: JamesIves/github-pages-deploy-action@v4.3.3
