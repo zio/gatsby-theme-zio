@@ -16,3 +16,13 @@ jobs:
           cd ${{ matrix.sites }}
           yarn install 
           npx gatsby build
+  publish:
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+      - name: Release to GitHub Pages
+        if: github.event_name == 'push'
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: ./example/public
