@@ -1,7 +1,7 @@
-import * as React from "react";
-import Jumbotron from "../components/index/jumbotron";
-import Features from "../components/index/features";
-import Sponsors from "../components/index/sponsors";
+const React = require("react");
+const Jumbotron = require("../components/index/jumbotron")
+const Features = require("../components/index/features")
+const Sponsors = require("../components/index/sponsors")
 
 const IndexPage = () => { 
   return (
