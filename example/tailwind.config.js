@@ -1,8 +1,9 @@
+
 const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/@atooni/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: { 
