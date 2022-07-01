@@ -1,7 +1,6 @@
 name: ZIO Site Builds
 on: [push]
 jobs:
-  name: Build the theme
   steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
