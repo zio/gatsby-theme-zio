@@ -13,6 +13,6 @@ jobs:
         with:
           node-version: 18
       - run: |
-          cd {{ matrix.sites }}
+          cd ${{ matrix.sites }}
           yarn install 
           npx gatsby build
