@@ -27,10 +27,10 @@
     "typescript": "4.7.3"
   },
   "dependencies": {
+    "@atooni/gatsby-theme-zio": "file:../gatsby-theme-zio",
     "@atooni/zio-core": "1.0.1",
     "@atooni/zio-core-2": "npm:@atooni/zio-core@^2.0.0",
     "@atooni/zio-metrics-connectors": "2.0.0",
-    "@atooni/gatsby-theme-ziosite": "file:../gatsby-theme-ziosite",
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
     "gatsby": "4.16.0",

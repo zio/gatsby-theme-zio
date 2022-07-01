@@ -4,7 +4,7 @@ const config = {
   },
   plugins: [
     'gatsby-plugin-postcss',
-    '@atooni/gatsby-theme-ziosite',
+    '@atooni/gatsby-theme-zio',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
