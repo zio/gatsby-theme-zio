@@ -1,12 +1,14 @@
 name: ZIO Site Builds
 on: [push]
 jobs:
-  steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - run: |
-        cd gatsby-theme-zio
-        yarn install 
-        npx gatsby build
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: |
+          cd gatsby-theme-zio
+          yarn install 
+          npx gatsby build
