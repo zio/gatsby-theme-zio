@@ -36,9 +36,9 @@ const features = [
 ];
 
 const Features = () => { 
-  const inner = features.map( (f) => {
+  const inner = features.map( (f, i) => {
     return (
-      <div className="container p-8">
+      <div key={i} className="container p-8">
         <h1 className="text-center text-secondary-600 font-bold text-2xl">{f.title}</h1>
         <p className="text-center text-xl mt-4">{f.content}</p>
       </div>

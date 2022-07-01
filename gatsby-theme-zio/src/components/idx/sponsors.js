@@ -28,9 +28,9 @@ const sponsors = [
 ];
 
 const Sponsors = () => { 
-  const elems = sponsors.map( (s) => {
+  const elems = sponsors.map( (s, i) => {
     return (
-      <div className="m-4">
+      <div key={i} className="m-4">
         <div className="container w-80 h-40 m-auto flex place-content-center">
           <a href={s.imageLink} className="flex flex-col place-content-center">
             <img src={s.image} alt={s.imageAlt} className="flex-none w-full h-auto"/>
