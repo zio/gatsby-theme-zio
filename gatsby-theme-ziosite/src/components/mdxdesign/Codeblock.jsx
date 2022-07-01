@@ -3,20 +3,17 @@ import * as Prism from "prismjs"
 
 // Prism extra Languages should go into an overall config object 
 // Need to load java before scala
-const extraLanguages : Array<string> = ["bash", "java", "scala"]
-
-// A single element coming out of the tokenizer 
-type Element = string | Prism.Token
+const extraLanguages = ["bash", "java", "scala"]
 
 // A single line consists of an array of Elements
 class Line {
-  tokens : Array<Element>
+  tokens
 
   constructor () { 
     this.tokens = []
   }
 
-  addElement(t: Element) { 
+  addElement(t) { 
     this.tokens.push(t)
   }
 
@@ -36,7 +33,7 @@ class Line {
 const lineSplit = '\n'
 
 // Turn a single toke into a node 
-const tokenToReactNode = (token: Element, key: string) : React.ReactNode => {
+const tokenToReactNode = (token, key) => {
   if (typeof token === "string") {
     return <span key={key}>{token}</span>
   } else if (typeof token.content === "string") {
@@ -56,7 +53,7 @@ const tokenToReactNode = (token: Element, key: string) : React.ReactNode => {
   }  
 }
 
-const lineToReactNode = (line: Line, i: number, nonum: boolean) : React.ReactNode => {
+const lineToReactNode = (line, i, nonum) => {
   const nodes = line.tokens.map( (t,idx) => { return tokenToReactNode(t, `l-${i}-t-${idx}`) })
 
   const lineNum = nonum ? "hidden" : "flex-none w-8 pr-2 border-r-2 text-right"
@@ -69,7 +66,7 @@ const lineToReactNode = (line: Line, i: number, nonum: boolean) : React.ReactNod
   ) 
 }
 
-function tokenToLines (curLine: Line, lines: Array<Line>, token: Element) : Element | null {
+function tokenToLines (curLine, lines, token) {
   if (typeof token === "string") {
     if (token.includes(lineSplit)) {
       const parts = token.split(lineSplit)
@@ -97,10 +94,10 @@ function tokenToLines (curLine: Line, lines: Array<Line>, token: Element) : Elem
   }
 } 
 
-function linify(tokens: Array<Element>) : Array<Line> { 
-  const res : Array<Line> = []
-  var curLine : Line = new Line()
-  const lines : Array<Line> = []
+function linify(tokens) { 
+  const res = []
+  var curLine = new Line()
+  const lines = []
   tokens.forEach( (t) => { 
     var elem = t 
     while(elem) { 
@@ -117,23 +114,17 @@ function linify(tokens: Array<Element>) : Array<Line> {
   return res
 }
 
-interface Props {
-  className: string,
-  nonum: boolean,
-  children: any
-}
-
-const CodeBlock : React.FC<Props> = (props : Props) => {
+const CodeBlock = (props) => {
 
   // Figure out the Prism language to use 
-  const language : string = props.className?.replace(/language-/g, '') || ''
-  const nonum : boolean = props.nonum?.valueOf() || false
+  const language = props.className?.replace(/language-/g, '') || ''
+  const nonum = props.nonum?.valueOf() || false
 
   // We will stick the tokenized data into the state
   const [data, replaceToken] = React.useState<Array<Line>>([])
 
   // This will load the required extra languages and tokenise the codeblock 
-  const loadAndTokenize = (langs : Array<string>) => {
+  const loadAndTokenize = (langs) => {
     // more languages to load
     if (langs.length > 0) { 
       const lang = langs.shift()
@@ -143,7 +134,7 @@ const CodeBlock : React.FC<Props> = (props : Props) => {
       })
     } else { 
       // Now we should have all languages, so we can try to tokenize the code block
-      const grammar : Prism.Grammar = Prism.languages[language]
+      const grammar = Prism.languages[language]
       const tokens = 
         grammar ? Prism.tokenize(props.children, grammar) : [props.children]
 

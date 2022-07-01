@@ -1,13 +1,6 @@
 import * as React from "react"
 
-interface Sponsor {
-  image: string,
-  imageAlt: string,
-  imageLink: string,
-  content: string
-}
-
-const sponsors : Array<Sponsor> = [
+const sponsors = [
   {
     image: '/img/ziverge.png',
     imageAlt: 'Ziverge',

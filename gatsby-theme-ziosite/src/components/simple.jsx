@@ -1,10 +1,9 @@
 import * as React  from "react";
-import type { ContentPageProps }  from "../utils/sitetypes.js";
 
 import { graphql, PageProps } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
-const Simple = ( {data} : PageProps<ContentPageProps> ) => {
+const Simple = ({data}) => {
 
   const page = data.mdx;
 

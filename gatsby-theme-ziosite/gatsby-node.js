@@ -1,9 +1,7 @@
-import { GatsbyNode, Actions, Node, CreatePageArgs} from "gatsby";
-import { readFileSync, existsSync, mkdirSync } from "fs"; 
-import path from "path";
-import { ProjectRef } from "./src/utils/sitetypes";
+const fs = require("fs")
+const path = require("path")
 
-function findFile(fn: string) : string { 
+function findFile(fn) { 
   const dirs = [ 
     ".", 
     "node_modules/@atooni/gatsby-theme-ziosite", 
@@ -12,7 +10,7 @@ function findFile(fn: string) : string {
 
   const idx = dirs.findIndex ( (d) => { 
     const fileName = path.resolve(d, fn)
-    const exists = existsSync(fileName)
+    const exists = fs.existsSync(fileName)
     return exists
   } )
 
@@ -23,15 +21,15 @@ function findFile(fn: string) : string {
   }
 }
 
-const mdxComponent : string = findFile("./src/components/simple.tsx")
+const mdxComponent = findFile("./src/components/simple.jsx")
 const projectFile = findFile("./projects.json")
 
-const projects : Array<ProjectRef> = JSON.parse(readFileSync(projectFile, "utf-8")).projects
+const projects = JSON.parse(fs.readFileSync(projectFile, "utf-8")).projects
 
-function prjSlug(srcInstance: string, baseSlug : string) : string {
+function prjSlug(srcInstance, baseSlug) {
   const prj = projects.find( (p) => p.sourceInstance === srcInstance )
   if (typeof prj !== "undefined") { 
-    return slugify(`${prj!.projectName}/${prj!.version}/${baseSlug}`)
+    return slugify(`${prj.projectName}/${prj.version}/${baseSlug}`)
   } else {  
     return slugify(baseSlug)
   }
@@ -43,7 +41,7 @@ function prjSlug(srcInstance: string, baseSlug : string) : string {
  * @param str The input string.
  * @returns The slugified string
  */
-const slugify = (str: string) => { 
+const slugify = (str) => { 
   const basePath = '/';
 
   const slug = str
@@ -55,18 +53,18 @@ const slugify = (str: string) => {
 }
 
 // Make sure the path src/docs exists.
-export const onPreBootstrap : GatsbyNode["onPreBootstrap"]= ({reporter}) => {
+exports.onPreBootstrap = ({reporter}) => {
   const docsPath = 'src/docs';
 
-  if (!existsSync(docsPath)) { 
+  if (!fs.existsSync(docsPath)) { 
     reporter.info(`Creating directory ${docsPath}.`);
-    mkdirSync(docsPath, {recursive: true});
+    fs.mkdirSync(docsPath, {recursive: true});
   } else { 
     reporter.info(`Using existing src/docs directory`);
   }
 }
 
-export const onCreateNode : GatsbyNode["onCreateNode"] = (params) => { 
+exports.onCreateNode = (params) => { 
 
   const node = params.node
   const { createNodeField } = params.actions
@@ -89,7 +87,7 @@ export const onCreateNode : GatsbyNode["onCreateNode"] = (params) => { 
   }
 }
 
-export const onCreatePage : GatsbyNode["onCreatePage"] = (params) => {
+exports.onCreatePage = (params) => {
 
   const { createPage, deletePage } = params.actions
 
@@ -110,31 +108,12 @@ export const onCreatePage : GatsbyNode["onCreatePage"] = (params) => {
   }
 }
 
-export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
  
   const { createPage } = actions
 
-  interface SubSiteNode { 
-    fields: { 
-      slug: string
-    },
-    children: Array<{
-      id: string, 
-      fileAbsolutePath,
-      slug: string
-    }>
-  }
-
-  interface SubSiteResult { 
-    data?: {
-      allFile: { 
-        nodes: [SubSiteNode]
-      }
-    }
-  }
-  
   const createSubSitePages = async (
-    prj : ProjectRef
+    prj
   ) => {
     return await graphql(`
       {
@@ -158,8 +137,8 @@ export const createPages : GatsbyNode["createPages"] = async ({ graphql, actions
 
   projects.forEach( async (p) => { 
     createSubSitePages(p).then( (qPages) => {
-      const pages = <SubSiteResult>qPages
-      pages.data!.allFile.nodes.forEach((n: SubSiteNode) => {
+      const pages = qPages
+      pages.data.allFile.nodes.forEach((n) => {
         if (n.children.length >= 1) { 
           const mdxChild = n.children[0]
           createPage({

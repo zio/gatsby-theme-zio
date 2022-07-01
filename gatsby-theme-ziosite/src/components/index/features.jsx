@@ -1,11 +1,6 @@
 import * as React from "react"
 
-interface Feature {
-  title: string,
-  content: string
-}
-
-const features : Array<Feature>= [
+const features = [
   {
     title: 'High-performance',
     content: 'Build scalable applications with 100x the performance of Scala’s Future',

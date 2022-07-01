@@ -1,6 +1,4 @@
-import { GatsbyConfig } from 'gatsby';
-
-const config : GatsbyConfig = { 
+const config = { 
   siteMetadata: {
     title: "The ZIO Gatsby Theme"
   },
@@ -31,4 +29,4 @@ const config : GatsbyConfig = {
   ]
 }
 
-export default config;
+module.exports = config;

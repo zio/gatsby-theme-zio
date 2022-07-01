@@ -1,11 +1,6 @@
 import * as React from "react";
 
-interface NavLink { 
-  name: string,
-  target: string
-}
-
-const links : Array<NavLink> = [
+const links = [
   { name: "Blog", target: "#"},
   { name: "Articles",target: "#"},
   { name: "Projects",target: "#"},

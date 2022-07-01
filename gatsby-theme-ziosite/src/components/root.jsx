@@ -3,7 +3,7 @@ import NavBar from "./navbar";
 import Footer from "./footer"
 import MDXDesign from "./mdxdesign/design";
 
-const Root = (props : React.PropsWithChildren) => { 
+const Root = (props) => { 
   return(
     <MDXDesign>
       <div className="container flex flex-col max-w-full w-full">
