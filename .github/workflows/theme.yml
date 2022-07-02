@@ -15,12 +15,12 @@ jobs:
       - run: |
           cd ${{ matrix.sites }}
           yarn install 
-          npx gatsby build
+          npx gatsby build --prefix-paths
         name: Gatsby Build
       - name: Cache Site Builds
         uses: actions/cache@v3
         with:
-          key: build-${{ matrix.sites }}-${{ github.sha }} --prefix-paths
+          key: build-${{ matrix.sites }}-${{ github.sha }}
           path: ./${{ matrix.sites }}/public
 
   publish:
