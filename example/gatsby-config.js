@@ -11,8 +11,21 @@ const config = {
         name: "zio",
         path: `${__dirname}/node_modules/@atooni/zio-core/src/docs`,
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { 
+        name: "zio-2",
+        path: `${__dirname}/node_modules/@atooni/zio-core-2/src/docs`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { 
+        name: "metrics-connectors",
+        path: `${__dirname}/node_modules/@atooni/zio-metrics-connectors/src/docs`,
+      }
     }
-
   ]
 }
 
