@@ -6,6 +6,36 @@ module.exports = {
     siteUrl: `https://zio.dev`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-postcss',
+     // Configure the file system plugin for standard pages
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    // Configure the file system plugin for generated docs
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docs`,
+        path: `${__dirname}/src/docs/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: { 
+        path: `${__dirname}/src/docs`,
+        
+      }
+    }
   ],
 }
