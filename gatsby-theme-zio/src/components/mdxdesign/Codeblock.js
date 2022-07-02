@@ -18,7 +18,7 @@ class Line {
   }
 
   isEmpty() { 
-    if (this.tokens.length == 0) return true
+    if (this.tokens.length === 0) return true
     return (this.tokens.findIndex( (e) => {
       if (typeof e === "string") { 
         return e.trim().length > 0
@@ -103,14 +103,12 @@ function linify(tokens) {
     while(elem) { 
       elem = tokenToLines(curLine, lines, elem)
       if (elem) { 
-        console.log(JSON.stringify(curLine))
         res.push(curLine)
         curLine = new Line()
       }
     }
   })
   if (!curLine.isEmpty()) res.push(curLine)
-  console.log(JSON.stringify(curLine))
   return res
 }
 
@@ -121,7 +119,8 @@ const CodeBlock = (props) => {
   const nonum = props.nonum?.valueOf() || false
 
   // We will stick the tokenized data into the state
-  const [data, replaceToken] = React.useState<Array<Line>>([])
+
+  const [data, replaceTokens] = React.useState([])
 
   // This will load the required extra languages and tokenise the codeblock 
   const loadAndTokenize = (langs) => {
@@ -139,19 +138,20 @@ const CodeBlock = (props) => {
         grammar ? Prism.tokenize(props.children, grammar) : [props.children]
 
       const lines = linify(tokens)
-      replaceToken(lines)
+      replaceTokens(lines)
     }
   }
 
-  React.useEffect( () => { loadAndTokenize(extraLanguages) })
+  React.useEffect( () => { loadAndTokenize(extraLanguages) }, [])
   
   return(
     <div className="w-11/12 my-2 mx-auto">
       <pre className={`language-${language} rounded-xl`}>
-        {data.length ? data.map( (l, i) => lineToReactNode(l, i, nonum)) : props.children}
+         {data.length ? data.map( (l, i) => lineToReactNode(l, i, nonum)) : props.children}
       </pre>
     </div>
   )
 }
 
 export default CodeBlock
+

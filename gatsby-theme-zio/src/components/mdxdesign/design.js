@@ -14,9 +14,9 @@ const LI = ({children}) => {
 }
 
 const Heading = ({level, children}) => {
-  const sizes = ["4xl", "2xl", "xl"]
-  const size = (level > 0 && level <= sizes.length) ? sizes.at(level - 1) : "lg"
-  const style = `text-${size} font-semibold my-2`
+  const sizes = ["text-4xl", "text-3xl", "text-2xl"]
+  const size = (level > 0 && level <= sizes.length) ? sizes.at(level - 1) : "text-xl"
+  const style = `${size} font-semibold my-2`
 
   const Elem = `h${level}`
   
@@ -57,7 +57,7 @@ const components = {
   li: LI,
   p: p => <p className="mb-2" {...p} />,
   pre: p => <pre {...p} />,
-  inlineCode: p => <code className="font-mono text-sm bg-primary-300 mx-1 py-1 px-1 rounded-md" {...p} />,
+  inlineCode: p => <code className="font-mono text-sm bg-primary-300 mx-1 px-1 rounded-sm" {...p} />,
   code: CodeBlock
 }
 
