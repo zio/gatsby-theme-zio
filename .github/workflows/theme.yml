@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        sites: ["gatsby-theme-zio", "example"]
+        sites: ["gatsby-theme-ziodoc", "example"]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
