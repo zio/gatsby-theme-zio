@@ -20,7 +20,7 @@ jobs:
       - name: Cache Site Builds
         uses: actions/cache@v3
         with:
-          key: build-${{ matrix.sites }}-${{ github.sha }}
+          key: build-${{ matrix.sites }}-${{ github.sha }} --prefix-paths
           path: ./${{ matrix.sites }}/public
 
   publish:

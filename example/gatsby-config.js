@@ -1,4 +1,5 @@
 const config = { 
+  pathPrefix: "/gatsby-theme-zio",
   siteMetadata: {
     title: "ZIO Sample Site"
   },
