@@ -1,2 +1,0 @@
-(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[43807],{43807:function(){Prism.languages.git={comment:/^#.*/m,deleted:/^[-–].*/m,inserted:/^\+.*/m,string:/("|')(?:\\.|(?!\1)[^\\\r\n])*\1/,command:{pattern:/^.*\$ git .*$/m,inside:{parameter:/\s--?\w+/}},coord:/^@@.*@@$/m,"commit-sha1":/^commit \w{40}$/m}}}]);
-//# sourceMappingURL=43807-1ff196029185a40fc8d5.js.map

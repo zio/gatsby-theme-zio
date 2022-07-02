@@ -1,2 +1,0 @@
-(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[12722],{12722:function(){Prism.languages.insertBefore("php","variable",{this:{pattern:/\$this\b/,alias:"keyword"},global:/\$(?:GLOBALS|HTTP_RAW_POST_DATA|_(?:COOKIE|ENV|FILES|GET|POST|REQUEST|SERVER|SESSION)|argc|argv|http_response_header|php_errormsg)\b/,scope:{pattern:/\b[\w\\]+::/,inside:{keyword:/\b(?:parent|self|static)\b/,punctuation:/::|\\/}}})}}]);
-//# sourceMappingURL=12722-a9f3a3b0649d4e71fd5c.js.map
