@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[321],{7696:function(e,t,l){l.r(t);var a=l(7294),n=l(1597),c=l(9364),o=l(2160);t.default=function(){return a.createElement(c.Z,null,a.createElement(o.Z,{title:"Page two"}),a.createElement("h1",null,"Hi from the second page"),a.createElement("p",null,"Welcome to page 2"),a.createElement(n.rU,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-page-2-js-846c2b68da32d3fb373c.js.map
