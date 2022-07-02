@@ -152,5 +152,4 @@ To make it easy for developers to see the implementation scala doc links are use
    */
   def absolve[R, A](v: RIO[R, Either[Throwable, A]]): RIO[R, A] =
     ZIO.absolve(v)
-
 ```

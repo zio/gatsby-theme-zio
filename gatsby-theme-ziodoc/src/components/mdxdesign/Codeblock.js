@@ -1,10 +1,6 @@
 import * as React from "react"
 import * as Prism from "prismjs"
 
-// Prism extra Languages should go into an overall config object 
-// Need to load java before scala
-const extraLanguages = ["bash", "java", "scala"]
-
 // A single line consists of an array of Elements
 class Line {
   tokens
@@ -61,88 +57,76 @@ const lineToReactNode = (line, i, nonum) => {
   return(
     <div className="flex flew-row" key={`l-${i}`}> 
       <div className={lineNum}>{i+1}</div>
-      <div className="flex-grow ml-2">{nodes}{`\n`}</div>
+      <div className="flex-grow ml-2">{nodes}</div>
     </div>
   ) 
 }
 
-function tokenToLines (curLine, lines, token) {
-  if (typeof token === "string") {
-    if (token.includes(lineSplit)) {
-      const parts = token.split(lineSplit)
-      curLine.addElement(parts.shift())
-      lines.push(curLine)
-      return parts.join(lineSplit)
-    } else { 
-      curLine.addElement(token)
-      return null
-    }
-  } else if (typeof token.content === "string") { 
-    if (token.content.includes(lineSplit)) { 
-      const parts = token.content.split(lineSplit)
-      const toEol = new Prism.Token(token.type, parts.shift(), token.alias)
-      curLine.addElement(toEol)
-      lines.push(curLine)
-      return new Prism.Token(token.type, parts.join(lineSplit), token.alias)
-    } else {
-      curLine.addElement(token)
-      return null
-    }
-  } else { 
-    curLine.addElement(token)
-    return null
-  }
-} 
+const linify = (tokens) => { 
 
-function linify(tokens) { 
-  const res = []
   var curLine = new Line()
   const lines = []
-  tokens.forEach( (t) => { 
-    var elem = t 
-    while(elem) { 
-      elem = tokenToLines(curLine, lines, elem)
-      if (elem) { 
-        res.push(curLine)
-        curLine = new Line()
-      }
-    }
+
+  const linefeed = ( () => {
+    lines.push(curLine)
+    curLine = new Line()
   })
-  if (!curLine.isEmpty()) res.push(curLine)
-  return res
+  
+  const eatLines = (token) => {
+
+    if (typeof token === "string") {
+      if (token.includes(lineSplit)) {
+        const parts = token.split(lineSplit)
+        while (parts.length > 0) {
+          const part = parts.shift()
+          curLine.addElement(part)
+          if (parts.length > 0 || (token.endsWith(lineSplit) && part.trim().length > 0 )) linefeed()
+        }
+      } else { 
+        curLine.addElement(token)
+      }
+    } else if (typeof token.content === "string") { 
+      if (token.content.includes(lineSplit)) { 
+        const parts = token.content.split(lineSplit)
+        while (parts.length > 0) { 
+          curLine.addElement(new Prism.Token(token.type, parts.shift(), token.alias))
+          if (parts.length > 0 || token.content.endsWith(lineSplit)) linefeed()
+        }
+      } else {
+        curLine.addElement(token)
+      }
+    } else if (Array.isArray(token.content)) {
+      token.content.forEach( (t) => eatLines(t))
+    } else { 
+      eatLines(token.content)
+    }
+  } 
+
+  tokens.forEach( (t) => { 
+    eatLines(t)
+  })
+  if (!curLine.isEmpty()) lines.push(curLine)
+  return lines
 }
 
 const CodeBlock = (props) => {
 
+  // We will stick the tokenized data into the state
+
+  const tokenize = () => {
+    // Now we should have all languages, so we can try to tokenize the code block
+    const grammar = Prism.languages[language]
+    const tokens = 
+      grammar ? Prism.tokenize(props.children, grammar) : [props.children]
+
+    const lines = linify(tokens)
+    return lines 
+  }
+
   // Figure out the Prism language to use 
   const language = props.className?.replace(/language-/g, '') || ''
   const nonum = props.nonum?.valueOf() || false
-
-  // We will stick the tokenized data into the state
-
-  const [data, replaceTokens] = React.useState([])
-
-  // This will load the required extra languages and tokenise the codeblock 
-  const loadAndTokenize = (langs) => {
-    // more languages to load
-    if (langs.length > 0) { 
-      const lang = langs.shift()
-      console.log(`Loading language ${lang}`)
-      import(`prismjs/components/prism-${lang}`).then( () => { 
-        loadAndTokenize(langs)
-      })
-    } else { 
-      // Now we should have all languages, so we can try to tokenize the code block
-      const grammar = Prism.languages[language]
-      const tokens = 
-        grammar ? Prism.tokenize(props.children, grammar) : [props.children]
-
-      const lines = linify(tokens)
-      replaceTokens(lines)
-    }
-  }
-
-  React.useEffect( () => { loadAndTokenize(extraLanguages) }, [])
+  const data = tokenize()
   
   return(
     <div className="w-11/12 my-2 mx-auto">
