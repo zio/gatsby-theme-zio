@@ -1,5 +1,6 @@
-const React = require("react")
-const Link = require ("gatsby").Link
+import * as React from "react"
+import { Link } from "gatsby" 
+import { withPrefix } from "gatsby" 
 
 const tagLine = "Type-safe, composable asynchronous and concurrent programming for Scala"
 
@@ -16,7 +17,7 @@ const Jumbotron = () => {
         </div>
         <img 
           alt={tagLine}
-          src="/img/jumbotron_pattern.png" 
+          src={`${withPrefix("/theme/img/jumbotron_pattern.png")}`}
         />
       </div>
     </div>
