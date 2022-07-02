@@ -1,0 +1,732 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.17.2"/><style data-href="/styles.0d77a1f9790ad3befaea.css" data-identity="gatsby-global-css">/*
+! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.invisible{visibility:hidden}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.top-1\/2{top:50%}.z-10{z-index:10}.m-4{margin:1rem}.m-auto{margin:auto}.my-2{margin-bottom:.5rem;margin-top:.5rem}.my-auto{margin-bottom:auto;margin-top:auto}.mx-auto{margin-left:auto;margin-right:auto}.mx-1{margin-right:.25rem}.ml-1,.mx-1{margin-left:.25rem}.mr-8{margin-right:2rem}.mt-4{margin-top:1rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mb-2{margin-bottom:.5rem}.ml-5{margin-left:1.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-8{height:2rem}.h-0{height:0}.h-40{height:10rem}.h-auto{height:auto}.w-full{width:100%}.w-auto{width:auto}.w-80{width:20rem}.w-8{width:2rem}.w-11\/12{width:91.666667%}.max-w-full{max-width:100%}.flex-initial{flex:0 1 auto}.flex-none{flex:none}.flex-grow{flex-grow:1}.list-outside{list-style-position:outside}.list-disc{list-style-type:disc}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.place-content-center{place-content:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-sm{border-radius:.125rem}.border-2{border-width:2px}.border-r-2{border-right-width:2px}.border-solid{border-style:solid}.border-primary-50{--tw-border-opacity:1;border-color:rgb(250 250 249/var(--tw-border-opacity))}.bg-primary-700{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.bg-primary-900{--tw-bg-opacity:1;background-color:rgb(28 25 23/var(--tw-bg-opacity))}.bg-primary-100{--tw-bg-opacity:1;background-color:rgb(245 245 244/var(--tw-bg-opacity))}.bg-primary-300{--tw-bg-opacity:1;background-color:rgb(214 211 209/var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.p-4{padding:1rem}.p-2{padding:.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.pb-4{padding-bottom:1rem}.pr-2{padding-right:.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-sm{font-size:.875rem;line-height:1.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-primary-50{--tw-text-opacity:1;color:rgb(250 250 249/var(--tw-text-opacity))}.text-secondary-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:rounded-md:hover{border-radius:.375rem}.hover\:bg-primary-700:hover{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.hover\:bg-primary-600:hover{--tw-bg-opacity:1;background-color:rgb(87 83 78/var(--tw-bg-opacity))}@media (min-width:768px){.md\:visible{visibility:visible}.md\:h-auto{height:auto}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:flex-row{flex-direction:row}}@media (min-width:1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:#2f2f2f;color:#eee;font-family:Roboto Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#363636}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#363636}:not(pre)>code[class*=language-]{border-radius:.2em;padding:.1em;white-space:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1.25em 1em;position:relative}.language-css>code,.language-sass>code,.language-scss>code{color:#fd9170}[class*=language-] .namespace{opacity:.7}.token.atrule{color:#c792ea}.token.attr-name{color:#ffcb6b}.token.attr-value,.token.attribute{color:#a5e844}.token.boolean{color:#c792ea}.token.builtin{color:#ffcb6b}.token.cdata,.token.char{color:#80cbc4}.token.class{color:#ffcb6b}.token.class-name{color:#f2ff00}.token.comment{color:#616161}.token.constant{color:#c792ea}.token.deleted{color:#f66}.token.doctype{color:#616161}.token.entity{color:#f66}.token.function{color:#c792ea}.token.hexcode{color:#f2ff00}.token.id,.token.important{color:#c792ea;font-weight:700}.token.inserted{color:#80cbc4}.token.keyword{color:#c792ea}.token.number{color:#fd9170}.token.operator{color:#89ddff}.token.prolog{color:#616161}.token.property{color:#80cbc4}.token.pseudo-class,.token.pseudo-element{color:#a5e844}.token.punctuation{color:#89ddff}.token.regex{color:#f2ff00}.token.selector{color:#f66}.token.string{color:#a5e844}.token.symbol{color:#c792ea}.token.tag{color:#f66}.token.unit{color:#fd9170}.token.url,.token.variable{color:#f66}</style><title data-react-helmet="true"></title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="container mx-auto"><h2>Installation</h2><p>In order to use this library, we need to add the following line in our <code>build.sbt</code> file:</p><pre><code class="language-scala">libraryDependencies += &quot;dev.zio&quot; %% &quot;zio-mock&quot; % &lt;version&gt;
+</code></pre><h2>The Problem</h2><p>Whenever possible, we should strive to make our functions pure, which makes testing such function easy. So we just need to assert on the return value. However, in larger applications there is a need for intermediate layers that delegate the work to specialized services.</p><p>For example, in an HTTP server, the first layers of indirection are so-called <em>routes</em>, whose job is to match the request and delegate the processing to downstream layers. Below this layer, there is often a second layer of indirection, so-called <em>controllers</em>, which comprises several business logic units grouped by their domain. In a RESTful API, that would be all operations on a certain model. The <em>controller</em> to perform its job might call on further specialized services for communicating with the database, sending email, logging, etc.</p><p>If the job of the <em>capability</em> is to call on another <em>capability</em>, how should we test it?</p><p>Let&#x27;s say we have a <code>Userservice</code> defined as follows:</p><pre><code class="language-scala">import zio._
+
+trait UserService {
+  def register(username: String, age: Int, email: String): IO[String, Unit]
+}
+
+object UserService {
+  def register(username: String, age: Int, email: String): ZIO[UserService, String, Unit] =
+    ZIO.serviceWithZIO(_.register(username, age, email))
+}
+</code></pre><p>The live implementation of the <code>UserService</code> has two collaborators, <code>EmailService</code> and <code>UserRepository</code>:</p><pre><code class="language-scala">trait EmailService {
+  def send(to: String, body: String): IO[String, Unit]
+}
+
+case class User(username: String, age: Int, email: String)
+
+trait UserRepository {
+  def save(user: User): IO[String, Unit]
+}
+</code></pre><p>Following is how the live version of <code>UserService</code> is implemented:</p><pre><code class="language-scala">case class UserServiceLive(emailService: EmailService, userRepository: UserRepository) extends UserService {
+  override def register(username: String, age: Int, email: String): IO[String, Unit] =
+    if (age &lt; 18) {
+      emailService.send(email, &quot;You are not eligible to register!&quot;)
+    } else if (username == &quot;admin&quot;) {
+      ZIO.fail(&quot;The admin user is already registered!&quot;)
+    } else {
+      for {
+        _ &lt;- userRepository.save(User(username, age, email))
+        _ &lt;- emailService.send(email, &quot;Congratulation, you are registered!&quot;)
+      } yield ()
+    }
+}
+
+object UserServiceLive {
+  val layer: URLayer[EmailService with UserRepository, UserService] =
+    (UserServiceLive.apply _).toLayer[UserService]
+}
+</code></pre><p>A pure function is such a function which operates only on its inputs and produces only its output. Command-like methods, by definition are impure, as their job is to change state of the collaborating object (performing a <em>side effect</em>). For example:</p><p>The signature of <code>register</code> method <code>(String, Int, String) =&gt; IO[String, Unit]</code> hints us we&#x27;re dealing with a command. It returns <code>Unit</code> (well, wrapped in the <code>IO</code>, but it does not matter here). We can&#x27;t do anything useful with <code>Unit</code>, and it does not contain any information. It is the equivalent of returning nothing.</p><p>It is also an unreliable return type, as when Scala expects the return type to be <code>Unit</code> it will discard whatever value it had (for details see <a href="https://scala-lang.org/files/archive/spec/2.13/06-expressions.html#value-conversions">Section 6.26.1</a> of the Scala Language Specification), which may shadow the fact that the final value produced (and discarded) was not the one we expected.</p><p>Inside the <code>IO</code> there may be a description of any side effects. It may open a file, print to the console, or connect to databases. <strong>So the problem is &quot;How is it possible to test a service along with its collaborators&quot;?</strong></p><p>In this example, the <code>register</code> method has a service call to its collaborators, <code>UserRepository</code> and <code>EmailService</code>.  So, how can we test the live version of <code>UserService.register</code> while it has some side effects in communicating with its collaborators?</p><p>Mockists would probably claim that testing how collaborators are called during the test process allows us to test the UserService. Let&#x27;s move on to the next section and see the mockists&#x27; solution in greater detail.</p><h2>The Solution</h2><p>In this sort of situations we need mock implementations of our <em>collaborator service</em>. As <em>Martin Fowler</em> puts it in his excellent article <a href="https://martinfowler.com/articles/mocksArentStubs.html">Mocks Aren&#x27;t Stubs</a>:</p><blockquote><p><strong>Mocks</strong> are (...) objects pre-programmed with expectations which form a specification of the calls they are expected to receive.</p></blockquote><p>So to test the <code>register</code> function, we can mock the behavior of its two collaborators. So instead of using production objects, we use pre-programmed mock versions of these two collaborators with some expectations. In this way, in each test case, we expect these collaborators will be called with expected inputs.</p><p>In this example, we can define these three test cases:</p><ol><li>If we register a user with an age of less than 18, we expect that the <code>save</code> method of <code>UserRepository</code> shouldn&#x27;t be called. Additionally, we expect that the <code>send</code> method of <code>EmailService</code> will be called with the following content: &quot;You are not eligible to register.&quot;</li><li>If we register a user with a username of &quot;admin&quot;, we expect that both <code>UserRepository</code> and <code>EmailService</code> should not be called. Instead, we expect that the <code>register</code> call will be failed with a proper failure value: &quot;The admin user is already registered!&quot;</li><li>Otherwise, we expect that the <code>save</code> method of <code>UserRepository</code> will be called with the corresponding <code>User</code> object, and the <code>send</code> method of <code>EmailService</code> will be called with this content: &quot;Congratulation, you are registered!&quot;.</li></ol><p>ZIO Test provides a framework for mocking our modules. In the next section, we are going to test <code>UserService</code> by mocking its collaborators.</p><h2>Mocking Collaborators</h2><p>In the previous section, we learned we can test the <code>UserService</code> by mocking its collaborators. Let&#x27;s see how we can mock the <code>EmailService</code> and also the <code>UserRepository</code>.</p><p>We should create a mock object by extending <code>Mock[EmailService]</code> (<code>zio.mock.Mock</code>). Then we need to define the following objects:</p><ol><li><strong>Capability tags</strong> — They are value objects which extend one of the <code>Capability[R, I, E, A]</code> data types, such as <code>Effect</code>, <code>Method</code>, <code>Sink</code>, or <code>Stream</code>. For each of the service capabilities, we need to create an object extending one of these data types. They encode the type of <em>environments</em>, <em>arguments</em> (inputs), the <em>error channel</em>, and also the <em>success channel</em> of each capability of the service.</li></ol><p>For example, to encode the <code>send</code> capability of <code>EmailService</code> we need to extend the <code>Effect</code> capability as bellow:</p><pre><code class="language-scala">object Send extends Effect[(String, String), String, Unit]
+</code></pre><ol start="2"><li><strong>Compose layer</strong> — In this step, we need to provide a layer in which used to construct the mocked object. In order to do that, we should obtain the <code>Proxy</code> data type from the environment and then implement the service interface (i.e. <code>EmailService</code>) by wrapping all capability tags with proxy.</li></ol><p>Let&#x27;s see how we can mock the <code>EmailService</code>:</p><pre><code class="language-scala">// Test Sources
+import zio.mock._
+
+object MockEmailService extends Mock[EmailService] {
+  object Send extends Effect[(String, String), String, Unit]
+
+  val compose: URLayer[Proxy, EmailService] =
+    ZIO
+      .service[Proxy]
+      .map { proxy =&gt;
+        new EmailService {
+          override def send(to: String, body: String): IO[String, Unit] =
+            proxy(Send, to, body)
+        }
+      }
+      .toLayer
+}
+</code></pre><p>And, here is the mock version of the <code>UserRepository</code>:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+
+object MockUserRepository extends Mock[UserRepository] {
+  object Save extends Effect[User, String, Unit]
+
+  val compose: URLayer[Proxy, UserRepository] =
+    ZIO
+      .service[Proxy]
+      .map { proxy =&gt;
+        new UserRepository {
+          override def save(user: User): IO[String, Unit] =
+            proxy(Save, user)
+        }
+      }
+      .toLayer
+}
+</code></pre><h2>Testing the Service</h2><p>After writing the mock version of collaborators, now we can use their <em>capability tags</em> to convert them to the <code>Expectation</code>, and finally create the mock layer of the service.</p><p>For example, we can create an expectation from the <code>Send</code> capability tag of the <code>MockEmailService</code>:</p><pre><code class="language-scala">import zio.test._
+
+val sendEmailExpectation: Expectation[EmailService] =
+  MockEmailService.Send(
+    assertion = Assertion.equalTo((&quot;john@doe&quot;, &quot;You are not eligible to register!&quot;)),
+    result = Expectation.unit
+  )
+</code></pre><p>The <code>sendEmailExpectation</code> is an expectation, which requires a call to <code>send</code> method with <code>(&quot;john@doe&quot;, &quot;You are not eligible to register!&quot;)</code> arguments. If this service will be called, the returned value would be <code>unit</code>.</p><p>There is an extension method called <code>Expectation#toLayer</code> which implicitly converts an expectation to the <code>ZLayer</code> environment:</p><pre><code class="language-scala">import zio.test._
+
+val mockEmailService: ULayer[EmailService] =
+  MockEmailService.Send(
+    assertion = Assertion.equalTo((&quot;john@doe&quot;, &quot;You are not eligible to register!&quot;)),
+    result = Expectation.unit
+  ).toLayer
+</code></pre><p>So we do not require to convert them to <code>ZLayer</code> explicitly. It will convert them whenever required.</p><ol><li>Now let&#x27;s test the first scenario discussed in the <a href="#the-solution">solution</a> section:</li></ol><blockquote><p>If we register a user with an age of less than 18, we expect that the <code>save</code> method of <code>UserRepository</code> shouldn&#x27;t be called. Additionally, we expect that the <code>send</code> method of <code>EmailService</code> will be called with the following content: &quot;You are not eligible to register.&quot;</p></blockquote><pre><code class="language-scala">import zio.test._
+
+test(&quot;non-adult registration&quot;) {
+  val sut              = UserService.register(&quot;john&quot;, 15, &quot;john@doe&quot;)
+  val liveUserService  = UserServiceLive.layer
+  val mockUserRepo     = MockUserRepository.empty
+  val mockEmailService = MockEmailService.Send(
+    assertion = Assertion.equalTo((&quot;john@doe&quot;, &quot;You are not eligible to register!&quot;)),
+    result = Expectation.unit
+  )
+
+  for {
+    _ &lt;- sut.provide(liveUserService, mockUserRepo, mockEmailService)
+  } yield assertTrue(true)
+}
+</code></pre><p>We used <code>MockUserRepository.empty</code> since we expect no call to the <code>UserRepository</code> service.</p><ol start="2"><li>The second scenario is:</li></ol><blockquote><p>If we register a user with a username of &quot;admin&quot;, we expect that both <code>UserRepository</code> and <code>EmailService</code> should not be called. Instead, we expect that the <code>register</code> call will be failed with a proper failure value: &quot;The admin user is already registered!&quot;</p></blockquote><pre><code class="language-scala">import zio.test._
+
+test(&quot;user cannot register pre-defined admin user&quot;) {
+  val sut = UserService.register(&quot;admin&quot;, 30, &quot;admin@doe&quot;)
+
+  for {
+    result &lt;- sut.provide(
+      UserServiceLive.layer,
+      MockEmailService.empty,
+      MockUserRepository.empty
+    ).exit
+  } yield assertTrue(
+    result match {
+      case Exit.Failure(cause)
+        if cause.contains(
+          Cause.fail(&quot;The admin user is already registered!&quot;)
+        ) =&gt; true
+      case _ =&gt; false
+    }
+  )
+}
+</code></pre><ol start="3"><li>Finally, we have to check the <em>happy path</em> scenario:</li></ol><blockquote><p>We expect that the <code>save</code> method of <code>UserRepository</code> will be called with the corresponding <code>User</code> object, and the <code>send</code> method of <code>EmailService</code> will be called with this content: &quot;Congratulation, you are registered!&quot;.</p></blockquote><pre><code class="language-scala">import zio.test._
+
+test(&quot;a valid user can register to the user service&quot;) {
+  val sut              = UserService.register(&quot;jane&quot;, 25, &quot;jane@doe&quot;)
+  val liveUserService  = UserServiceLive.layer
+  val mockUserRepo     = MockUserRepository.Save(
+    Assertion.equalTo(User(&quot;jane&quot;, 25, &quot;jane@doe&quot;)),
+    Expectation.unit
+  )
+  val mockEmailService = MockEmailService.Send(
+    assertion = Assertion.equalTo((&quot;jane@doe&quot;, &quot;Congratulation, you are registered!&quot;)),
+    result = Expectation.unit
+  )
+
+  for {
+    _ &lt;- sut.provide(liveUserService, mockUserRepo, mockEmailService)
+  } yield assertTrue(true)
+}
+</code></pre><h2>Built-in Mock Services</h2><p>For each built-in ZIO service, we will find their mockable counterparts in <code>zio.mock</code> package:</p><ul><li>[<code>MockClock</code>]<!-- --> for <code>zio.Clock</code></li><li>[<code>MockConsole</code>]<!-- --> for <code>zio.Console</code></li><li>[<code>MockRandom</code>]<!-- --> for <code>zio.Random</code></li><li>[<code>MockSystem</code>]<!-- --> for <code>zio.System</code></li></ul><p>A <code>Mock[R]</code> represents a mockable environment <code>R</code>. It&#x27;s a base abstract class for every service we want to mock.</p><h2>Creating a Mock Service</h2><p>In order to create a mock object, we should define an object which implements the <code>Mock</code> abstract class in the test sources. To implement the <code>Mock</code> need to define <em>capability tags</em> and the <em>compose layer</em>:</p><h2>Encoding Service Capabilities</h2><p>Capabilities are service functionalities that are accessible from the client-side. For example, in the following service the <code>send</code> method is a service capability:</p><pre><code class="language-scala">import zio._
+
+trait UserService {
+  def register(username: String, age: Int, email: String): Task[Unit]
+}
+</code></pre><p>A <strong>capability tag</strong> encodes all information needed to mock the target capability. It is just a value that extends the <code>zio.mock.Capability[R, I, E, A]</code> type constructor, where:</p><ul><li><code>R</code> is the type of <em>environment</em> the method belongs to</li><li><code>I</code> is the type of <em>methods input arguments</em></li><li><code>E</code> is the type of <em>error</em> it can fail with</li><li><code>A</code> is the type of <em>return value</em> it can produce</li></ul><p>The <code>Capability</code> type is not publicly available, instead we have to extend <code>Mock</code> dependent types <code>Effect</code>, <code>Method</code>, <code>Sink</code> or <code>Stream</code>.</p><p>We can have 4 types of capabilities inside a service:</p><ol><li><strong><code>Effect</code></strong> — describes an effectful ZIO operation</li><li><strong><code>Method</code></strong> — describes an ordinary scala function</li><li><strong><code>Sink</code></strong> — describes an effectful ZIO Sink</li><li><strong><code>Stream</code></strong> — describes an effectful ZIO Stream</li></ol><p>Let&#x27;s say we have the following service:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.stream._
+
+trait ExampleService {
+  def exampleEffect(i: Int): Task[String]
+  def exampleMethod(i: Int): String
+  def exampleSink(a: Int): Sink[Throwable, Int, Nothing, List[Int]]
+  def exampleStream(a: Int): Stream[Throwable, String]
+}
+</code></pre><p>Therefore, the mock service should have the following <em>capability tags</em>:</p><pre><code class="language-scala">import zio.mock._
+
+object MockExampleService extends Mock[ExampleService] {
+  object ExampleEffect extends Effect[Int, Throwable, String]
+  object ExampleMethod extends Method[Int, Throwable, String]
+  object ExampleSink   extends Sink[Any, Throwable, Int, Nothing, List[Int]]
+  object ExampleStream extends Stream[Int, Throwable, String]
+  
+  override val compose: URLayer[Proxy, ExampleService] = ???
+}
+</code></pre><p>In this example, all <code>ExampleEffect</code>, <code>ExampleMethod</code>, <code>ExampleSink</code>, and <code>ExampleStream</code> are capability tags. Each of these capability tags encodes all information needed to mock the target capability.</p><p>For example, the <code>ExampleEffect</code> capability tag encodes the type of <em>environments</em>, <em>arguments</em> (inputs), the <em>error channel</em>, and also the <em>success channel</em> of the <code>exampleEffect(i: Int)</code> method.</p><pre><code class="language-scala"></code></pre><p>We encode service capabilities according to the following scheme:</p><h3>Encoding Zero Argument Capability</h3><p>For zero arguments the type is <code>Unit</code></p><pre><code class="language-scala">import zio._
+
+trait ZeroParamService {
+  def zeroParams: Task[Int]
+}
+</code></pre><p>So the capability tag of <code>zeroParams</code> should be:</p><pre><code class="language-scala">import zio.mock._
+
+object MockZeroParamService extends Mock[ZeroParamService] {
+  object ZeroParams extends Effect[Unit, Throwable, Int]
+  
+  override val compose = ???
+}
+</code></pre><pre><code class="language-scala"></code></pre><h3>Encoding Multiple Arguments Capability</h3><p>For one or more arguments, regardless of how many parameter lists, the type is a <code>TupleN</code> where <code>N</code> is the size of arguments list</p><blockquote><p><strong>Note:</strong></p><p>We&#x27;re using tuples to represent multiple argument methods, which follows with a limit to max 22 arguments, as is Scala itself limited.</p></blockquote><p>If the capability has more than one argument, we should encode the argument types in the <code>Tuple</code> data type. For example, if we have the following service:</p><pre><code class="language-scala">import zio._
+
+trait ManyParamsService {
+  def manyParams(a: Int, b: String, c: Long): Task[Int]
+  def manyParamLists(a: Int, b: String)(c: Long): Task[Int]
+}
+</code></pre><p>We should encode that with the following capability tag:</p><pre><code class="language-scala">import zio.mock._
+
+trait MockExampleService extends Mock[ManyParamsService] {
+  object ManyParams     extends Method[(Int, String, Long), Throwable, String]
+  object ManyParamLists extends Method[(Int, String, Long), Throwable, String]
+  
+  override val compose = ???
+}
+</code></pre><h3>Encoding Overloaded Capabilities</h3><p>For overloaded methods, we nest a list of numbered objects, each representing subsequent overloads:</p><pre><code class="language-scala">// Main sources
+
+import zio._
+import zio.stream.{ ZSink, ZStream }
+
+trait OverloadedService {
+  def overloaded(arg1: Int)                  : UIO[String]
+  def overloaded(arg1: Long)                 : UIO[String]
+}
+</code></pre><p>We encode both overloaded capabilities by using numbered objects inside a nested object:</p><pre><code class="language-scala">// Test sources
+
+import zio._
+import zio.mock._
+
+object MockOervloadedService extends Mock[OverloadedService] {
+  object Overloaded {
+    object _0 extends Effect[Int, Nothing, String]
+    object _1 extends Effect[Long, Nothing, String]
+  }
+
+  val compose: URLayer[Proxy, OverloadedService] = ???
+}
+</code></pre><pre><code class="language-scala"></code></pre><h3>Encoding Polymorphic Capabilities</h3><p>Mocking polymorphic methods is also supported, but the interface must require <code>zio.Tag</code> implicit evidence for each type parameter:</p><pre><code class="language-scala">// main sources
+import zio._
+
+trait PolyService {
+  def polyInput[I: Tag](input: I): Task[String]
+  def polyError[E: Tag](input: Int): IO[E, String]
+  def polyOutput[A: Tag](input: Int): Task[A]
+  def polyAll[I: Tag, E: Tag, A: Tag](input: I): IO[E, A]
+}
+</code></pre><p>In the test sources we construct partially applied <em>capability tags</em> by extending <code>Method.Poly</code> family. The unknown types must be provided at call site. To produce a final monomorphic <code>Method</code> tag we must use the <code>of</code> combinator and pass the missing types:</p><pre><code class="language-scala">// test sources
+import zio.mock._
+
+object MockPolyService extends Mock[PolyService] {
+
+  object PolyInput  extends Poly.Effect.Input[Throwable, String]
+  object PolyError  extends Poly.Effect.Error[Int, String]
+  object PolyOutput extends Poly.Effect.Output[Int, Throwable]
+  object PolyAll    extends Poly.Effect.InputErrorOutput
+
+  // We will learn about the compose layer in the next section
+  val compose: URLayer[Proxy, PolyService] =
+    ZIO.serviceWithZIO[Proxy] { proxy =&gt;
+      withRuntime[Any].map { rts =&gt;
+        new PolyService {
+          def polyInput[I: Tag](input: I)               = proxy(PolyInput.of[I], input)
+          def polyError[E: Tag](input: Int)             = proxy(PolyError.of[E], input)
+          def polyOutput[A: Tag](input: Int)            = proxy(PolyOutput.of[A], input)
+          def polyAll[I: Tag, E: Tag, A: Tag](input: I) = proxy(PolyAll.of[I, E, A], input)
+        }
+      }
+    }.toLayer
+}
+</code></pre><p>Similarly, we use the same <code>of</code> combinator to refer to concrete monomorphic call in our test suite when building expectations:</p><pre><code class="language-scala">import zio.test._
+import MockPolyService._
+
+val exp06 = PolyInput.of[String](
+  Assertion.equalTo(&quot;foo&quot;),
+  Expectation.value(&quot;bar&quot;)
+)
+
+val exp07 = PolyInput.of[Int](
+  Assertion.equalTo(42),
+  Expectation.failure(new Exception)
+)
+
+val exp08 = PolyInput.of[Long](
+  Assertion.equalTo(42L),
+  Expectation.value(&quot;baz&quot;)
+)
+
+val exp09 = PolyAll.of[Int, Throwable, String](
+  Assertion.equalTo(42),
+  Expectation.value(&quot;foo&quot;)
+)
+
+val exp10 = PolyAll.of[Int, Throwable, String](
+  Assertion.equalTo(42),
+  Expectation.failure(new Exception)
+)
+</code></pre><h2>Defining a Layer for the Mocked Service</h2><p>Finally, we need to define a <em>compose layer</em> that can create our environment from a <code>Proxy</code>. A <code>Proxy</code> holds the mock state and serves predefined responses to calls.</p><p>So again, assume we have the following service:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+
+trait ExampleService {
+  def exampleEffect(i: Int): Task[String]
+  def exampleMethod(i: Int): String
+  def exampleSink(a: Int): stream.Sink[Throwable, Int, Nothing, List[Int]]
+  def exampleStream(a: Int): stream.Stream[Throwable, String]
+}
+</code></pre><p>In this step, we need to provide a layer in which used to construct the mocked object. To do that, we should obtain the <code>Proxy</code> data type from the environment and then implement the service interface by wrapping all capability tags with proxy:</p><pre><code class="language-scala">import zio.mock._
+
+object MockExampleService extends Mock[ExampleService] {
+  object ExampleEffect extends Effect[Int, Throwable, String]
+  object ExampleMethod extends Method[Int, Throwable, String]
+  object ExampleSink extends Sink[Any, Throwable, Int, Nothing, List[Int]]
+  object ExampleStream extends Stream[Int, Throwable, String]
+
+  override val compose: URLayer[Proxy, ExampleService] =
+    ZIO.serviceWithZIO[Proxy] { proxy =&gt;
+      withRuntime[Any].map { rts =&gt;
+        new ExampleService {
+          override def exampleEffect(i: Int): Task[String] =
+            proxy(ExampleEffect, i)
+
+          override def exampleMethod(i: Int): String =
+            rts.unsafeRunTask(proxy(ExampleMethod, i))
+
+          override def exampleSink(a: Int): stream.Sink[Throwable, Int, Nothing, List[Int]] =
+            rts.unsafeRun(proxy(ExampleSink, a))
+
+          override def exampleStream(a: Int): stream.Stream[Throwable, String] =
+            rts.unsafeRun(proxy(ExampleStream, a))
+        }
+      }
+    }.toLayer
+}
+</code></pre><blockquote><p><strong>Note:</strong> The <code>withRuntime</code> helper is defined in <code>Mock</code>. It accesses the Runtime via <code>ZIO.runtime</code> and if you&#x27;re on JS platform, it will replace the executor to an unyielding one.</p></blockquote><p>A reference to this layer is passed to <em>capability tags</em>, so it can be used to automatically build environment for composed expectations on multiple services.</p><pre><code class="language-scala"></code></pre><h2>The Complete Example</h2><pre><code class="language-scala">trait AccountEvent
+</code></pre><pre><code class="language-scala">// main sources
+
+import zio._
+import zio.mock._
+
+trait AccountObserver {
+  def processEvent(event: AccountEvent): UIO[Unit]
+  def runCommand(): UIO[Unit]
+}
+
+object AccountObserver {
+  def processEvent(event: AccountEvent) =
+    ZIO.serviceWithZIO[AccountObserver](_.processEvent(event))
+
+  def runCommand() =
+    ZIO.serviceWithZIO[AccountObserver](_.runCommand())
+}
+
+case class AccountObserverLive(console: Console) extends AccountObserver {
+  def processEvent(event: AccountEvent): UIO[Unit] =
+    for {
+      _    &lt;- console.printLine(s&quot;Got $event&quot;).orDie
+      line &lt;- console.readLine.orDie
+      _    &lt;- console.printLine(s&quot;You entered: $line&quot;).orDie
+    } yield ()
+
+  def runCommand(): UIO[Unit] =
+    console.printLine(&quot;Done!&quot;).orDie
+}
+
+object AccountObserverLive {
+  val layer = (AccountObserverLive.apply _).toLayer[AccountObserver]
+}
+</code></pre><pre><code class="language-scala">// test sources
+
+object AccountObserverMock extends Mock[AccountObserver] {
+
+  object ProcessEvent extends Effect[AccountEvent, Nothing, Unit]
+  object RunCommand   extends Effect[Unit, Nothing, Unit]
+
+  val compose: URLayer[Proxy, AccountObserver] =
+    ZIO.service[Proxy].map { proxy =&gt;
+      new AccountObserver {
+        def processEvent(event: AccountEvent) = proxy(ProcessEvent, event)
+        def runCommand(): UIO[Unit]           = proxy(RunCommand)
+      }
+    }.toLayer
+}
+</code></pre><blockquote><p><strong>Note:</strong> ZIO provides some useful macros to help you generate repetitive code, see <a href="../../../howto/howto-macros.md">Scrapping the boilerplate with macros</a>.</p></blockquote><h2>More examples</h2><p>We can find more examples in the <code>examples</code> and <code>test-tests</code> subproject:</p><ul><li><a href="https://github.com/zio/zio/blob/master/examples/shared/src/test/scala/zio/examples/test/MockExampleSpec.scala">MockExampleSpec</a></li><li><a href="https://github.com/zio/zio/blob/master/test-tests/shared/src/test/scala/zio/test/mock/EmptyMockSpec.scala">EmptyMockSpec</a></li><li><a href="https://github.com/zio/zio/blob/master/test-tests/shared/src/test/scala/zio/test/mock/ComposedMockSpec.scala">ComposedMockSpec</a></li><li><a href="https://github.com/zio/zio/blob/master/test-tests/shared/src/test/scala/zio/test/mock/ComposedEmptyMockSpec.scala">ComposedEmptyMockSpec</a></li><li><a href="https://github.com/zio/zio/blob/master/test-tests/shared/src/test/scala/zio/test/mock/PolyMockSpec.scala">PolyMockSpec</a></li></ul><p>An <code>Expectation[R]</code> is an immutable tree structure that represents expectations on environment <code>R</code>.</p><h2>Defining Expectations</h2><p>ZIO Test has a variety of expectations, such as <code>value</code>, <code>unit</code>, <code>failure</code>, and <code>never</code>. In this section we are going to learn each of these expectations and their variant, by mocking the <code>UserService</code> service. So let&#x27;s assume we have the following service:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test._
+
+case class User(id: String, name: String)
+
+trait UserService {
+  def insert(user: User): IO[String, Unit]
+  def remove(id: String): IO[String, Unit]
+  def totalUsers: IO[String, Int]
+  def recentUsers(n: Int): IO[String, List[User]]
+  def removeAll: IO[String, Unit]
+}
+
+object UserService {
+  def totalUsers: ZIO[UserService, String, Int] =
+    ZIO.serviceWithZIO(_.totalUsers)
+
+  def insert(user: User): ZIO[UserService, String, Unit] =
+    ZIO.serviceWithZIO(_.insert(user))
+
+  def recentUsers(n: Int): ZIO[UserService, String, List[User]] =
+    ZIO.serviceWithZIO(_.recentUsers(n))
+
+  def remove(id: String): ZIO[UserService, String, Unit] =
+    ZIO.serviceWithZIO(_.remove(id))
+   
+  def removeAll: ZIO[UserService, String, Unit] = 
+    ZIO.serviceWithZIO(_.removeAll) 
+}
+</code></pre><p>We can write the mock version of this class as below:</p><pre><code class="language-scala">
+object MockUserService extends Mock[UserService] {
+
+  object Insert      extends Effect[User, String, Unit]
+  object Remove      extends Effect[String, String, Unit]
+  object RecentUsers extends Effect[Int, String, List[User]]
+  object TotalUsers  extends Effect[Unit, String, Int]
+  object RemoveAll   extends Effect[Unit, String, Unit]
+
+  val compose: URLayer[mock.Proxy, UserService] =
+    ZIO.service[mock.Proxy]
+      .map { proxy =&gt;
+        new UserService {
+          override def insert(user: User):  IO[String, Unit]       = proxy(Insert, user)
+          override def remove(id: String):  IO[String, Unit]       = proxy(Remove, id)
+          override def recentUsers(n: Int): IO[String, List[User]] = proxy(RecentUsers, n)
+          override def totalUsers:          IO[String, Int]        = proxy(TotalUsers)
+          override def removeAll:           IO[String, Unit]       = proxy(RemoveAll)
+        }
+      }.toLayer
+      
+}
+</code></pre><p>To create expectations we use the previously defined <em>capability tags</em>.</p><ol><li>For methods that take input, the first argument will be an assertion on input, and the second the predefined result.</li></ol><pre><code class="language-scala">import zio.mock._
+import zio.test._
+
+val exp01 = MockUserService.RecentUsers( // capability to build an expectation for
+  Assertion.equalTo(5), // assertion of the expected input argument
+  Expectation.value(List(User(&quot;1&quot;, &quot;Jane Doe&quot;), User(&quot;2&quot;, &quot;John Doe&quot;))) // result, that will be returned
+)
+</code></pre><ol start="2"><li>For methods that take no input, we only define the expected output:</li></ol><pre><code class="language-scala">val exp02 = MockUserService.TotalUsers(Expectation.value(42))
+</code></pre><ol start="3"><li>For methods that may return <code>Unit</code>, we may skip the predefined result (it will default to successful value) or use <code>unit</code> helper:</li></ol><pre><code class="language-scala">val exp03 = MockUserService.Remove(
+  Assertion.equalTo(&quot;1&quot;),
+  Expectation.unit
+)
+</code></pre><ol start="4"><li>For methods that may return <code>Unit</code> and take no input we can skip both:</li></ol><pre><code class="language-scala">val exp04 = MockUserService.RemoveAll()
+</code></pre><h3>Providing Mocked Environment</h3><p>Each expectation can be taught of a mocked environment. They can be converted to a <code>ZLayer</code> implicitly. Therefore, we can compose them together and provide them to the environment of the SUT (System Under Test).</p><pre><code class="language-scala">import zio.test._
+
+import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;expecting simple value on call to nextInt&quot;) {
+  val sut     = Random.nextInt
+  val mockEnv = MockRandom.NextInt(Expectation.value(5))
+  for {
+    total &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(total == 5)
+} 
+</code></pre><h3>Mocking Unused Collaborators</h3><p>Often the dependency on a collaborator is only in some branches of the code. To test the correct behaviour of branches without dependencies, we still have to provide it to the environment, but we would like to assert it was never called. With the <code>Mock.empty</code> method we can obtain a <code>ZLayer</code> with an empty service (no calls expected):</p><pre><code class="language-scala">import zio.mock._
+import zio.test._
+
+object MaybeConsoleSpec extends MockSpecDefault {
+  def spec = suite(&quot;processEvent&quot;)(
+    test(&quot;expect no call&quot;) {
+      def maybeConsole(invokeConsole: Boolean) =
+        ZIO.when(invokeConsole)(Console.printLine(&quot;foo&quot;))
+
+      val sut1     = maybeConsole(false).unit
+      val mockEnv1 = MockConsole.empty
+
+      val sut2     = maybeConsole(true).unit
+      val mockEnv2 = MockConsole.PrintLine(
+        Assertion.equalTo(&quot;foo&quot;),
+        Expectation.unit
+      )
+
+      for {
+        _ &lt;- sut1.provideLayer(mockEnv1)
+        _ &lt;- sut2.provideLayer(mockEnv2)
+      } yield assertTrue(true)
+    }
+  )
+}
+</code></pre><h3>Mocking Multiple Collaborators</h3><p>In some cases we have more than one collaborating service being called. We can create mocks for rich environments and as you enrich the environment by using <em>capability tags</em> from another service, the underlying mocked layer will be updated.</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;mocking multiple collaborators&quot;) {
+  val sut =
+    for {
+      _ &lt;- Console.printLine(&quot;What is your name?&quot;)
+      name &lt;- Console.readLine.orDie
+      num &lt;- Random.nextInt
+      _ &lt;- Console.printLine(s&quot;$name, your lucky number today is $num!&quot;)
+    } yield ()
+
+  val mockEnv: ULayer[Console with Random] = MockConsole.PrintLine(
+    Assertion.equalTo(&quot;What is your name?&quot;),
+    Expectation.unit
+  ) ++ MockConsole.ReadLine(Expectation.value(&quot;Mike&quot;)) ++
+    MockRandom.NextInt(Expectation.value(42)) ++
+    MockConsole.PrintLine(
+      Assertion.equalTo(&quot;Mike, your lucky number today is 42!&quot;),
+      Expectation.unit
+    )
+    
+  for {
+    _ &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(true)
+} 
+</code></pre><h2>Expectations</h2><p>In the most robust example, the result can be either a successful value or a failure. In this section we are going to introduce all these cases, by using the proper expectation from <code>zio.mock.Expectation</code> companion object:</p><h3><code>value</code></h3><p>Expecting a simple value:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;expecting simple value&quot;) {
+  val sut     = UserService.totalUsers
+  val mockEnv = MockUserService.TotalUsers(Expectation.value(14))
+  for {
+    total &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(total == 14)
+} 
+</code></pre><h3><code>valueF</code></h3><p>Expecting a value based on input arguments:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;an expectation based on input arguments&quot;) {
+  val sut     = UserService.recentUsers(3)
+  val mockEnv = MockUserService.RecentUsers(
+    Assertion.isPositive,
+    Expectation.valueF(n =&gt;
+      (1 to n).map(id =&gt; User(id.toString, &quot;name&quot;)).toList
+    )
+  )
+
+  for {
+    users &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(users.map(_.id) == List(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;))
+}
+</code></pre><h3><code>valueZIO</code></h3><p>Expecting a value based on the input arguments and also the result of an effectful operation:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;effectful expectation&quot;) {
+  val sut     = UserService.recentUsers(3)
+  val mockEnv = MockUserService.RecentUsers(
+    Assertion.isPositive,
+    Expectation.valueZIO(n =&gt;
+      ZIO.foreach(1 to n) { n =&gt;
+        Random
+          .nextUUID
+          .map(id =&gt; User(id.toString, s&quot;name-$n&quot;))
+          .provideLayer(Random.live)
+      }.map(_.toList)
+    )
+  )
+
+  for {
+    users &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(List(&quot;name-1&quot;, &quot;name-2&quot;, &quot;name-3&quot;) == users.map(_.name))
+}
+</code></pre><h3><code>unit</code></h3><p>Expecting simple unit value:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;expecting unit&quot;) {
+  val sut     = UserService.remove(&quot;1&quot;)
+  val mockEnv = MockUserService.Remove(
+    Assertion.isNonEmptyString,
+    Expectation.unit
+  )
+  
+  for {
+    res &lt;- sut.provideLayer(mockEnv).exit
+  } yield assertTrue(
+    res match {
+      case Exit.Success(()) =&gt; true
+      case _ =&gt; false
+    }
+  )
+}
+</code></pre><h3><code>failure</code></h3><p>Expecting a failure:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;failure expectation&quot;) {
+  val sut = UserService.totalUsers
+  val mockEnv = MockUserService.TotalUsers(Expectation.failure(&quot;connection failed&quot;))
+  
+  for {
+    total &lt;- sut.provideLayer(mockEnv).exit
+  } yield assertTrue(
+    total match {
+      case Exit.Success(_) =&gt;
+        false
+      case Exit.Failure(cause) =&gt;
+        cause.contains(Cause.fail(&quot;connection failed&quot;))
+    }
+  )
+}
+</code></pre><p>There are also <code>failureF</code> and <code>failureZIO</code> variants like what we described for <code>value</code> expectation.</p><h3><code>never</code></h3><p>This expectation simulates a never-ending loop:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;never ending expectation&quot;) {
+  val sut     = UserService.totalUsers
+  val mockEnv = MockUserService.TotalUsers(
+    Expectation.never
+  )
+
+  for {
+    r &lt;- Live.live(
+      sut.provideLayer(mockEnv).timeout(500.millis)
+    )
+  } yield assertTrue(r.isEmpty)
+}
+</code></pre><h2>Composing Expectations</h2><p>We can combine our expectation to build complex scenarios using combinators defined in <code>zio.mock.Expectation</code>.</p><h3><code>and</code></h3><p>The <code>and</code> (alias <code>&amp;&amp;</code>) operator composes two expectations, producing a new expectation to <strong>satisfy both in any order</strong>:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;satisfy both expectations with a logical `and` operator&quot;) {
+  val sut     = UserService.recentUsers(5) *&gt; UserService.totalUsers
+  val mockEnv = MockUserService.TotalUsers(Expectation.value(1)).and(
+    MockUserService.RecentUsers(
+      Assertion.isPositive,
+      Expectation.value(List(User(&quot;1&quot;, &quot;user&quot;))))
+  )
+
+  for {
+    total &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(total == 1)
+}
+</code></pre><h3><code>or</code></h3><p>The <code>or</code> (alias <code>||</code>) operator composes two expectations, producing a new expectation to <strong>satisfy only one of them</strong>:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;satisfy one of expectations with a logical `or` operator&quot;) {
+  val sut     = UserService.totalUsers
+  val mockEnv = MockUserService.TotalUsers(Expectation.value(1)).or(
+    MockUserService.RecentUsers(
+      Assertion.isPositive,
+      Expectation.value(List(User(&quot;1&quot;, &quot;user&quot;))))
+  )
+
+  for {
+    total &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(total == 1)
+}
+</code></pre><h3><code>andThen</code></h3><p>The <code>andThen</code> (alias <code>++</code>) operator composes two expectations, producing a new expectation to <strong>satisfy both sequentially</strong>:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;satisfy sequence of two expectations with `andThen` operator&quot;) {
+  val sut     = UserService.recentUsers(5) *&gt; UserService.totalUsers
+  val mockEnv = MockUserService.RecentUsers(
+    Assertion.isPositive,
+    Expectation.value(List(User(&quot;1&quot;, &quot;user&quot;)))
+  ) andThen MockUserService.TotalUsers(Expectation.value(1))
+
+  for {
+    total &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(total == 1)
+}
+</code></pre><p>In the example above, changing the SUT to <code>UserService.totalUsers *&gt; UserService.remove(1)</code> will fail the test.</p><h3>Exact Repetition</h3><ol><li><strong><code>exactly</code></strong> — Produces a new expectation to satisfy itself exactly the given number of times:</li></ol><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;satisfying exact repetition of a method call&quot;) {
+  val sut     = ZIO.foreach(List(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;))(id =&gt; UserService.remove(id))
+  val mockEnv = MockUserService.Remove(
+    Assertion.isNonEmptyString
+  ).exactly(4)
+
+  for {
+    _ &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(true)
+}
+</code></pre><ol start="2"><li><strong><code>twice</code></strong> and <strong><code>thrice</code></strong> — Aliases for <code>exactly(2)</code> and <code>exactly(3)</code>.</li></ol><h3>Range of Repetitions</h3><ol><li><strong><code>Expectation#repeats(range: Range)</code></strong> — Repeats this expectation within given bounds, producing a new expectation to <strong>satisfy itself sequentially given number of times</strong>:</li></ol><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;expect repeated calls&quot;) {
+  val sut     = Random.nextInt *&gt; Random.nextInt
+  val mockEnv = MockRandom.NextInt(Expectation.value(42)).repeats(2 to 4)
+
+  for {
+    _ &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(true)
+}
+</code></pre><p>In the example above, if we repeat <code>nextInt</code> less than 2 or over 4 times, the test will fail.</p><p>Another note on repetitions is that, if we compose expectations with <code>andThen</code>/<code>++</code>, once another repetition starts executing, it must be completed in order to satisfy the composite expectation. For example <code>(A ++ B).repeats(1, 2)</code> will be satisfied by either <code>A-&gt;B</code> (one repetition) or <code>A-&gt;B-&gt;A-&gt;B</code> (two repetitions), but will fail on <code>A-&gt;B-&gt;A</code> (incomplete second repetition):</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.mock.Expectation._
+import zio.test.{test, _}
+
+test(&quot;if another repetition starts executing, it must be completed&quot;) {
+  val sut     = Random.nextInt *&gt; Random.nextBoolean *&gt; Random.nextInt
+  val mockEnv = (MockRandom.NextInt(value(42)) ++ MockRandom.NextBoolean(value(true)))
+    .repeats(1 to 2)
+  for {
+    _ &lt;- sut.provideLayer(mockEnv)
+  } yield assertTrue(true)
+} @@ TestAspect.failing
+</code></pre><ol start="2"><li>The <strong><code>atLeast(min: Int)</code></strong>, <strong><code>atMost(max: Int)</code></strong>, and <strong><code>optional</code></strong> expectations are other variants for <code>repeats</code> expectation.</li></ol><ul><li>The <code>atLeast</code> operator is a lower-bounded variant of <code>repeated</code>, produces a new expectation to satisfy <strong>itself sequentially at least given number of times</strong>.</li><li>The <code>atMost</code> operator is an upper-bounded variant of <code>repeated</code>, produces a new expectation to satisfy <strong>itself sequentially at most given number of times</strong>.</li><li>The <code>optional</code> operator is an alias for <code>atMost(1)</code>, produces a new expectation to satisfy <strong>itself at most once</strong>.</li></ul><p><code>MockClock</code> is a built-in mock version of the <!-- -->[<code>Clock</code>]<!-- --> service. </p><p>Here is an example of mocking <code>Clock.nanoTime</code> capability:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.mock.Expectation._
+import zio.test.{test, _}
+
+test(&quot;calling mocked nanoTime should return expected time&quot;) {
+  val app = Clock.nanoTime
+  val env = MockClock.NanoTime(value(1000L))
+  val out = app.provideLayer(env)
+  out.map(r =&gt; assertTrue(r == 1000L))
+}
+</code></pre><p><code>MockConsole</code> is a built-in mock version of the <!-- -->[<code>Console</code>]<!-- --> service.</p><p>Here is an example of mocking <code>Console.readLine</code> capability:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;calling mocked readline should return expected value&quot;) {
+  for {
+    line &lt;- Console.readLine.provideLayer(
+      MockConsole.ReadLine(Expectation.value(&quot;foo&quot;))
+    )
+  } yield assertTrue(line == &quot;foo&quot;)
+}
+</code></pre><p><code>MockRandom</code> is a built-in mock version of the <!-- -->[<code>Random</code>]<!-- --> service. It mocks all the random service capabilities.</p><p>Here&#x27;s how we can mock the <code>MockRandom.nextIntBounded</code> capability:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;expect call with input satisfying assertion and transforming it into output&quot;) {
+  for {
+    out &lt;- Random.nextIntBounded(1).provideLayer(
+      MockRandom.NextIntBounded(
+        Assertion.equalTo(1),
+        Expectation.valueF(_ + 41)
+      )
+    )
+  } yield assertTrue(out == 42)
+}
+</code></pre><p><code>MockSystem</code> is a built-in mock version of the <!-- -->[<code>System</code>]<!-- --> service. It mocks all the system service capabilities.</p><p>Here&#x27;s how we can mock the <code>MockSystem.property</code> capability:</p><pre><code class="language-scala">import zio._
+import zio.mock._
+import zio.test.{test, _}
+
+test(&quot;calling mocked property should return expected property&quot;) {
+  for {
+    property &lt;- System.property(&quot;java.vm.name&quot;).provideLayer(
+      MockSystem.Property(
+        Assertion.equalTo(&quot;java.vm.name&quot;),
+        Expectation.value(Some(&quot;OpenJDK 64-Bit Server VM&quot;))
+      )
+    )
+  } yield assertTrue(property.get.contains(&quot;OpenJDK&quot;))
+}
+</code></pre></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/zio/2-0-0/resources/ecosystem/officials/zio-mock";window.___webpackCompilationHash="cdece7bd87ec0e38633f";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0704c8948e63b1196955.js"],"app":["/app-8399cd578ff86df79336.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js-900cac777aa246c3185a.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js-b44617773e223797ea52.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js-f82da7fc8f1ed5d041f7.js"],"component---src-pages-foo-md":["/component---src-pages-foo-md-3c304a0b5d5a13435790.js"]};/*]]>*/</script><script src="/polyfill-0704c8948e63b1196955.js" nomodule=""></script><script src="/app-8399cd578ff86df79336.js" async=""></script><script src="/1a48c3c1-3aa89e0c36dddf1a6d26.js" async=""></script><script src="/framework-ef126061ffea8930f2ad.js" async=""></script><script src="/webpack-runtime-90acb813f0122dad9372.js" async=""></script></body></html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.17.2"/><style data-href="/styles.0d77a1f9790ad3befaea.css" data-identity="gatsby-global-css">/*
+! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.invisible{visibility:hidden}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.top-1\/2{top:50%}.z-10{z-index:10}.m-4{margin:1rem}.m-auto{margin:auto}.my-2{margin-bottom:.5rem;margin-top:.5rem}.my-auto{margin-bottom:auto;margin-top:auto}.mx-auto{margin-left:auto;margin-right:auto}.mx-1{margin-right:.25rem}.ml-1,.mx-1{margin-left:.25rem}.mr-8{margin-right:2rem}.mt-4{margin-top:1rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mb-2{margin-bottom:.5rem}.ml-5{margin-left:1.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-8{height:2rem}.h-0{height:0}.h-40{height:10rem}.h-auto{height:auto}.w-full{width:100%}.w-auto{width:auto}.w-80{width:20rem}.w-8{width:2rem}.w-11\/12{width:91.666667%}.max-w-full{max-width:100%}.flex-initial{flex:0 1 auto}.flex-none{flex:none}.flex-grow{flex-grow:1}.list-outside{list-style-position:outside}.list-disc{list-style-type:disc}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.place-content-center{place-content:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-sm{border-radius:.125rem}.border-2{border-width:2px}.border-r-2{border-right-width:2px}.border-solid{border-style:solid}.border-primary-50{--tw-border-opacity:1;border-color:rgb(250 250 249/var(--tw-border-opacity))}.bg-primary-700{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.bg-primary-900{--tw-bg-opacity:1;background-color:rgb(28 25 23/var(--tw-bg-opacity))}.bg-primary-100{--tw-bg-opacity:1;background-color:rgb(245 245 244/var(--tw-bg-opacity))}.bg-primary-300{--tw-bg-opacity:1;background-color:rgb(214 211 209/var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.p-4{padding:1rem}.p-2{padding:.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.pb-4{padding-bottom:1rem}.pr-2{padding-right:.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-sm{font-size:.875rem;line-height:1.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-primary-50{--tw-text-opacity:1;color:rgb(250 250 249/var(--tw-text-opacity))}.text-secondary-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:rounded-md:hover{border-radius:.375rem}.hover\:bg-primary-700:hover{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.hover\:bg-primary-600:hover{--tw-bg-opacity:1;background-color:rgb(87 83 78/var(--tw-bg-opacity))}@media (min-width:768px){.md\:visible{visibility:visible}.md\:h-auto{height:auto}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:flex-row{flex-direction:row}}@media (min-width:1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:#2f2f2f;color:#eee;font-family:Roboto Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#363636}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#363636}:not(pre)>code[class*=language-]{border-radius:.2em;padding:.1em;white-space:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1.25em 1em;position:relative}.language-css>code,.language-sass>code,.language-scss>code{color:#fd9170}[class*=language-] .namespace{opacity:.7}.token.atrule{color:#c792ea}.token.attr-name{color:#ffcb6b}.token.attr-value,.token.attribute{color:#a5e844}.token.boolean{color:#c792ea}.token.builtin{color:#ffcb6b}.token.cdata,.token.char{color:#80cbc4}.token.class{color:#ffcb6b}.token.class-name{color:#f2ff00}.token.comment{color:#616161}.token.constant{color:#c792ea}.token.deleted{color:#f66}.token.doctype{color:#616161}.token.entity{color:#f66}.token.function{color:#c792ea}.token.hexcode{color:#f2ff00}.token.id,.token.important{color:#c792ea;font-weight:700}.token.inserted{color:#80cbc4}.token.keyword{color:#c792ea}.token.number{color:#fd9170}.token.operator{color:#89ddff}.token.prolog{color:#616161}.token.property{color:#80cbc4}.token.pseudo-class,.token.pseudo-element{color:#a5e844}.token.punctuation{color:#89ddff}.token.regex{color:#f2ff00}.token.selector{color:#f66}.token.string{color:#a5e844}.token.symbol{color:#c792ea}.token.tag{color:#f66}.token.unit{color:#fd9170}.token.url,.token.variable{color:#f66}</style><title data-react-helmet="true"></title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="container mx-auto"><p>A <code>ZIO[R, E, A]</code> value is an immutable value that lazily describes a workflow or job. The workflow requires some environment <code>R</code>, and may fail with an error of type <code>E</code>, or succeed with a value of type <code>A</code>.</p><p>A value of type <code>ZIO[R, E, A]</code> is like an effectful version of the following function type:</p><pre><code class="language-scala">R =&gt; Either[E, A]
+</code></pre><p>This function, which requires an <code>R</code>, might produce either an <code>E</code>, representing failure, or an <code>A</code>, representing success. ZIO effects are not actually functions, of course, they can model synchronous, asynchronous, concurrent, parallel, and resourceful computations.</p><p>ZIO effects use a fiber-based concurrency model, with built-in support for
+scheduling, fine-grained interruption, structured concurrency, and high scalability.</p><p>The <code>ZIO[R, E, A]</code> data type has three type parameters:</p><ul><li><strong><code>R</code> - Environment Type</strong>. The effect requires an environment of type <code>R</code>. If this type parameter is <code>Any</code>, it means the effect has no requirements, because we can run the effect with any value (for example, the unit value <code>()</code>).</li><li><strong><code>E</code> - Failure Type</strong>. The effect may fail with a value of type <code>E</code>. Some applications will use <code>Throwable</code>. If this type parameter is <code>Nothing</code>, it means the effect cannot fail, because there are no values of type <code>Nothing</code>.</li><li><strong><code>A</code> - Success Type</strong>. The effect may succeed with a value of type <code>A</code>. If this type parameter is <code>Unit</code>, it means the effect produces no useful information, while if it is <code>Nothing</code>, it means the effect runs forever (or until failure).</li></ul><p>In the following example, the <code>readLine</code> function does not require any services, it may fail with value of type <code>IOException</code>, or may succeed with a value of type <code>String</code>:</p><pre><code class="language-scala">val readLine: ZIO[Any, IOException, String] =
+  Console.readLine
+</code></pre><p><code>ZIO</code> values are immutable, and all <code>ZIO</code> functions produce new <code>ZIO</code> values, enabling <code>ZIO</code> to be reasoned about and used like any ordinary Scala immutable data structure.</p><p><code>ZIO</code> values do not actually <em>do</em> anything; they are just values that <em>model</em> or <em>describe</em> effectful interactions.</p><p><code>ZIO</code> can be <em>interpreted</em> by the ZIO runtime system into effectful interactions with the external world. Ideally, this occurs at a single time, in our application&#x27;s <code>main</code> function. The <code>App</code> class provides this functionality automatically.</p><h2>Creation</h2><p>In this section we explore some of the common ways to create ZIO effects from values, from common Scala types, and from both synchronous and asynchronous side-effects. Here is the summary list of them:</p><h3>Success Values</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>succeed</code></td><td><code>A</code></td><td><code>UIO[A]</code></td></tr></tbody></table><p>Using the <code>ZIO.succeed</code> method, we can create an effect that succeeds with the specified value:</p><pre><code class="language-scala">val s1 = ZIO.succeed(42)
+</code></pre><h3>Failure Values</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fail</code></td><td><code>E</code></td><td><code>IO[E, Nothing]</code></td></tr></tbody></table><p>Using the <code>ZIO.fail</code> method, we can create an effect that models failure:</p><pre><code class="language-scala">val f1 = ZIO.fail(&quot;Uh oh!&quot;)
+</code></pre><p>For the <code>ZIO</code> data type, there is no restriction on the error type. We may use strings, exceptions, or custom data types appropriate for our application.</p><p>Many applications will model failures with classes that extend <code>Throwable</code> or <code>Exception</code>:</p><pre><code class="language-scala">val f2 = ZIO.fail(new Exception(&quot;Uh oh!&quot;))
+</code></pre><h3>From Values</h3><p>ZIO contains several constructors which help us to convert various data types into <code>ZIO</code> effects.</p><h4>Option</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromOption</code></td><td><code>Option[A]</code></td><td><code>IO[Option[Nothing], A]</code></td></tr><tr><td><code>some</code></td><td><code>A</code></td><td><code>UIO[Option[A]]</code></td></tr><tr><td><code>none</code></td><td></td><td><code>UIO[Option[Nothing]]</code></td></tr><tr><td><code>getOrFail</code></td><td><code>Option[A]</code></td><td><code>Task[A]</code></td></tr><tr><td><code>getOrFailUnit</code></td><td><code>Option[A]</code></td><td><code>IO[Unit, A]</code></td></tr><tr><td><code>getOrFailWith</code></td><td><code>e:=&gt; E, v:=&gt; Option[A]</code></td><td><code>IO[E, A]</code></td></tr></tbody></table><p>An <code>Option</code> can be converted into a ZIO effect using <code>ZIO.fromOption</code>:</p><pre><code class="language-scala">val zoption: IO[Option[Nothing], Int] = ZIO.fromOption(Some(2))
+</code></pre><p>The error type of the resulting effect is <code>Option[Nothing]</code>, which provides no information on why the value is not there. We can change the <code>Option[Nothing]</code> into a more specific error type using <code>ZIO#mapError</code>:</p><pre><code class="language-scala">val zoption2: IO[String, Int] = zoption.mapError(_ =&gt; &quot;It wasn&#x27;t there!&quot;)
+</code></pre><p>We can also readily compose it with other operators while preserving the optional nature of the result (similar to an <code>OptionT</code>):</p><pre><code class="language-scala">val maybeId: IO[Option[Nothing], String] = ZIO.fromOption(Some(&quot;abc123&quot;))
+def getUser(userId: String): IO[Throwable, Option[User]] = ???
+def getTeam(teamId: String): IO[Throwable, Team] = ???
+
+
+val result: IO[Throwable, Option[(User, Team)]] = (for {
+  id   &lt;- maybeId
+  user &lt;- getUser(id).some
+  team &lt;- getTeam(user.teamId).asSomeError 
+} yield (user, team)).unsome 
+</code></pre><h4>Either</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromEither</code></td><td><code>Either[E, A]</code></td><td><code>IO[E, A]</code></td></tr><tr><td><code>left</code></td><td><code>A</code></td><td><code>UIO[Either[A, Nothing]]</code></td></tr><tr><td><code>right</code></td><td><code>A</code></td><td><code>UIO[Either[Nothing, A]]</code></td></tr></tbody></table><p>An <code>Either</code> can be converted into a ZIO effect using <code>ZIO.fromEither</code>:</p><pre><code class="language-scala">val zeither = ZIO.fromEither(Right(&quot;Success!&quot;))
+</code></pre><p>The error type of the resulting effect will be whatever type the <code>Left</code> case has, while the success type will be whatever type the <code>Right</code> case has.</p><h4>Try</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromTry</code></td><td><code>scala.util.Try[A]</code></td><td><code>Task[A]</code></td></tr></tbody></table><p>A <code>Try</code> value can be converted into a ZIO effect using <code>ZIO.fromTry</code>:</p><pre><code class="language-scala">import scala.util.Try
+
+val ztry = ZIO.fromTry(Try(42 / 0))
+</code></pre><p>The error type of the resulting effect will always be <code>Throwable</code>, because <code>Try</code> can only fail with values of type <code>Throwable</code>.</p><h4>Future</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromFuture</code></td><td><code>ExecutionContext =&gt; scala.concurrent.Future[A]</code></td><td><code>Task[A]</code></td></tr><tr><td><code>fromFutureJava</code></td><td><code>java.util.concurrent.Future[A]</code></td><td><code>RIO[Blocking, A]</code></td></tr><tr><td><code>fromFunctionFuture</code></td><td><code>R =&gt; scala.concurrent.Future[A]</code></td><td><code>RIO[R, A]</code></td></tr><tr><td><code>fromFutureInterrupt</code></td><td><code>ExecutionContext =&gt; scala.concurrent.Future[A]</code></td><td><code>Task[A]</code></td></tr></tbody></table><p>A <code>Future</code> can be converted into a ZIO effect using <code>ZIO.fromFuture</code>:</p><pre><code class="language-scala">import scala.concurrent.Future
+
+lazy val future = Future.successful(&quot;Hello!&quot;)
+
+val zfuture: Task[String] =
+  ZIO.fromFuture { implicit ec =&gt;
+    future.map(_ =&gt; &quot;Goodbye!&quot;)
+  }
+</code></pre><p>The function passed to <code>fromFuture</code> is passed an <code>ExecutionContext</code>, which allows ZIO to manage where the <code>Future</code> runs (of course, we can ignore this <code>ExecutionContext</code>).</p><p>The error type of the resulting effect will always be <code>Throwable</code>, because <code>Future</code> can only fail with values of type <code>Throwable</code>.</p><h4>Promise</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromPromiseScala</code></td><td><code>scala.concurrent.Promise[A]</code></td><td><code>Task[A]</code></td></tr></tbody></table><p>A <code>Promise</code> can be converted into a ZIO effect using <code>ZIO.fromPromiseScala</code>:</p><pre><code class="language-scala">val func: String =&gt; String = s =&gt; s.toUpperCase
+for {
+  promise &lt;- ZIO.succeed(scala.concurrent.Promise[String]())
+  _ &lt;- ZIO.attempt {
+    Try(func(&quot;hello world from future&quot;)) match {
+      case Success(value) =&gt; promise.success(value)
+      case Failure(exception) =&gt; promise.failure(exception)
+    }
+  }.fork
+  value &lt;- ZIO.fromPromiseScala(promise)
+  _ &lt;- Console.printLine(s&quot;Hello World in UpperCase: $value&quot;)
+} yield ()
+</code></pre><h4>Fiber</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fromFiber</code></td><td><code>Fiber[E, A]</code></td><td><code>IO[E, A]</code></td></tr><tr><td><code>fromFiberZIO</code></td><td><code>IO[E, Fiber[E, A]]</code></td><td><code>IO[E, A]</code></td></tr></tbody></table><p>A <code>Fiber</code> can be converted into a ZIO effect using <code>ZIO.fromFiber</code>:</p><pre><code class="language-scala">val io: IO[Nothing, String] = ZIO.fromFiber(Fiber.succeed(&quot;Hello from Fiber!&quot;))
+</code></pre><h3>From Side-Effects</h3><p>ZIO can convert both synchronous and asynchronous side-effects into ZIO effects (pure values).</p><p>These functions can be used to wrap procedural code, allowing us to seamlessly use all features of ZIO with legacy Scala and Java code, as well as third-party libraries.</p><h4>Synchronous</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th><th>Note</th></tr></thead><tbody><tr><td><code>succeed</code></td><td><code>A</code></td><td><code>UIO[A]</code></td><td>Imports a total synchronous effect</td></tr><tr><td><code>attempt</code></td><td><code>A</code></td><td>Task<!-- -->[A]</td><td>Imports a (partial) synchronous side-effect</td></tr></tbody></table><p>A synchronous side-effect can be converted into a ZIO effect using <code>ZIO.attempt</code>:</p><pre><code class="language-scala">import scala.io.StdIn
+
+val getLine: Task[String] =
+  ZIO.attempt(StdIn.readLine())
+</code></pre><p>The error type of the resulting effect will always be <code>Throwable</code>, because side-effects may throw exceptions with any value of type <code>Throwable</code>. </p><p>If a given side-effect is known to not throw any exceptions, then the side-effect can be converted into a ZIO effect using <code>ZIO.succeed</code>:</p><pre><code class="language-scala">def printLine(line: String): UIO[Unit] =
+  ZIO.succeed(println(line))
+
+val succeedTask: UIO[Long] =
+  ZIO.succeed(java.lang.System.nanoTime())
+</code></pre><p>We should be careful when using <code>ZIO.succeed</code>—when in doubt about whether or not a side-effect is total, prefer <code>ZIO.attempt</code> to convert the effect.</p><p>If this is too broad, the <code>refineOrDie</code> method of <code>ZIO</code> may be used to retain only certain types of exceptions, and to die on any other types of exceptions:</p><pre><code class="language-scala">import java.io.IOException
+
+val printLine2: IO[IOException, String] =
+  ZIO.attempt(StdIn.readLine()).refineToOrDie[IOException]
+</code></pre><h5>Blocking Synchronous Side-Effects</h5><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>blocking</code></td><td><code>ZIO[R, E, A]</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>attemptBlocking</code></td><td><code>A</code></td><td><code>RIO[Blocking, A]</code></td></tr><tr><td><code>attemptBlockingCancelable</code></td><td><code>effect: =&gt; A</code>, <code>cancel: UIO[Unit]</code></td><td><code>RIO[Blocking, A]</code></td></tr><tr><td><code>attemptBlockingInterrupt</code></td><td><code>A</code></td><td><code>RIO[Blocking, A]</code></td></tr><tr><td><code>attemptBlockingIO</code></td><td><code>A</code></td><td><code>ZIO[Blocking, IOException, A]</code></td></tr></tbody></table><p>Some side-effects use blocking IO or otherwise put a thread into a waiting state. If not carefully managed, these side-effects can deplete threads from our application&#x27;s main thread pool, resulting in work starvation.</p><p>ZIO provides the <code>zio.blocking</code> package, which can be used to safely convert such blocking side-effects into ZIO effects.</p><p>A blocking side-effect can be converted directly into a ZIO effect blocking with the <code>attemptBlocking</code> method:</p><pre><code class="language-scala">
+val sleeping =
+  ZIO.attemptBlocking(Thread.sleep(Long.MaxValue))
+</code></pre><p>The resulting effect will be executed on a separate thread pool designed specifically for blocking effects.</p><p>Blocking side-effects can be interrupted by invoking <code>Thread.interrupt</code> using the <code>attemptBlockingInterrupt</code> method.</p><p>Some blocking side-effects can only be interrupted by invoking a cancellation effect. We can convert these side-effects using the <code>attemptBlockingCancelable</code> method:</p><pre><code class="language-scala">import java.net.ServerSocket
+import zio.UIO
+
+def accept(l: ServerSocket) =
+  ZIO.attemptBlockingCancelable(l.accept())(ZIO.succeed(l.close()))
+</code></pre><p>If a side-effect has already been converted into a ZIO effect, then instead of <code>attemptBlocking</code>, the <code>blocking</code> method can be used to ensure the effect will be executed on the blocking thread pool:</p><pre><code class="language-scala">import scala.io.{ Codec, Source }
+
+def download(url: String) =
+  ZIO.attempt {
+    Source.fromURL(url)(Codec.UTF8).mkString
+  }
+
+def safeDownload(url: String) =
+  ZIO.blocking(download(url))
+</code></pre><h4>Asynchronous</h4><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>async</code></td><td><code>(ZIO[R, E, A] =&gt; Unit) =&gt; Any</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>asyncZIO</code></td><td><code>(ZIO[R, E, A] =&gt; Unit) =&gt; ZIO[R, E, Any]</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>asyncMaybe</code></td><td><code>(ZIO[R, E, A] =&gt; Unit) =&gt; Option[ZIO[R, E, A]]</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>asyncInterrupt</code></td><td><code>(ZIO[R, E, A] =&gt; Unit) =&gt; Either[URIO[R, Any], ZIO[R, E, A]]</code></td><td><code>ZIO[R, E, A]</code></td></tr></tbody></table><p>An asynchronous side-effect with a callback-based API can be converted into a ZIO effect using <code>ZIO.async</code>:</p><pre><code class="language-scala">object legacy {
+  def login(
+    onSuccess: User =&gt; Unit,
+    onFailure: AuthError =&gt; Unit): Unit = ???
+}
+
+val login: IO[AuthError, User] =
+  ZIO.async[Any, AuthError, User] { callback =&gt;
+    legacy.login(
+      user =&gt; callback(ZIO.succeed(user)),
+      err  =&gt; callback(ZIO.fail(err))
+    )
+  }
+</code></pre><p>Asynchronous ZIO effects are much easier to use than callback-based APIs, and they benefit from ZIO features like interruption, resource-safety, and superior error handling.</p><h3>Creating Suspended Effects</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>suspend</code></td><td><code>RIO[R, A]</code></td><td><code>RIO[R, A]</code></td></tr><tr><td><code>suspendSucceed</code></td><td><code>ZIO[R, E, A]</code></td><td><code>ZIO[R, E, A]</code></td></tr></tbody></table><p>A <code>RIO[R, A]</code> effect can be suspended using <code>suspend</code> function:</p><pre><code class="language-scala">val suspendedEffect: RIO[Any, ZIO[Any, IOException, Unit]] =
+  ZIO.suspend(ZIO.attempt(Console.printLine(&quot;Suspended Hello World!&quot;)))
+</code></pre><h2>Control Flows</h2><p>Although we have access to built-in scala control flow structures, ZIO has several control flow combinators. In this section, we are going to introduce different ways of controlling flows in ZIO applications.</p><h3>If Expressions and Operators</h3><p>When working with ZIO values, we can also work with built-in scala if-then-else expressions:</p><pre><code class="language-scala">import zio._
+
+def validateWeightOption(weight: Double): ZIO[Any, Nothing, Option[Double]] =
+  if (weight &gt;= 0)
+    ZIO.some(weight)
+  else
+    ZIO.none
+</code></pre><p>Also, we can encode invalid inputs using the error channel:</p><pre><code class="language-scala">import zio._
+
+def validateWeightOrFail(weight: Double): ZIO[Any, String, Double] =
+  if (weight &gt;= 0)
+    ZIO.succeed(weight)
+  else
+    ZIO.fail(s&quot;negative input: $weight&quot;)
+</code></pre><p>Even if the input has side effects, we can use <code>ZIO#flatMap</code> to access the raw value and write the if-then-else expression:</p><pre><code class="language-scala">import zio._
+
+def validateWeightOrFailZIO[R](weight: ZIO[R, Nothing, Double]): ZIO[R, String, Double] =
+  weight.flatMap { w =&gt;
+    if (w &gt;= 0)
+      ZIO.succeed(w)
+    else
+      ZIO.fail(s&quot;negative input: $w&quot;)
+  }
+</code></pre><p>We can also use ZIO&#x27;s combinators that are the moral equivalent to these expressions:</p><ol><li><strong><code>ZIO.when</code>/<code>ZIO#when</code></strong>— Instead of <code>if (p) expression</code> we can use the <code>ZIO.when</code> or <code>ZIO#when</code> operator:</li></ol><pre><code class="language-scala">import zio._
+
+def validateWeightOption(weight: Double): ZIO[Any, Nothing, Option[Double]] =
+  ZIO.when(weight &gt; 0)(ZIO.succeed(weight))
+</code></pre><p>If the predicate is effectful, we can use <code>ZIO.whenZIO</code> or <code>ZIO#whenZIO</code> operators.</p><p>For example, the following function creates a random option of int value:</p><pre><code class="language-scala">import zio._
+
+def randomIntOption: ZIO[Any, Nothing, Option[Int]] =
+  Random.nextInt.whenZIO(Random.nextBoolean)
+</code></pre><p>Another nice variant of the <code>when</code> operator is <code>ZIO.whenCase</code> and also the <code>ZIO.whenCaseZIO</code>. Using these operators, we can run an effect when our provided effectful <code>PartialFunction</code> matches the given raw or effectful input. The important note regarding this operator is that it is safe, so it will do nothing if the value does not match.</p><p>Let&#x27;s try to write a game, which asks users to choose which game to play:</p><pre><code class="language-scala">def minesweeper(level: String)     = ZIO.attempt(???)
+def ticTacToe                      = ZIO.attempt(???)
+def snake(rows: Int, columns: Int) = ZIO.attempt(???)
+
+def myApp = 
+  ZIO.whenCaseZIO {
+    (Console.print(
+      &quot;Please choose one game (minesweeper, snake, tictactoe)? &quot;
+    ) *&gt; Console.readLine).orDie
+  } {
+    case &quot;minesweeper&quot; =&gt;
+      Console.print(
+        &quot;Please enter the level of the game (easy/hard/medium)?&quot;
+      ) *&gt; Console.readLine.flatMap(minesweeper)
+    case &quot;snake&quot; =&gt;
+      Console.printLine(
+        &quot;Please enter the size of the game: &quot;
+      ) *&gt; Console.readLine.mapAttempt(_.toInt).flatMap(n =&gt; snake(n, n))
+    case &quot;tictactoe&quot; =&gt; ticTacToe
+  }
+</code></pre><ol start="2"><li><p><strong><code>ZIO.unless</code>/<code>ZIO#unless</code></strong>— These operators are like <code>when</code> operators, but they are moral equivalent for the <code>if (!p) expression</code> construct.</p></li><li><p><strong><code>ZIO#ifZIO</code></strong>— This operator takes an <em>effectful predicate</em>, if that predicate is evaluated to true, it will run the <code>onTrue</code> effect, otherwise it will run the <code>onFalse</code> effect.</p></li></ol><p>Let&#x27;s try to write a simple virtual flip function:</p><pre><code class="language-scala">import zio._
+
+def flipTheCoin: ZIO[Any, IOException, Unit] =
+  ZIO.ifZIO(Random.nextBoolean)(
+    onTrue = Console.printLine(&quot;Head&quot;),
+    onFalse = Console.printLine(&quot;Tail&quot;)
+  )
+</code></pre><h3>Loops</h3><p>In imperative scala code base, sometime we may use <code>while(condition) { statement }</code> or <code>do { statement } while (condition)</code> structs to perform loops:</p><pre><code class="language-scala">object MainApp extends scala.App {
+  def printNumbers(from: Int, to: Int): Unit = {
+    var i = from
+    while (i &lt;= to) {
+      println(s&quot;$i&quot;)
+      i = i + 1
+    }
+  }
+  
+  printNumbers(1, 3)
+}
+</code></pre><p>But in functional scala, we tend to not use mutable variable. So to have a loop, we would like to use recursions. Let&#x27;s rewrite the previous example, using recursion:</p><pre><code class="language-scala">import scala.annotation.tailrec
+
+object MainApp extends scala.App {
+  @tailrec
+  def printNumbers(from: Int, to: Int): Unit = {
+    if (from &lt;= to) {
+      println(s&quot;$from&quot;)
+      printNumbers(from + 1, to)
+    } else ()
+  }
+  
+  printNumbers(1, 3)
+}
+</code></pre><p>In this example, we wrote a recursive function that prints numbers from 1 to 3. While the last effort doesn&#x27;t use a mutable variable, it&#x27;s not a pure solution. We have a <code>println</code> statement inside our solution, calling this function is not pure so the whole solution is not pure. We know that we can model effectful functions using the ZIO effect system. So let&#x27;s try rewrite that using ZIO:</p><pre><code class="language-scala">import zio._
+import java.io.IOException
+
+object MainApp extends ZIOAppDefault {
+  def printNumbers(from: Int, to: Int): ZIO[Any, IOException, Unit] = {
+    if (from &lt;= to)
+      Console.printLine(s&quot;$from&quot;) *&gt;
+        printNumbers(from + 1, to)
+    else ZIO.unit
+  }
+
+  def run = printNumbers(1, 5)
+}
+</code></pre><p>ZIO provides some loop combinators that help us avoid the need to write explicit recursions. This means that we can do almost anything we want to do without using explicit recursions. Let&#x27;s rewrite the last solution using <code>ZIO.loopDiscard</code>:</p><pre><code class="language-scala">import zio._
+
+import java.io.IOException
+
+object MainApp extends ZIOAppDefault {
+  def printNumbers(from: Int, to: Int): ZIO[Any, IOException, Unit] = {
+    ZIO.loopDiscard(from)(_ &lt;= to, _ + 1)(i =&gt; Console.printLine(i))
+  }
+
+  def run = printNumbers(1, 3)
+}
+</code></pre><p>After this very short introduction to writing loops in functional scala, now let us go deep into ZIO specific combinators for writing loops:</p><ol><li><strong><code>ZIO.loop</code>/<code>ZIO.loopDiscard</code></strong>— It takes an initial state, then repeatedly change the state based on the given <code>inc</code> function, until the given <code>cont</code> function is evaluated to true:</li></ol><pre><code class="language-scala">object ZIO {
+  def loop[R, E, A, S](
+    initial: =&gt; S
+  )(cont: S =&gt; Boolean, inc: S =&gt; S)(body: S =&gt; ZIO[R, E, A]): ZIO[R, E, List[A]]
+  
+  def loopDiscard[R, E, S](
+    initial: =&gt; S
+  )(cont: S =&gt; Boolean, inc: S =&gt; S)(body: S =&gt; ZIO[R, E, Any]): ZIO[R, E, Unit]
+</code></pre><p>The <code>ZIO#loop</code> collects all intermediate states in a list and returns it finally, while the <code>loopDiscard</code> discards all results.</p><p>We can think of <code>ZIO#loop</code> as a moral equivalent of the following while loop:</p><pre><code class="language-scala">var s  = initial
+var as = List.empty[A]
+
+while (cont(s)) {
+  as = body(s) :: as
+  s  = inc(s)
+}
+
+as.reverse
+</code></pre><p>Let&#x27;s try some examples:</p><pre><code class="language-scala">import zio._
+
+val r1: ZIO[Any, Nothing, List[Int]] =
+  ZIO.loop(1)(_ &lt;= 5, _ + 1)(n =&gt; ZIO.succeed(n)).debug
+// List(1, 2, 3, 4, 5)
+
+val r2: ZIO[Any, Nothing, List[Int]] =
+  ZIO.loop(1)(_ &lt;= 5, _ + 1)(n =&gt; ZIO.succeed(n * 2)).debug
+// List(2, 4, 6, 8, 10)
+
+val r3: ZIO[Any, IOException, List[Unit]] =
+  ZIO.loop(1)(_ &lt;= 5, _ + 1) { index =&gt;
+    Console.printLine(s&quot;Currently at index $index&quot;)
+  }.debug
+// Currently at index 1
+// Currently at index 2
+// Currently at index 3
+// Currently at index 4
+// Currently at index 5
+// List((), (), (), (), ())
+
+val r4: ZIO[Any, IOException, Unit] =
+  ZIO.loopDiscard(1)(_ &lt;= 5, _ + 1) { index =&gt;
+    Console.printLine(s&quot;Currently at index $index&quot;)
+  }.debug
+// Currently at index 1
+// Currently at index 2
+// Currently at index 3
+// Currently at index 4
+// Currently at index 5
+// ()
+
+val r5: ZIO[Any, IOException, List[String]] =
+  Console.printLine(&quot;Please enter three names: &quot;) *&gt;
+    ZIO.loop(1)(_ &lt;= 3, _ + 1) { n =&gt;
+      Console.print(s&quot;$n. &quot;) *&gt; Console.readLine
+    }.debug
+</code></pre><ol start="2"><li><strong><code>ZIO.iterate</code></strong>— To iterate with the given effectful operation we can use this combinator. During each iteration, it uses an effectful <code>body</code> operation to change the state, and it will continue the iteration while the <code>cont</code> function evaluates to true:</li></ol><pre><code class="language-scala">object ZIO {
+  def iterate[R, E, S](
+    initial: =&gt; S
+  )(cont: S =&gt; Boolean)(body: S =&gt; ZIO[R, E, S]): ZIO[R, E, S]
+}
+</code></pre><p>This operator is a moral equivalent of the following while loop:</p><pre><code class="language-scala">var s = initial
+while (cont(s)) {
+  s = body(s)
+}
+s
+</code></pre><p>Let&#x27;s try some examples:</p><pre><code class="language-scala">import zio._
+
+val r1 = ZIO.iterate(1)(_ &lt;= 5)(s =&gt; ZIO.succeed(s + 1)).debug
+// 6
+
+val r2 = ZIO.iterate(1)(_ &lt;= 5)(s =&gt; ZIO.succeed(s * 2).debug).debug(&quot;result&quot;)
+</code></pre><p>Here&#x27;s another example. Assume we want to take many names from the user using the terminal. We don&#x27;t know how many names the user is going to enter. We can ask the user to write &quot;exit&quot; when all inputs are finished. To write such an application, we can use recursion like below:</p><pre><code class="language-scala">import zio._
+
+def getNames: ZIO[Any, IOException, List[String]] =
+  Console.print(&quot;Please enter all names&quot;) *&gt;
+    Console.printLine(&quot; (enter \&quot;exit\&quot; to indicate end of the list):&quot;) *&gt; {
+      def loop(
+          names: List[String]
+      ): ZIO[Any, IOException, List[String]] = {
+        Console.print(s&quot;${names.length + 1}. &quot;) *&gt; Console.readLine
+          .flatMap {
+            case &quot;exit&quot; =&gt; ZIO.succeed(names)
+            case name   =&gt; loop(names.appended(name))
+          }
+      }
+      loop(List.empty[String])
+    }
+</code></pre><p>Instead of manually writing recursions, we can rely on well-tested ZIO combinators. So let&#x27;s rewrite this application using the <code>ZIO.iterate</code> operator:</p><pre><code class="language-scala">def getNames: ZIO[Any, IOException, List[String]] =
+  Console.print(&quot;Please enter all names&quot;) *&gt;
+    Console.printLine(&quot; (enter \&quot;exit\&quot; to indicate end of the list):&quot;) *&gt;
+    ZIO.iterate((List.empty[String], true))(_._2) { case (names, _) =&gt;
+      Console.print(s&quot;${names.length + 1}. &quot;) *&gt; 
+        Console.readLine.map {
+          case &quot;exit&quot; =&gt; (names, false)
+          case name   =&gt; (names.appended(name), true)
+        }
+    }
+    .map(_._1)
+    .debug
+</code></pre><p>Note that, in several cases, we can avoid these low-level operators and instead use the high-level ones. For example, let&#x27;s try to rewrite the <code>r5</code> with <code>ZIO.foreach</code>:</p><pre><code class="language-scala">import zio._
+
+Console.printLine(&quot;Please enter three names:&quot;) *&gt;
+  ZIO.foreach(1 to 3) { index =&gt;
+    Console.print(s&quot;$index. &quot;) *&gt; Console.readLine
+  }.debug
+</code></pre><h3>try/catch/finally</h3><p>When working with resources, just like the scala&#x27;s <code>try</code>/<code>catch</code>/<code>finally</code> construct, in ZIO we have a similar operator called <code>acquireRelease</code> and also <code>ensuring</code>. We discussed them in more detail in the <a href="#resource-management">resource management section</a>. But, for now, we want to focus on their control flow behaviors.</p><p>Let&#x27;s learn about the <code>ZIO.acquireReleaseWith</code> operator. This operator takes three effects:</p><ol><li><strong><code>acquire</code></strong> an effect that describes the resource acquisition</li><li><strong><code>release</code></strong> an effect that describes the release of the resource</li><li><strong><code>use</code></strong> an effect that describes resource usage</li></ol><pre><code class="language-scala">ZIO.acquireReleaseWith(acquire = ???)(release = ???)(use = ???)
+</code></pre><p>This operator guarantees us that if the <em>resource acquisition (acquire)</em>  the <em>release</em> effect will be executed whether the <em>use</em> effect succeeded or not:</p><pre><code class="language-scala">import zio._
+
+def wordCount(fileName: String): ZIO[Any, Throwable, Int] = {
+  def openFile(name: =&gt; String): ZIO[Any, IOException, Source] =
+    ZIO.attemptBlockingIO(Source.fromFile(name))
+
+  def closeFile(source: =&gt; Source): ZIO[Any, Nothing, Unit] =
+    ZIO.succeedBlocking(source.close())
+
+  def wordCount(source: =&gt; Source): ZIO[Any, Throwable, Int] =
+    ZIO.attemptBlocking(source.getLines().length)
+
+  ZIO.acquireReleaseWith(openFile(fileName))(closeFile(_))(wordCount(_))
+}
+</code></pre><p>Let&#x27;s try a simple <code>acquireRelease</code> workflow to see how its control flow works:</p><pre><code class="language-scala">object MainApp extends ZIOAppDefault {
+  def run =
+    ZIO.acquireReleaseWith {
+      ZIO.succeed(&quot;resource&quot;).tap(r =&gt; ZIO.debug(s&quot;$r acquired&quot;))
+    } { i =&gt;
+      ZIO.debug(s&quot;$i released&quot;)
+    } { i =&gt;
+      ZIO.debug(s&quot;start using $i&quot;)
+    }
+}
+</code></pre><h2>Blocking Operations</h2><p>ZIO provides access to a thread pool that can be used for performing blocking operations, such as thread sleeps, synchronous socket/file reads, and so forth.</p><p>By default, ZIO is asynchronous and all effects will be executed on a default primary thread pool which is optimized for asynchronous operations. As ZIO uses a fiber-based concurrency model, if we run <strong>Blocking I/O</strong> or <strong>CPU Work</strong> workloads on a primary thread pool, they are going to monopolize all threads of <strong>primary thread pool</strong>.</p><p>In the following example, we create 20 blocking tasks to run parallel on the primary async thread pool. Assume we have a machine with an 8 CPU core, so the ZIO creates a thread pool of size 16 (2 * 8). If we run this program, all of our threads got stuck, and the remaining 4 blocking tasks (20 - 16) haven&#x27;t any chance to run on our thread pool:</p><pre><code class="language-scala">import zio._
+def blockingTask(n: Int): UIO[Unit] =
+  Console.printLine(s&quot;running blocking task number $n&quot;).orDie *&gt;
+    ZIO.succeed(Thread.sleep(3000)) *&gt;
+    blockingTask(n)
+
+val program = ZIO.foreachPar((1 to 100).toArray)(blockingTask)
+</code></pre><h3>Creating Blocking Effects</h3><p>ZIO has a separate <strong>blocking thread pool</strong> specially designed for <strong>Blocking I/O</strong> and, also <strong>CPU Work</strong> workloads. We should run blocking workloads on this thread pool to prevent interfering with the primary thread pool.</p><p>The contract is that the thread pool will accept unlimited tasks (up to the available memory) and continuously create new threads as necessary.</p><p>The <code>blocking</code> operator takes a ZIO effect and return another effect that is going to run on a blocking thread pool:</p><p>Also, we can directly import a synchronous effect that does blocking IO into ZIO effect by using <code>attemptBlocking</code>:</p><pre><code class="language-scala">def blockingTask(n: Int) = ZIO.attemptBlocking {
+  do {
+    println(s&quot;Running blocking task number $n on dedicated blocking thread pool&quot;)
+    Thread.sleep(3000) 
+  } while (true)
+}
+</code></pre><h3>Interruption of Blocking Operations</h3><p>By default, when we convert a blocking operation into the ZIO effects using <code>attemptBlocking</code>, there is no guarantee that if that effect is interrupted the underlying effect will be interrupted.</p><p>Let&#x27;s create a blocking effect from an endless loop:</p><pre><code class="language-scala">for {
+  _ &lt;- printLine(&quot;Starting a blocking operation&quot;)
+  fiber &lt;- ZIO.attemptBlocking {
+    while (true) {
+      Thread.sleep(1000)
+      println(&quot;Doing some blocking operation&quot;)
+    }
+  }.ensuring(
+    Console.printLine(&quot;End of a blocking operation&quot;).orDie
+  ).fork
+  _ &lt;- fiber.interrupt.schedule(
+    Schedule.delayed(
+      Schedule.duration(1.seconds)
+    )
+  )
+} yield ()
+</code></pre><p>When we interrupt this loop after one second, it will still not stop. It will only stop when the entire JVM stops. So the <code>attemptBlocking</code> doesn&#x27;t translate the ZIO interruption into thread interruption (<code>Thread.interrupt</code>).</p><p>Instead, we should use <code>attemptBlockingInterrupt</code> to create interruptible blocking effects:</p><pre><code class="language-scala">for {
+  _ &lt;- printLine(&quot;Starting a blocking operation&quot;)
+  fiber &lt;- ZIO.attemptBlockingInterrupt {
+    while(true) {
+      Thread.sleep(1000)
+      println(&quot;Doing some blocking operation&quot;)
+    }
+  }.ensuring(
+     Console.printLine(&quot;End of the blocking operation&quot;).orDie
+   ).fork
+  _ &lt;- fiber.interrupt.schedule(
+    Schedule.delayed(
+      Schedule.duration(3.seconds)
+    )
+  )
+} yield ()
+</code></pre><p>Notes:</p><ol><li><p>If we are converting a blocking I/O to the ZIO effect, it would be better to use <code>attemptBlockingIO</code> which refines the error type to the <code>java.io.IOException</code>.</p></li><li><p>The <code>attemptBlockingInterrupt</code> method adds significant overhead. So for performance-sensitive applications, it is better to handle interruptions manually using <code>attemptBlockingCancelable</code>.</p></li></ol><h3>Cancellation of Blocking Operation</h3><p>Some blocking operations do not respect <code>Thread#interrupt</code> by swallowing <code>InterruptedException</code>. So, they will not be interrupted via <code>attemptBlockingInterrupt</code>. Instead, they may provide us an API to signal them to <em>cancel</em> their operation.</p><p>The following <code>BlockingService</code> will not be interrupted in case of <code>Thread#interrupt</code> call, but it checks the <code>released</code> flag constantly. If this flag becomes true, the blocking service will finish its job:</p><pre><code class="language-scala">import java.util.concurrent.atomic.AtomicReference
+final case class BlockingService() {
+  private val released = new AtomicReference(false)
+
+  def start(): Unit = {
+    while (!released.get()) {
+      println(&quot;Doing some blocking operation&quot;)
+      try Thread.sleep(1000)
+      catch {
+        case _: InterruptedException =&gt; () // Swallowing InterruptedException
+      }
+    }
+    println(&quot;Blocking operation closed.&quot;)
+  }
+
+  def close(): Unit = {
+    println(&quot;Releasing resources and ready to be closed.&quot;)
+    released.getAndSet(true)
+  }
+}
+</code></pre><p>So, to translate ZIO interruption into cancellation of these types of blocking operations we should use <code>attemptBlockingCancelable</code>. This method takes a <code>cancel</code> effect which is responsible to signal the blocking code to close itself when ZIO interruption occurs:</p><pre><code class="language-scala">val myApp =
+  for {
+    service &lt;- ZIO.attempt(BlockingService())
+    fiber   &lt;- ZIO.attemptBlockingCancelable(
+      effect = service.start()
+    )(
+      cancel = ZIO.succeed(service.close())
+    ).fork
+    _       &lt;- fiber.interrupt.schedule(
+      Schedule.delayed(
+        Schedule.duration(3.seconds)
+      )
+    )
+  } yield ()
+</code></pre><p>Here is another example of the cancelation of a blocking operation. When we <code>accept</code> a server socket, this blocking operation will never be interrupted until we close that using <code>ServerSocket#close</code> method:</p><pre><code class="language-scala">import java.net.{Socket, ServerSocket}
+def accept(ss: ServerSocket): Task[Socket] =
+  ZIO.attemptBlockingCancelable(ss.accept())(ZIO.succeed(ss.close()))
+</code></pre><h2>Mapping</h2><h3>map</h3><p>We can change an <code>IO[E, A]</code> to an <code>IO[E, B]</code> by calling the <code>map</code> method with a function <code>A =&gt; B</code>. This lets us transform values produced by actions into other values.</p><pre><code class="language-scala">import zio.{ UIO, IO }
+
+val mappedValue: UIO[Int] = ZIO.succeed(21).map(_ * 2)
+</code></pre><h3>mapError</h3><p>We can transform an <code>IO[E, A]</code> into an <code>IO[E2, A]</code> by calling the <code>mapError</code> method with a function <code>E =&gt; E2</code>.  This lets us transform the failure values of effects:</p><pre><code class="language-scala">val mappedError: IO[Exception, String] = 
+  ZIO.fail(&quot;No no!&quot;).mapError(msg =&gt; new Exception(msg))
+</code></pre><blockquote><p><em><strong>Note:</strong></em></p><p>Note that mapping over an effect&#x27;s success or error channel does not change the success or failure of the effect, in the same way that mapping over an <code>Either</code> does not change whether the <code>Either</code> is <code>Left</code> or <code>Right</code>.</p></blockquote><h3>mapAttempt</h3><p><code>mapAttempt</code> returns an effect whose success is mapped by the specified side-effecting <code>f</code> function, translating any thrown exceptions into typed failed effects.</p><p>Converting literal &quot;Five&quot; String to Int by calling <code>toInt</code> is side-effecting because it throws a <code>NumberFormatException</code> exception:</p><pre><code class="language-scala">val task: RIO[Any, Int] = ZIO.succeed(&quot;hello&quot;).mapAttempt(_.toInt)
+</code></pre><p><code>mapAttempt</code> converts an unchecked exception to a checked one by returning the <code>RIO</code> effect.</p><h2>Chaining</h2><p>We can execute two actions in sequence with the <code>flatMap</code> method. The second action may depend on the value produced by the first action.</p><pre><code class="language-scala">val chainedActionsValue: UIO[List[Int]] = ZIO.succeed(List(1, 2, 3)).flatMap { list =&gt;
+  ZIO.succeed(list.map(_ + 1))
+}
+</code></pre><p>If the first effect fails, the callback passed to <code>flatMap</code> will never be invoked, and the composed effect returned by <code>flatMap</code> will also fail.</p><p>In <em>any</em> chain of effects, the first failure will short-circuit the whole chain, just like throwing an exception will prematurely exit a sequence of statements.</p><p>Because the <code>ZIO</code> data type supports both <code>flatMap</code> and <code>map</code>, we can use Scala&#x27;s <em>for comprehensions</em> to build sequential effects:</p><pre><code class="language-scala">val program = 
+  for {
+    _    &lt;- Console.printLine(&quot;Hello! What is your name?&quot;)
+    name &lt;- Console.readLine
+    _    &lt;- Console.printLine(s&quot;Hello, ${name}, welcome to ZIO!&quot;)
+  } yield ()
+</code></pre><p><em>For comprehensions</em> provide a more procedural syntax for composing chains of effects.</p><h2>Zipping</h2><p>We can combine two effects into a single effect with the <code>zip</code> method. The resulting effect succeeds with a tuple that contains the success values of both effects:</p><pre><code class="language-scala">val zipped: UIO[(String, Int)] = 
+  ZIO.succeed(&quot;4&quot;).zip(ZIO.succeed(2))
+</code></pre><p>Note that <code>zip</code> operates sequentially: the effect on the left side is executed before the effect on the right side.</p><p>In any <code>zip</code> operation, if either the left or right-hand sides fail, then the composed effect will fail, because <em>both</em> values are required to construct the tuple.</p><h3>zipLeft and zipRight</h3><p>Sometimes, when the success value of an effect is not useful (for example, it is <code>Unit</code>), it can be more convenient to use the <code>zipLeft</code> or <code>zipRight</code> functions, which first perform a <code>zip</code>, and then map over the tuple to discard one side or the other:</p><pre><code class="language-scala">val zipRight1 = 
+  Console.printLine(&quot;What is your name?&quot;).zipRight(readLine)
+</code></pre><p>The <code>zipRight</code> and <code>zipLeft</code> functions have symbolic aliases, known as <code>*&gt;</code> and <code>&lt;*</code>, respectively. Some developers find these operators easier to read:</p><pre><code class="language-scala">val zipRight2 = 
+  Console.printLine(&quot;What is your name?&quot;) *&gt;
+  Console.readLine
+</code></pre><h2>Parallelism</h2><p>ZIO provides many operations for performing effects in parallel. These methods are all named with a <code>Par</code> suffix that helps us identify opportunities to parallelize our code.</p><p>For example, the ordinary <code>ZIO#zip</code> method zips two effects together, sequentially. But there is also a <code>ZIO#zipPar</code> method, which zips two effects together in parallel.</p><p>The following table summarizes some of the sequential operations and their corresponding parallel versions:</p><table><thead><tr><th align="right"><strong>Description</strong></th><th align="center"><strong>Sequential</strong></th><th align="center"><strong>Parallel</strong></th></tr></thead><tbody><tr><td align="right">Zip two effects into one</td><td align="center"><code>ZIO#zip</code></td><td align="center"><code>ZIO#zipPar</code></td></tr><tr><td align="right">Zip two effects into one</td><td align="center"><code>ZIO#zipWith</code></td><td align="center"><code>ZIO#zipWithPar</code></td></tr><tr><td align="right">Collect from many effects</td><td align="center"><code>ZIO.collectAll</code></td><td align="center"><code>ZIO.collectAllPar</code></td></tr><tr><td align="right">Effectfully loop over values</td><td align="center"><code>ZIO.foreach</code></td><td align="center"><code>ZIO.foreachPar</code></td></tr><tr><td align="right">Reduce many values</td><td align="center"><code>ZIO.reduceAll</code></td><td align="center"><code>ZIO.reduceAllPar</code></td></tr><tr><td align="right">Merge many values</td><td align="center"><code>ZIO.mergeAll</code></td><td align="center"><code>ZIO.mergeAllPar</code></td></tr></tbody></table><p>For all the parallel operations, if one effect fails, then others will be interrupted, to minimize unnecessary computation.</p><p>If the fail-fast behavior is not desired, potentially failing effects can be first converted into infallible effects using the <code>ZIO#either</code> or <code>ZIO#option</code> methods.</p><h3>Racing</h3><p>ZIO lets us race multiple effects in parallel, returning the first successful result:</p><pre><code class="language-scala">for {
+  winner &lt;- ZIO.succeed(&quot;Hello&quot;).race(ZIO.succeed(&quot;Goodbye&quot;))
+} yield winner
+</code></pre><p>If we want the first success or failure, rather than the first success, then we can use <code>left.either race right.either</code>, for any effects <code>left</code> and <code>right</code>.</p><h2>Timeout</h2><p>ZIO lets us timeout any effect using the <code>ZIO#timeout</code> method, which returns a new effect that succeeds with an <code>Option</code>. A value of <code>None</code> indicates the timeout elapsed before the effect completed.</p><pre><code class="language-scala">ZIO.succeed(&quot;Hello&quot;).timeout(10.seconds)
+</code></pre><p>If an effect times out, then instead of continuing to execute in the background, it will be interrupted so no resources will be wasted.</p><h2>Error Management</h2><h3>Either</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>ZIO#either</code></td><td><code>ZIO[R, E, A]</code></td><td><code>URIO[R, Either[E, A]]</code></td></tr><tr><td><code>ZIO.absolve</code></td><td><code>ZIO[R, E, Either[E, A]]</code></td><td><code>ZIO[R, E, A]</code></td></tr></tbody></table><p>We can surface failures with <code>ZIO#either</code>, which takes a <code>ZIO[R, E, A]</code> and produces a <code>ZIO[R, Nothing, Either[E, A]]</code>.</p><pre><code class="language-scala">val zeither: UIO[Either[String, Int]] = 
+  ZIO.fail(&quot;Uh oh!&quot;).either
+</code></pre><p>We can submerge failures with <code>ZIO.absolve</code>, which is the opposite of <code>either</code> and turns a <code>ZIO[R, Nothing, Either[E, A]]</code> into a <code>ZIO[R, E, A]</code>:</p><pre><code class="language-scala">def sqrt(io: UIO[Double]): IO[String, Double] =
+  ZIO.absolve(
+    io.map(value =&gt;
+      if (value &lt; 0.0) Left(&quot;Value must be &gt;= 0.0&quot;)
+      else Right(Math.sqrt(value))
+    )
+  )
+</code></pre><h3>Catching</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>ZIO#catchAll</code></td><td><code>E =&gt; ZIO[R1, E2, A1]</code></td><td><code>ZIO[R1, E2, A1]</code></td></tr><tr><td><code>ZIO#catchAllCause</code></td><td><code>Cause[E] =&gt; ZIO[R1, E2, A1]</code></td><td><code>ZIO[R1, E2, A1]</code></td></tr><tr><td><code>ZIO#catchAllDefect</code></td><td><code>Throwable =&gt; ZIO[R1, E1, A1]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr><tr><td><code>ZIO#catchAllTrace</code></td><td><code>((E, Option[ZTrace])) =&gt; ZIO[R1, E2, A1]</code></td><td><code>ZIO[R1, E2, A1]</code></td></tr><tr><td><code>ZIO#catchSome</code></td><td><code>PartialFunction[E, ZIO[R1, E1, A1]]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr><tr><td><code>ZIO#catchSomeCause</code></td><td><code>PartialFunction[Cause[E], ZIO[R1, E1, A1]]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr><tr><td><code>ZIO#catchSomeDefect</code></td><td><code>PartialFunction[Throwable, ZIO[R1, E1, A1]]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr><tr><td><code>ZIO#catchSomeTrace</code></td><td><code>PartialFunction[(E, Option[ZTrace]), ZIO[R1, E1, A1]]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr></tbody></table><h4>Catching All Errors</h4><p>If we want to catch and recover from all types of errors and effectfully attempt recovery, we can use the <code>catchAll</code> method:</p><pre><code class="language-scala">val z: IO[IOException, Array[Byte]] = 
+  readFile(&quot;primary.json&quot;).catchAll(_ =&gt; 
+    readFile(&quot;backup.json&quot;))
+</code></pre><p>In the callback passed to <code>catchAll</code>, we may return an effect with a different error type (or perhaps <code>Nothing</code>), which will be reflected in the type of effect returned by <code>catchAll</code>.</p><h4>Catching Some Errors</h4><p>If we want to catch and recover from only some types of exceptions and effectfully attempt recovery, we can use the <code>catchSome</code> method:</p><pre><code class="language-scala">val data: IO[IOException, Array[Byte]] = 
+  readFile(&quot;primary.data&quot;).catchSome {
+    case _ : FileNotFoundException =&gt; 
+      readFile(&quot;backup.data&quot;)
+  }
+</code></pre><p>Unlike <code>catchAll</code>, <code>catchSome</code> cannot reduce or eliminate the error type, although it can widen the error type to a broader class of errors.</p><h3>Fallback</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>orElse</code></td><td><code>ZIO[R1, E2, A1]</code></td><td><code>ZIO[R1, E2, A1]</code></td></tr><tr><td><code>orElseEither</code></td><td><code>ZIO[R1, E2, B]</code></td><td><code>ZIO[R1, E2, Either[A, B]]</code></td></tr><tr><td><code>orElseFail</code></td><td><code>E1</code></td><td><code>ZIO[R, E1, A]</code></td></tr><tr><td><code>orElseOptional</code></td><td><code>ZIO[R1, Option[E1], A1]</code></td><td><code>ZIO[R1, Option[E1], A1]</code></td></tr><tr><td><code>orElseSucceed</code></td><td><code>A1</code></td><td><code>URIO[R, A1]</code></td></tr></tbody></table><p>We can try one effect, or, if it fails, try another effect, with the <code>orElse</code> combinator:</p><pre><code class="language-scala">val primaryOrBackupData: IO[IOException, Array[Byte]] = 
+  readFile(&quot;primary.data&quot;).orElse(readFile(&quot;backup.data&quot;))
+</code></pre><h3>Folding</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>fold</code></td><td><code>failure: E =&gt; B, success: A =&gt; B</code></td><td><code>URIO[R, B]</code></td></tr><tr><td><code>foldCause</code></td><td><code>failure: Cause[E] =&gt; B, success: A =&gt; B</code></td><td><code>URIO[R, B]</code></td></tr><tr><td><code>foldZIO</code></td><td><code>failure: E =&gt; ZIO[R1, E2, B], success: A =&gt; ZIO[R1, E2, B]</code></td><td><code>ZIO[R1, E2, B]</code></td></tr><tr><td><code>foldCauseZIO</code></td><td><code>failure: Cause[E] =&gt; ZIO[R1, E2, B], success: A =&gt; ZIO[R1, E2, B]</code></td><td><code>ZIO[R1, E2, B]</code></td></tr><tr><td><code>foldTraceZIO</code></td><td><code>failure: ((E, Option[ZTrace])) =&gt; ZIO[R1, E2, B], success: A =&gt; ZIO[R1, E2, B]</code></td><td><code>ZIO[R1, E2, B]</code></td></tr></tbody></table><p>Scala&#x27;s <code>Option</code> and <code>Either</code> data types have <code>fold</code>, which lets us handle both failure and success at the same time. In a similar fashion, <code>ZIO</code> effects also have several methods that allow us to handle both failure and success.</p><p>The first fold method, <code>fold</code>, lets us non-effectfully handle both failure and success by supplying a non-effectful handler for each case:</p><pre><code class="language-scala">lazy val DefaultData: Array[Byte] = Array(0, 0)
+
+val primaryOrDefaultData: UIO[Array[Byte]] = 
+  readFile(&quot;primary.data&quot;).fold(
+    _    =&gt; DefaultData,
+    data =&gt; data)
+</code></pre><p>The second fold method, <code>foldZIO</code>, lets us effectfully handle both failure and success by supplying an effectful (but still pure) handler for each case:</p><pre><code class="language-scala">val primaryOrSecondaryData: IO[IOException, Array[Byte]] = 
+  readFile(&quot;primary.data&quot;).foldZIO(
+    _    =&gt; readFile(&quot;secondary.data&quot;),
+    data =&gt; ZIO.succeed(data))
+</code></pre><p>Nearly all error handling methods are defined in terms of <code>foldZIO</code>, because it is both powerful and fast.</p><p>In the following example, <code>foldZIO</code> is used to handle both failure and success of the <code>readUrls</code> method:</p><pre><code class="language-scala">val urls: UIO[Content] =
+  readUrls(&quot;urls.json&quot;).foldZIO(
+    error   =&gt; ZIO.succeed(NoContent(error)), 
+    success =&gt; fetchContent(success)
+  )
+</code></pre><h3>Retrying</h3><table><thead><tr><th>Function</th><th>Input Type</th><th>Output Type</th></tr></thead><tbody><tr><td><code>retry</code></td><td><code>Schedule[R1, E, S]</code></td><td><code>ZIO[R1, E, A]</code></td></tr><tr><td><code>retryN</code></td><td><code>n: Int</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>retryOrElse</code></td><td><code>policy: Schedule[R1, E, S], orElse: (E, S) =&gt; ZIO[R1, E1, A1]</code></td><td><code>ZIO[R1, E1, A1]</code></td></tr><tr><td><code>retryOrElseEither</code></td><td><code>schedule: Schedule[R1, E, Out], orElse: (E, Out) =&gt; ZIO[R1, E1, B]</code></td><td><code>ZIO[R1, E1, Either[B, A]]</code></td></tr><tr><td><code>retryUntil</code></td><td><code>E =&gt; Boolean</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>retryUntilEquals</code></td><td><code>E1</code></td><td><code>ZIO[R, E1, A]</code></td></tr><tr><td><code>retryUntilZIO</code></td><td><code>E =&gt; URIO[R1, Boolean]</code></td><td><code>ZIO[R1, E, A]</code></td></tr><tr><td><code>retryWhile</code></td><td><code>E =&gt; Boolean</code></td><td><code>ZIO[R, E, A]</code></td></tr><tr><td><code>retryWhileEquals</code></td><td><code>E1</code></td><td><code>ZIO[R, E1, A]</code></td></tr><tr><td><code>retryWhileZIO</code></td><td><code>E =&gt; URIO[R1, Boolean]</code></td><td><code>ZIO[R1, E, A]</code></td></tr></tbody></table><p>When we are building applications we want to be resilient in the face of a transient failure. This is where we need to retry to overcome these failures.</p><p>There are a number of useful methods on the ZIO data type for retrying failed effects. </p><p>The most basic of these is <code>ZIO#retry</code>, which takes a <code>Schedule</code> and returns a new effect that will retry the first effect if it fails according to the specified policy:</p><pre><code class="language-scala">val retriedOpenFile: ZIO[Any, IOException, Array[Byte]] = 
+  readFile(&quot;primary.data&quot;).retry(Schedule.recurs(5))
+</code></pre><p>The next most powerful function is <code>ZIO#retryOrElse</code>, which allows specification of a fallback to use if the effect does not succeed with the specified policy:</p><pre><code class="language-scala">readFile(&quot;primary.data&quot;).retryOrElse(
+  Schedule.recurs(5), 
+  (_, _:Long) =&gt; ZIO.succeed(DefaultData)
+)
+</code></pre><p>The final method, <code>ZIO#retryOrElseEither</code>, allows returning a different type for the fallback.</p><h2>Resource Management</h2><p>ZIO&#x27;s resource management features work across synchronous, asynchronous, concurrent, and other effect types, and provide strong guarantees even in the presence of failure, interruption, or defects in the application.</p><h3>Finalizing</h3><p>Scala has a <code>try</code> / <code>finally</code> construct which helps us to make sure we don&#x27;t leak resources because no matter what happens in the <code>try</code>, the <code>finally</code> block will be executed. So we can open files in the <code>try</code> block, and then we can close them in the <code>finally</code> block, and that gives us the guarantee that we will not leak resources.</p><h4>Asynchronous Try / Finally</h4><p>The problem with the <code>try</code> / <code>finally</code> construct is that it only applies to synchronous code, meaning it doesn&#x27;t work for asynchronous code. ZIO gives us a method called <code>ensuring</code> that works with either synchronous or asynchronous actions. So we have a functional <code>try</code> / <code>finally</code> even for asynchronous regions of our code.</p><p>Like <code>try</code> / <code>finally</code>, the <code>ensuring</code> operation guarantees that if an effect begins executing and then terminates (for whatever reason), then the finalizer will begin executing:</p><pre><code class="language-scala">val finalizer = 
+  ZIO.succeed(println(&quot;Finalizing!&quot;))
+// finalizer: ZIO[Any, Nothing, Unit] = zio.ZIO$Succeed@778a0ee7
+
+val finalized: IO[String, Unit] = 
+  ZIO.fail(&quot;Failed!&quot;).ensuring(finalizer)
+// finalized: IO[String, Unit] = zio.ZIO$Suspend@1f08cd8
+</code></pre><p>The finalizer is not allowed to fail, which means that it must handle any errors internally.</p><p>Like <code>try</code> / <code>finally</code>, finalizers can be nested, and the failure of any inner finalizer will not affect outer finalizers. Nested finalizers will be executed in reverse order, and linearly (not in parallel).</p><p>Unlike <code>try</code> / <code>finally</code>, <code>ensuring</code> works across all types of effects, including asynchronous and concurrent effects.</p><p>Here is another example of ensuring that our clean-up action is called before our effect is done:</p><pre><code class="language-scala">import zio.Task
+var i: Int = 0
+val action: Task[String] =
+  ZIO.succeed(i += 1) *&gt;
+    ZIO.fail(new Throwable(&quot;Boom!&quot;))
+val cleanupAction: UIO[Unit] = ZIO.succeed(i -= 1)
+val composite = action.ensuring(cleanupAction)
+</code></pre><blockquote><p><em><strong>Note:</strong></em></p><p>Finalizers offer very powerful guarantees, but they are low-level, and should generally not be used for releasing resources. For higher-level logic built on <code>ensuring</code>, see <code>ZIO#acquireReleaseWith</code> in the acquire release section.</p></blockquote><h4>Unstoppable Finalizers</h4><p>In Scala when we nest <code>try</code> / <code>finally</code> finalizers, they cannot be stopped. If we have nested finalizers and one of them fails for some sort of catastrophic reason the ones on the outside will still be run and in the correct order. </p><pre><code class="language-scala">try {
+  try {
+    try {
+      ...
+    } finally f1
+  } finally f2
+} finally f3
+</code></pre><p>Also in ZIO like <code>try</code> / <code>finally</code>, the finalizers are unstoppable. This means if we have a buggy finalizer that is going to leak some resources, we will leak the minimum amount of resources because all other finalizers will still be run in the correct order.</p><pre><code class="language-scala">val io = ???
+io.ensuring(f1)
+ .ensuring(f2)
+ .ensuring(f3)
+</code></pre><h3>AcquireRelease</h3><p>In Scala the <code>try</code> / <code>finally</code> is often used to manage resources. A common use for <code>try</code> / <code>finally</code> is safely acquiring and releasing resources, such as new socket connections or opened files:</p><pre><code class="language-scala">val handle = openFile(name)
+
+try {
+  processFile(handle)
+} finally closeFile(handle)
+</code></pre><p>ZIO encapsulates this common pattern with <code>ZIO#acquireRelease</code>, which allows us to specify an <em>acquire</em> effect, which acquires a resource; a <em>release</em> effect, which releases it; and a <em>use</em> effect, which uses the resource. Acquire release lets us open a file and close the file and no matter what happens when we are using that resource.</p><p>The release action is guaranteed to be executed by the runtime system, even if the utilize action throws an exception or the executing fiber is interrupted.</p><p>Acquire release is a built-in primitive that let us safely acquire and release resources. It is used for a similar purpose as <code>try</code> / <code>catch</code> / <code>finally</code>, only acquire release work with synchronous and asynchronous actions, work seamlessly with fiber interruption, and is built on a different error model that ensures no errors are ever swallowed.</p><p>Acquire release consist of an <em>acquire</em> action, a <em>utilize</em> action (which uses the acquired resource), and a <em>release</em> action.</p><pre><code class="language-scala">import zio.{ UIO, IO }
+</code></pre><pre><code class="language-scala">val groupedFileData: IO[IOException, Unit] = ZIO.acquireReleaseWith(openFile(&quot;data.json&quot;))(closeFile(_)) { file =&gt;
+  for {
+    data    &lt;- decodeData(file)
+    grouped &lt;- groupData(data)
+  } yield grouped
+}
+</code></pre><p>Acquire releases have compositional semantics, so if an acquire release is nested inside another acquire release, and the outer resource is acquired, then the outer release will always be called, even if, for example, the inner release fails.</p><p>Let&#x27;s look at a full working example on using acquire release:</p><pre><code class="language-scala">import zio._
+import java.io.{ File, FileInputStream }
+import java.nio.charset.StandardCharsets
+
+object Main extends ZIOAppDefault {
+
+  // run my acquire release
+  def run = myAcquireRelease
+
+  def closeStream(is: FileInputStream) =
+    ZIO.succeed(is.close())
+
+  def convertBytes(is: FileInputStream, len: Long) =
+    ZIO.attempt {
+      val buffer = new Array[Byte](len.toInt)
+      is.read(buffer)
+      println(new String(buffer, StandardCharsets.UTF_8))
+    }
+
+  // myAcquireRelease is just a value. Won&#x27;t execute anything here until interpreted
+  val myAcquireRelease: Task[Unit] = for {
+    file   &lt;- ZIO.attempt(new File(&quot;/tmp/hello&quot;))
+    len    = file.length
+    string &lt;- ZIO.acquireReleaseWith(ZIO.attempt(new FileInputStream(file)))(closeStream)(convertBytes(_, len))
+  } yield string
+}
+</code></pre><h2>Unswallowed Exceptions</h2><p>The Java and Scala error models are broken. Because if we have the right combinations of <code>try</code>/<code>finally</code>/<code>catch</code>es we can actually throw many exceptions, and then we are only able to catch one of them. All the other ones are lost. They are swallowed into a black hole, and also the one that we catch is the wrong one. It is not the primary cause of the failure. </p><p>In the following example, we are going to show this behavior:</p><pre><code class="language-scala"> try {
+    try throw new Error(&quot;e1&quot;)
+    finally throw new Error(&quot;e2&quot;)
+ } catch {
+   case e: Error =&gt; println(e) 
+ }
+</code></pre><p>The above program just prints the <code>e2</code>, which is lossy and, also is not the primary cause of failure.</p><p>But in the ZIO version, all the errors will still be reported. So even though we are only able to catch one error, the other ones will be reported which we have full control over them. They don&#x27;t get lost.</p><p>Let&#x27;s write a ZIO version:</p><pre><code class="language-scala">ZIO.fail(&quot;e1&quot;)
+  .ensuring(ZIO.succeed(throw new Exception(&quot;e2&quot;)))
+  .catchAll {
+    case &quot;e1&quot; =&gt; Console.printLine(&quot;e1&quot;)
+    case &quot;e2&quot; =&gt; Console.printLine(&quot;e2&quot;)
+  }
+</code></pre><h2>ZIO Aspect</h2><p>There are two types of concerns in an application, <em>core concerns</em>, and <em>cross-cutting concerns</em>. Cross-cutting concerns are shared among different parts of our application. We usually find them scattered and duplicated across our application, or they are tangled up with our primary concerns. This reduces the level of modularity of our programs.</p><p>A cross-cutting concern is more about <em>how</em> we do something than <em>what</em> we are doing. For example, when we are downloading a bunch of files, creating a socket to download each one is the core concern because it is a question of <em>what</em> rather than the <em>how</em>, but the following concerns are cross-cutting ones:</p><ul><li>Downloading files <em>sequentially</em> or in <em>parallel</em></li><li><em>Retrying</em> and <em>timing out</em> the download process</li><li><em>Logging</em> and <em>monitoring</em> the download process</li></ul><p>So they don&#x27;t affect the return type of our workflows, but they add some new aspects or change their behavior.</p><p>To increase the modularity of our applications, we can separate cross-cutting concerns from the main logic of our programs. ZIO supports this programming paradigm, which is called <em> aspect-oriented programming</em>.</p><p>The <code>ZIO</code> effect has a data type called <code>ZIOAspect</code>, which allows modifying a <code>ZIO</code> effect and convert it into a specialized <code>ZIO</code> effect. We can add a new aspect to a <code>ZIO</code> effect with <code>@@</code> syntax like this:</p><pre><code class="language-scala">val myApp: ZIO[Any, Throwable, String] =
+  ZIO.attempt(&quot;Hello!&quot;) @@ ZIOAspect.debug
+</code></pre><p>As we see, the <code>debug</code> aspect doesn&#x27;t change the return type of our effect, but it adds a new debugging aspect to our effect.</p><p><code>ZIOAspect</code> is like a transformer of the <code>ZIO</code> effect, which takes a <code>ZIO</code> effect and converts it to another <code>ZIO</code> effect. We can think of a <code>ZIOAspect</code> as a function of type <code>ZIO[R, E, A] =&gt; ZIO[R, E, A]</code>.</p><p>To compose multiple aspects, we can use <code>@@</code> operator:</p><pre><code class="language-scala">def download(url: String): ZIO[Any, Throwable, Chunk[Byte]] = ZIO.succeed(???)
+
+ZIO.foreachPar(List(&quot;zio.dev&quot;, &quot;google.com&quot;)) { url =&gt;
+  download(url) @@
+    ZIOAspect.retry(Schedule.fibonacci(1.seconds)) @@
+    ZIOAspect.loggedWith[Chunk[Byte]](file =&gt; s&quot;Downloaded $url file with size of ${file.length} bytes&quot;)
+}
+</code></pre><p>The order of aspect composition matters. Therefore, if we change the order, the behavior may change.</p><h2>Debugging</h2><p>When we are writing an application using the ZIO effect, we are writing workflows as data transformers. So there are lots of cases where we need to debug our application by seeing how the data transformed through the workflow. We can add or remove debugging capability without changing the signature of our effect:</p><pre><code class="language-scala">ZIO.ifZIO(
+  Random.nextIntBounded(10)
+    .debug(&quot;random number&quot;)
+    .map(_ % 2)
+    .debug(&quot;remainder&quot;)
+    .map(_ == 0)
+)(
+  onTrue = ZIO.succeed(&quot;Success&quot;),
+  onFalse = ZIO.succeed(&quot;Failure&quot;)
+).debug.repeatWhile(_ != &quot;Success&quot;)
+</code></pre><p>The following could be one of the results of this program:</p><pre><code>random number: 5
+remainder: 1
+Failure
+random number: 1
+remainder: 1
+Failure
+random number: 2
+remainder: 0
+Success
+</code></pre><h2>Logging</h2><p>ZIO has built-in logging functionality. This allows us to log within our application without adding new dependencies. ZIO logging doesn&#x27;t require any services from the environment. </p><p>We can easily log inside our application using the <code>ZIO.log</code> function:</p><pre><code class="language-scala">ZIO.log(&quot;Application started!&quot;)
+</code></pre><p>The output would be something like this:</p><pre><code class="language-bash">[info] timestamp=2021-10-06T07:23:29.974297029Z level=INFO thread=#2 message=&quot;Application started!&quot; file=ZIOLoggingExample.scala line=6 class=zio.examples.ZIOLoggingExample$ method=run
+</code></pre><p>To log with a specific log-level, we can use the <code>ZIO.logLevel</code> combinator:</p><pre><code class="language-scala">ZIO.logLevel(LogLevel.Warning) {
+  ZIO.log(&quot;The response time exceeded its threshold!&quot;)
+}
+</code></pre><p>Or we can use the following functions directly:</p><ul><li><code>ZIO.logDebug</code></li><li><code>ZIO.logError</code></li><li><code>ZIO.logFatal</code></li><li><code>ZIO.logInfo</code></li><li><code>ZIO.logWarning</code></li></ul><pre><code class="language-scala">ZIO.logError(&quot;File does not exist: ~/var/www/favicon.ico&quot;)
+</code></pre><p>It also supports logging spans:</p><pre><code class="language-scala">ZIO.logSpan(&quot;myspan&quot;) {
+  ZIO.sleep(1.second) *&gt; ZIO.log(&quot;The job is finished!&quot;)
+}
+</code></pre><p>ZIO Logging calculates and records the running duration of the span and includes that in logging data:</p><pre><code class="language-bash">[info] timestamp=2021-10-06T07:29:57.816775631Z level=INFO thread=#2 message=&quot;The job is done!&quot; myspan=1013ms file=ZIOLoggingExample.scala line=8 class=zio.examples.ZIOLoggingExample$ method=run
+</code></pre></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/zio/2-0-0/datatypes/core/zio/zio";window.___webpackCompilationHash="cdece7bd87ec0e38633f";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0704c8948e63b1196955.js"],"app":["/app-8399cd578ff86df79336.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js-900cac777aa246c3185a.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js-b44617773e223797ea52.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js-f82da7fc8f1ed5d041f7.js"],"component---src-pages-foo-md":["/component---src-pages-foo-md-3c304a0b5d5a13435790.js"]};/*]]>*/</script><script src="/polyfill-0704c8948e63b1196955.js" nomodule=""></script><script src="/app-8399cd578ff86df79336.js" async=""></script><script src="/1a48c3c1-3aa89e0c36dddf1a6d26.js" async=""></script><script src="/framework-ef126061ffea8930f2ad.js" async=""></script><script src="/webpack-runtime-90acb813f0122dad9372.js" async=""></script></body></html>

@@ -1,0 +1,950 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.17.2"/><style data-href="/styles.0d77a1f9790ad3befaea.css" data-identity="gatsby-global-css">/*
+! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.invisible{visibility:hidden}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.top-1\/2{top:50%}.z-10{z-index:10}.m-4{margin:1rem}.m-auto{margin:auto}.my-2{margin-bottom:.5rem;margin-top:.5rem}.my-auto{margin-bottom:auto;margin-top:auto}.mx-auto{margin-left:auto;margin-right:auto}.mx-1{margin-right:.25rem}.ml-1,.mx-1{margin-left:.25rem}.mr-8{margin-right:2rem}.mt-4{margin-top:1rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mb-2{margin-bottom:.5rem}.ml-5{margin-left:1.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-8{height:2rem}.h-0{height:0}.h-40{height:10rem}.h-auto{height:auto}.w-full{width:100%}.w-auto{width:auto}.w-80{width:20rem}.w-8{width:2rem}.w-11\/12{width:91.666667%}.max-w-full{max-width:100%}.flex-initial{flex:0 1 auto}.flex-none{flex:none}.flex-grow{flex-grow:1}.list-outside{list-style-position:outside}.list-disc{list-style-type:disc}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.place-content-center{place-content:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-sm{border-radius:.125rem}.border-2{border-width:2px}.border-r-2{border-right-width:2px}.border-solid{border-style:solid}.border-primary-50{--tw-border-opacity:1;border-color:rgb(250 250 249/var(--tw-border-opacity))}.bg-primary-700{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.bg-primary-900{--tw-bg-opacity:1;background-color:rgb(28 25 23/var(--tw-bg-opacity))}.bg-primary-100{--tw-bg-opacity:1;background-color:rgb(245 245 244/var(--tw-bg-opacity))}.bg-primary-300{--tw-bg-opacity:1;background-color:rgb(214 211 209/var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.p-4{padding:1rem}.p-2{padding:.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.pb-4{padding-bottom:1rem}.pr-2{padding-right:.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-sm{font-size:.875rem;line-height:1.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-primary-50{--tw-text-opacity:1;color:rgb(250 250 249/var(--tw-text-opacity))}.text-secondary-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:rounded-md:hover{border-radius:.375rem}.hover\:bg-primary-700:hover{--tw-bg-opacity:1;background-color:rgb(68 64 60/var(--tw-bg-opacity))}.hover\:bg-primary-600:hover{--tw-bg-opacity:1;background-color:rgb(87 83 78/var(--tw-bg-opacity))}@media (min-width:768px){.md\:visible{visibility:visible}.md\:h-auto{height:auto}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:flex-row{flex-direction:row}}@media (min-width:1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:#2f2f2f;color:#eee;font-family:Roboto Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#363636}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#363636}:not(pre)>code[class*=language-]{border-radius:.2em;padding:.1em;white-space:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1.25em 1em;position:relative}.language-css>code,.language-sass>code,.language-scss>code{color:#fd9170}[class*=language-] .namespace{opacity:.7}.token.atrule{color:#c792ea}.token.attr-name{color:#ffcb6b}.token.attr-value,.token.attribute{color:#a5e844}.token.boolean{color:#c792ea}.token.builtin{color:#ffcb6b}.token.cdata,.token.char{color:#80cbc4}.token.class{color:#ffcb6b}.token.class-name{color:#f2ff00}.token.comment{color:#616161}.token.constant{color:#c792ea}.token.deleted{color:#f66}.token.doctype{color:#616161}.token.entity{color:#f66}.token.function{color:#c792ea}.token.hexcode{color:#f2ff00}.token.id,.token.important{color:#c792ea;font-weight:700}.token.inserted{color:#80cbc4}.token.keyword{color:#c792ea}.token.number{color:#fd9170}.token.operator{color:#89ddff}.token.prolog{color:#616161}.token.property{color:#80cbc4}.token.pseudo-class,.token.pseudo-element{color:#a5e844}.token.punctuation{color:#89ddff}.token.regex{color:#f2ff00}.token.selector{color:#f66}.token.string{color:#a5e844}.token.symbol{color:#c792ea}.token.tag{color:#f66}.token.unit{color:#fd9170}.token.url,.token.variable{color:#f66}</style><title data-react-helmet="true"></title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="container mx-auto"><p>A <code>ZLayer[-RIn, +E, +ROut]</code> describes a layer of an application: every layer in an application requires some services as input <code>RIn</code> and produces some services as the output <code>ROut</code>.</p><p>We can think of a layer as mental model of an asynchronous function from <code>RIn</code> to the <code>Either[E, ROut]</code>:</p><pre><code class="language-scala">type ZLayer[-RIn, +E, +ROut] = RIn =&gt; async Either[E, ROut]
+</code></pre><p>For example, a <code>ZLayer[Clock &amp; Logging, Throwable, Database]</code> can be thought of as a function that map <code>Clock</code> and <code>Logging</code> services into <code>Database</code> service:</p><pre><code class="language-scala">(Clock, Logging) =&gt; Database
+</code></pre><p>So we can say that the <code>Database</code> service has two dependencies: <code>Clock</code> and <code>Logging</code> services.</p><p>In some cases, a <code>ZLayer</code> may not have any dependencies or requirements from the environment. In this case, we can specify <code>Any</code> for the <code>RIn</code> type parameter. The <a href="layer.md"><code>Layer</code></a> type alias provided by ZIO is a convenient way to define a layer without requirements.</p><p>ZLayers are:</p><ol><li><p><strong>Recipes for Creating Services</strong> — They describe how to create services from given dependencies. For example, the <code>ZLayer[Logging &amp; Database, Throwable, UserRepo]</code> is a recipe for building a service that requires <code>Logging</code> and <code>Database</code> service, and it produces a <code>UserRepo</code> service.</p></li><li><p><strong>An Alternative to Constructors</strong> — We can think of <code>ZLayer</code> as a more powerful version of a constructor, it is an alternative way to represent a constructor. Like a constructor, it allows us to build the <code>ROut</code> service in terms of its dependencies (<code>RIn</code>).</p></li><li><p><strong>Composable</strong> — Because of their excellent <strong>composition properties</strong>, layers are the idiomatic way in ZIO to create services that depend on other services. We can define layers that are relying on each other.</p></li><li><p><strong>Effectful and Resourceful</strong> — The construction of ZIO layers can be effectful and resourceful. They can be acquired effectfully and safely released when the services are done being utilized or even in case of failure, interruption, or defects in the application. </p><p>For example, to create a recipe for a <code>Database</code> service, we should describe how the <code>Database</code> will be initialized using an acquisition action. In addition, it may contain information about how the <code>Database</code> releases its connection pools.</p></li><li><p><strong>Asynchronous</strong> — Unlike class constructors which are blocking, <code>ZLayer</code> is fully asynchronous and non-blocking. Note that in non-blocking applications we typically want to avoid creating something that is blocking inside its constructor.</p><p>For example, when we are constructing some sort of Kafka streaming service, we might want to connect to the Kafka cluster in the constructor of our service, which takes some time. So it wouldn&#x27;t be a good idea to block inside the constructor. There are some workarounds for fixing this issue, but they are not as perfect as the ZIO solution which allows for asynchronous, non-blocking constructors.</p></li><li><p><strong>Parallelism</strong> — ZIO layers can be acquired in parallel, unlike class constructors, which do not support parallelism. When we compose multiple layers and then acquire them, the construction of each layer will occur in parallel. This will reduce the initialization time of ZIO applications with a large number of dependencies.</p><p>With ZIO ZLayer, our constructor could be asynchronous, but it could also block. We can acquire resources asynchronously or in a blocking fashion, and spend some time doing that, and we don&#x27;t need to worry about it. That is not an anti-pattern. This is the best practice with ZIO. And that is because <code>ZLayer</code> has the full power of the <code>ZIO</code> data type, and as a result, we have strictly more power on our constructors with <code>ZLayer</code>.</p></li><li><p><strong>Resilient</strong> — Layer construction can be resilient. So if the acquiring phase fails, we can have a schedule to retry the acquiring stage. This helps us write apps that are error-proof and respond appropriately to failures.</p></li></ol><p>Let&#x27;s see how we can create a layer:</p><h2>Creation</h2><p>There are four main ways to create a ZLayer:</p><ol><li><code>ZLayer.succeed</code> for creating layers from simple values.</li><li><code>ZLayer.scoped</code> for creating layers with <em>for comprehension</em> style from resourceful effects.</li><li><code>ZLayer.apply</code>/<code>ZLayer.fromZIO</code> for creating layers with <em>for comprehension</em> style from effectual but not resourceful effects.</li><li><code>ZLayer.fromFunction</code> for creating layers that are neither effectual nor resourceful.</li></ol><p>Now let&#x27;s look at each of these methods.</p><h3>From a Simple Value or an Existing Service</h3><p>With <code>ZLayer.succeed</code> we can construct a <code>ZLayer</code> from a value. It returns a <code>ULayer[A]</code> value, which represents a layer of an application that has a service of type <code>A</code>:</p><pre><code class="language-scala">def succeed[A: Tag](a: A): ULayer[A]
+</code></pre><p>Using <code>ZLayer.succeed</code> we can create a layer containing <em>simple value</em> or a <em>service</em>:</p><ol><li>To create a layer from a <em>simple value</em>:</li></ol><pre><code class="language-scala">import zio._
+
+case class AppConfig(host: String, port: Int)
+
+val configLayer: ULayer[AppConfig] = ZLayer.succeed(AppConfig(&quot;localhost&quot;, 8080))
+</code></pre><p>In the example above, we created a <code>configLayer</code> that provides us an instance of <code>AppConfig</code>.</p><ol start="2"><li>To create a layer from an <em>existing service</em>:</li></ol><pre><code class="language-scala">import zio._
+
+trait Logging {
+  def log(line: String): UIO[Unit]
+}
+
+object Logging {
+  val layer: ZLayer[Any, Nothing, Logging] = 
+    ZLayer.succeed( 
+      new Logging {
+        override def log(line: String): UIO[Unit] =
+          ZIO.succeed(println(line))
+      }
+    )
+}
+</code></pre><h3>From Resourceful Effects (Scoped Resources)</h3><p>Some components of our applications need to be scoped, meaning they undergo a resource acquisition phase before usage, and a resource release phase after usage (e.g. when the application shuts down). As we stated before, the construction of ZIO layers can be effectful and resourceful, this means they can be acquired and safely released when the services are done being utilized.</p><p>The <code>ZLayer</code> relies on the powerful <code>Scope</code> data type and this makes this process extremely simple. We can lift any scoped <code>ZIO</code> to <code>ZLayer</code> by providing a scoped resource to the <code>ZLayer.apply</code> constructor:</p><pre><code class="language-scala">import zio._
+import scala.io.BufferedSource
+
+val fileLayer: ZLayer[Any, Throwable, BufferedSource] =
+  ZLayer.scoped {
+    ZIO.fromAutoCloseable(
+      ZIO.attempt(scala.io.Source.fromFile(&quot;file.txt&quot;))
+    )
+  }
+</code></pre><p>Let&#x27;s see a real-world example of creating a layer from scoped resources. Assume we have the following <code>UserRepository</code> service:</p><pre><code class="language-scala">import zio._
+import scala.io.Source._
+import java.io.{FileInputStream, FileOutputStream, Closeable}
+
+trait DBConfig
+trait Transactor
+trait User
+
+def dbConfig: Task[DBConfig] = ZIO.attempt(???)
+def initializeDb(config: DBConfig): Task[Unit] = ZIO.attempt(???)
+def makeTransactor(config: DBConfig): ZIO[Scope, Throwable, Transactor] = ZIO.attempt(???)
+
+trait UserRepository {
+  def save(user: User): Task[Unit]
+}
+
+case class UserRepositoryLive(xa: Transactor) extends UserRepository {
+  override def save(user: User): Task[Unit] = ZIO.attempt(???)
+}
+</code></pre><p>Assume we have written a scoped <code>UserRepository</code>:</p><pre><code class="language-scala">def scoped: ZIO[Scope, Throwable, UserRepository] = 
+  for {
+    cfg &lt;- dbConfig
+    _   &lt;- initializeDb(cfg)
+    xa  &lt;- makeTransactor(cfg)
+  } yield new UserRepositoryLive(xa)
+</code></pre><p>We can convert that to <code>ZLayer</code> with <code>ZLayer.apply</code>:</p><pre><code class="language-scala">val usersLayer : ZLayer[Any, Throwable, UserRepository] =
+  ZLayer.scoped(scoped)
+// usersLayer: ZLayer[Any, Throwable, UserRepository] = Suspend(
+//   self = zio.ZLayer$$$Lambda$15790/0x000000080370ac40@648b57db
+// )
+</code></pre><h3>From Non-resourceful Effects</h3><p>We can create <code>ZLayer</code> from any <code>ZIO</code> effect by using <code>ZLayer.fromZIO</code>/<code>ZLayer.apply</code> constructor.</p><p>For example, assume we have a <code>ZIO</code> effect that reads the application config from a file, we can create a layer from that:</p><pre><code class="language-scala">import zio._
+
+case class AppConfig(poolSize: Int)
+  
+def loadConfig : Task[AppConfig] = 
+  ZIO.attempt(???)
+
+object AppConfig {
+  val layer: TaskLayer[AppConfig] = 
+    ZLayer(loadConfig)  // or ZLayer.fromZIO(loadConfig)
+}
+</code></pre><p>This is the for-comprehension way of creating a ZIO service using <code>ZLayer.apply</code>:</p><pre><code class="language-scala">import zio._
+
+trait A
+trait B
+trait C
+case class CLive(a: A, b: B) extends C
+
+object CLive {
+  val layer: ZLayer[A &amp; B, Nothing, C] =
+    ZLayer {
+      for {
+        a &lt;- ZIO.service[A]
+        b &lt;- ZIO.service[B]
+      } yield CLive(a, b)
+    }
+}
+</code></pre><h3>From Functions</h3><p>A <code>ZLayer[R, E, A]</code> can be thought of as a function from <code>R</code> to <code>A</code>. So we can convert functions to the <code>ZLayer</code> using the <code>ZLayer.fromFunction</code> constructor.</p><p>In the following example, the <code>CLive</code> implementation requires two <code>A</code> and <code>B</code> services, and we can easily convert that case class to a <code>ZLayer</code>:</p><pre><code class="language-scala">import zio._
+
+trait A
+trait B
+trait C
+case class CLive(a: A, b: B) extends C
+
+object CLive {
+  val layer: ZLayer[A &amp; B, Nothing, C] = 
+    ZLayer.fromFunction(CLive.apply _)
+}
+</code></pre><p>Below is a complete working example:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  final case class DatabaseConfig()
+
+  object DatabaseConfig {
+    val live = ZLayer.succeed(DatabaseConfig())
+  }
+
+  final case class Database(databaseConfig: DatabaseConfig)
+
+  object Database {
+    val live: ZLayer[DatabaseConfig, Nothing, Database] =
+      ZLayer.fromFunction(Database.apply _)
+  }
+
+  final case class Analytics()
+
+  object Analytics {
+    val live: ULayer[Analytics] = ZLayer.succeed(Analytics())
+  }
+
+  final case class Users(database: Database, analytics: Analytics)
+
+  object Users {
+    val live = ZLayer.fromFunction(Users.apply _)
+  }
+
+  final case class App(users: Users, analytics: Analytics) {
+    def execute: UIO[Unit] =
+      ZIO.debug(s&quot;This app is made from ${users} and ${analytics}&quot;)
+  }
+
+  object App {
+    val live = ZLayer.fromFunction(App.apply _)
+  }
+
+  def run =
+    ZIO
+      .serviceWithZIO[App](_.execute)
+      // Cannot use `provide` due to this dotty bug: https://github.com/lampepfl/dotty/issues/12498
+      .provideLayer(
+        (((DatabaseConfig.live &gt;&gt;&gt; Database.live) ++ Analytics.live &gt;&gt;&gt; Users.live) ++ Analytics.live) &gt;&gt;&gt; App.live
+      )
+}
+</code></pre><h2>Building Dependency Graph</h2><p>We have two options to build a dependency graph:</p><ol><li>Manual layer construction</li><li>Automatic layer construction</li></ol><p>The first method uses ZIO&#x27;s composition operators such as horizontal (<code>++</code>) and vertical (<code>&gt;&gt;&gt;</code>) compositions. The second one uses macro and automatically creates the dependency graph at compile time.</p><h2>Manual Layer Construction</h2><p>We said that we can think of the <code>ZLayer</code> as a more powerful <em>constructor</em>. Constructors are not composable, because they are not values. While a constructor is not composable, <code>ZLayer</code> has a nice facility to compose with other <code>ZLayer</code>s. So we can say that a <code>ZLayer</code> turns a constructor into values.</p><blockquote><p><strong>Note</strong>:</p><p>In a regular ZIO application we are not required to build the dependency graph through composing layers tougher. Instead, we can provide all dependencies to the ZIO application using <code>ZIO#provide</code>, and the ZIO will create the dependency graph manually under the hood. Therefore, use manual layer composition if you know what you&#x27;re doing.</p></blockquote><h3>Vertical and Horizontal Composition</h3><p>Assume we have several services with their dependencies, and we need a way to compose and wire up these dependencies to create the dependency graph of our application. <code>ZLayer</code> is a ZIO solution for this problem, it allows us to build up the whole application dependency graph by composing layers horizontally and vertically.</p><ol><li><strong>Horizontal Composition</strong> — Layers can be composed together horizontally with the <code>++</code> operator. When we compose layers horizontally, the new layer requires all the services that both of them require and produces all services that both of them produce. Horizontal composition is a way of composing two layers side-by-side. It is useful when we combine two layers that don&#x27;t have any relationship with each other.</li></ol><p>We can compose <code>fooLayer</code> and <code>barLayer</code> <em>horizontally</em> to build a layer that has the requirements of both, to provide the capabilities of both, through <code>fooLayer ++ barLayer</code>:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Throwable, B] = ???        // A ==&gt; B        // A ==&gt; B
+val barLayer: ZLayer[C, Nothing  , D] = ???        // C ==&gt; D        // C ==&gt; D
+
+val horizontal: ZLayer[A &amp; C, Throwable, B &amp; D] =  // A &amp; C ==&gt; B &amp; D
+  fooLayer ++ barLayer
+</code></pre><ol start="2"><li><p><strong>Vertical Composition</strong> — We can also compose layers <em>vertically</em> using the <code>&gt;&gt;&gt;</code> operator, meaning the output of one layer is used as input for the subsequent layer, resulting in one layer with the requirement of the first, and the output of the second.  </p><p>For example if we have a layer that requires <code>A</code> and produces <code>B</code>, we can compose this with another layer that requires <code>B</code> and produces <code>C</code>; this composition produces a layer that requires <code>A</code> and produces <code>C</code>. The feed operator, <code>&gt;&gt;&gt;</code>, stack them on top of each other by using vertical composition. This sort of composition is like <em>function composition</em>, feeding an output of one layer to an input of another:</p></li></ol><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Throwable, B] = ???  // A ==&gt; B  // A ==&gt; B
+val barLayer: ZLayer[B, Nothing  , C] = ???  // B ==&gt; C  // B ==&gt; C
+
+val horizontal: ZLayer[A, Throwable, C] =    // A ==&gt; C
+  fooLayer &gt;&gt;&gt; barLayer
+</code></pre><h3>Hidden Versus Passed-through Dependencies</h3><p>ZLayer has a <code>passthrough</code> operator which returns a new layer that produces the outputs of this layer but also passes-through the inputs:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Nothing, B] = ???  // A ==&gt; B  // A ==&gt; B
+
+val result1 : ZLayer[A, Nothing, A &amp; B] =  // A ==&gt; A &amp; B
+  fooLayer.passthrough
+  
+val result2 : ZLayer[A, Nothing, A &amp; B] =  // A ==&gt; A &amp; B
+  ZLayer.service[A] ++ fooLayer
+</code></pre><p>By default, the <code>ZLayer</code> hides intermediate dependencies when composing vertically. For example, when we compose <code>fooLayer</code> with <code>barLayer</code> vertically, the output would be a <code>ZLayer[A, Throwable, C]</code>. This hides the dependency on the <code>B</code> layer. By using the above technique, we can pass through hidden dependencies.</p><p>Let&#x27;s include the <code>B</code> service into the upstream dependencies of the final layer using the <code>ZIO.service[B]</code>. We can think of <code>ZIO.service[B]</code> as an <em>identity function</em> (<code>B ==&gt; B</code>).</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Throwable, B] = ???  // A  ==&gt; B  // A  ==&gt; B
+val barLayer: ZLayer[B, Throwable, C] = ???  // B  ==&gt; C  // B  ==&gt; C
+
+val finalLayer: ZLayer[A &amp; B, Throwable, C] = // A &amp; B ==&gt; C
+  (fooLayer ++ ZLayer.service[B]) &gt;&gt;&gt; barLayer
+</code></pre><p>Or we may want to include the middle services in the output channel of the final layer, resulting in a new layer with the inputs of the first layer and the outputs of both layers:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Throwable, B] = ??? // A  ==&gt; B // A  ==&gt; B
+val barLayer: ZLayer[B, Throwable, C] = ??? // B  ==&gt; C // B  ==&gt; C
+
+val finalLayer: ZLayer[A, Throwable, B &amp; C] = // A ==&gt; B &amp; C
+  fooLayer &gt;&gt;&gt; (ZLayer.service[B] ++ barLayer)
+</code></pre><p>We can do the same with the <code>&gt;+&gt;</code> operator:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A, Throwable, B] = ??? // A  ==&gt; B // A  ==&gt; B
+val barLayer: ZLayer[B, Throwable, C] = ??? // B  ==&gt; C // B  ==&gt; C
+
+val finalLayer: ZLayer[A, Throwable, B &amp; C] = // A ==&gt; B &amp; C
+  fooLayer &gt;+&gt; barLayer
+</code></pre><p>This technique is useful when we want to defer the creation of some intermediate services and require them as part of the input of the final layer. For example, assume we have these two layers:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A    , Throwable, B] = ???   // A     ==&gt; B   // A     ==&gt; B
+val barLayer: ZLayer[B &amp; C, Throwable, D] = ???   // B &amp; C ==&gt; D   // B &amp; C ==&gt; D
+
+val finalLayer: ZLayer[A &amp; B &amp; C, Throwable, D] = // A &amp; B &amp; C ==&gt; B &amp; D
+  fooLayer &gt;&gt;&gt; barLayer
+</code></pre><p>So we can defer the creation of the <code>C</code> layer using <code>ZLayer.service[C]</code>:</p><pre><code class="language-scala">import zio._
+
+val fooLayer: ZLayer[A    , Throwable, B] = ??? // A ==&gt; B  // A ==&gt; B 
+val barLayer: ZLayer[B &amp; C, Throwable, D] = ??? // B &amp; C ==&gt; D // B &amp; C ==&gt; D
+
+val layer: ZLayer[A &amp; C, Throwable, D] =        // A &amp; C ==&gt; D
+  (fooLayer ++ ZLayer.service[C]) &gt;&gt;&gt; barLayer
+</code></pre><p>Here is an example in which we passthrough all requirements to bake a <code>Cake</code> so all the requirements are available to all the downstream services: </p><pre><code class="language-scala">import zio._
+
+trait Baker 
+trait Ingredients
+trait Oven
+trait Dough
+trait Cake
+
+lazy val baker      : ZLayer[Any, Nothing, Baker] = ???
+lazy val ingredients: ZLayer[Any, Nothing, Ingredients] = ???
+lazy val oven       : ZLayer[Any, Nothing, Oven] = ???
+lazy val dough      : ZLayer[Baker &amp; Ingredients, Nothing, Dough] = ???
+lazy val cake       : ZLayer[Baker &amp; Oven &amp; Dough, Nothing, Cake] = ???
+
+lazy val all: ZLayer[Any, Nothing, Baker &amp; Ingredients &amp; Oven &amp; Dough &amp; Cake] =
+  baker &gt;+&gt;       // Baker
+  ingredients &gt;+&gt; // Baker &amp; Ingredients
+  oven &gt;+&gt;        // Baker &amp; Ingredients &amp; Oven
+  dough &gt;+&gt;       // Baker &amp; Ingredients &amp; Oven &amp; Dough
+  cake            // Baker &amp; Ingredients &amp; Oven &amp; Dough &amp; Cake
+</code></pre><p>This allows a style of composition where the <code>&gt;+&gt;</code> operator is used to build a progressively larger set of services, with each new service able to depend on all the services before it. If we passthrough dependencies and later want to hide them we can do so through a simple type ascription:</p><pre><code class="language-scala">lazy val hidden: ZLayer[Any, Nothing, Cake] = all
+</code></pre><p>The <code>ZLayer</code> makes it easy to mix and match these styles. If we build our dependency graph more explicitly, we can be confident that dependencies used in multiple parts of the dependency graph will only be created once due to memoization and sharing.</p><p>Using these simple operators we can build complex dependency graphs.</p><h3>Updating Local Dependencies</h3><p>Given a layer, it is possible to update one or more components it provides. We update a dependency in two ways:</p><ol><li><strong>Using the <code>update</code> Method</strong> — This method allows us to replace one requirement with a different implementation:</li></ol><pre><code class="language-scala">import zio._
+
+val origin: ZLayer[Any, Nothing, String &amp; Int &amp; Double] = 
+  ZLayer.succeedEnvironment(ZEnvironment[String, Int, Double](&quot;foo&quot;, 123, 1.3))
+
+val updated1 = origin.update[String](_ + &quot;bar&quot;)
+val updated2 = origin.update[Int](_ + 5)
+val updated3 = origin.update[Double](_ - 0.3)
+</code></pre><p>Here is an example of updating a config layer:</p><pre><code class="language-scala">import zio._
+
+import java.io.IOException
+
+case class AppConfig(poolSize: Int)
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[AppConfig, IOException, Unit] =
+    for {
+      config &lt;- ZIO.service[AppConfig]
+      _ &lt;- Console.printLine(s&quot;Application config after the update operation: $config&quot;)
+    } yield ()
+
+
+  val appLayers: ZLayer[Any, Nothing, AppConfig] =
+    ZLayer(ZIO.succeed(AppConfig(5)).debug(&quot;Application config initialized&quot;))
+
+  val updatedConfig: ZLayer[Any, Nothing, AppConfig] =
+    appLayers.update[AppConfig](c =&gt;
+      c.copy(poolSize = c.poolSize + 10)
+    )
+
+  def run = myApp.provide(updatedConfig)
+}
+</code></pre><ol start="2"><li><strong>Using Horizontal Composition</strong> — Another way to update a requirement is to horizontally compose in a layer that provides the updated service. The resulting composition will replace the old layer with the new one:</li></ol><pre><code class="language-scala">import zio._
+
+val origin: ZLayer[Any, Nothing, String &amp; Int &amp; Double] =
+  ZLayer.succeedEnvironment(ZEnvironment[String, Int, Double](&quot;foo&quot;, 123, 1.3))
+
+val updated = origin ++ ZLayer.succeed(321)
+</code></pre><p>Let&#x27;s see an example of updating a config layer:</p><pre><code class="language-scala">import zio._
+
+import java.io.IOException
+
+case class AppConfig(poolSize: Int)
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[AppConfig, IOException, Unit] =
+    for {
+      config &lt;- ZIO.service[AppConfig]
+      _      &lt;- Console.printLine(s&quot;Application config after the update operation: $config&quot;)
+    } yield ()
+
+
+  val appLayers: ZLayer[Any, Nothing, AppConfig] =
+    ZLayer(ZIO.succeed(AppConfig(5)).debug(&quot;Application config initialized&quot;))
+
+  val updatedConfig: ZLayer[Any, Nothing, AppConfig] =
+    appLayers ++ ZLayer.succeed(AppConfig(8))
+
+  def run = myApp.provide(updatedConfig)
+}
+</code></pre><h3>Cyclic Dependencies</h3><p>The <code>ZLayer</code> mechanism makes it impossible to build cyclic dependencies, making the initialization process very linear, by construction.</p><h2>Automatic Layer Construction</h2><p>ZIO also has an automatic layer construction facility, which takes care of building dependency graphs from the individual layers and building blocks. So instead of manually composing layers together to build the final layer, we can only provide individual layers to the ZIO application, and it will do the rest.</p><p>The automatic layer construction takes place at the <em>compile-time</em>, so if there is a problem in providing a layer, we will receive an error or warning message. So it helps us to diagnose the problem. Additionally, it has a way to print the dependency graph using built-in debug layers.</p><h3>Providing Individual Layers to a ZIO Application</h3><p>When we provide individual layers using <code>ZIO#provide</code>, <code>ZIO#provideCustom</code>, or <code>ZIO#provideSome</code> to a ZIO application, the compiler will create the dependency graph automatically from the provided layers:</p><blockquote><p><strong>Note:</strong></p><p>We have a <a href="#dependency-propagation">separate section</a> that describes different methods for providing layers to the ZIO application.</p></blockquote><p>Assume we have written the following services (<code>Cake</code>, <code>Chocolate</code>, <code>Flour</code>, and <code>Spoon</code>):</p><pre><code class="language-scala">import zio._
+
+trait Cake
+
+object Cake {
+  val live: ZLayer[Chocolate &amp; Flour, Nothing, Cake] =
+    for {
+      _ &lt;- ZLayer.environment[Chocolate &amp; Flour]
+      cake &lt;- ZLayer.succeed(new Cake {})
+    } yield cake
+}
+
+trait Spoon
+
+object Spoon {
+  val live: ULayer[Spoon] =
+    ZLayer.succeed(new Spoon {})
+}
+
+trait Chocolate
+
+object Chocolate {
+  val live: ZLayer[Spoon, Nothing, Chocolate] =
+    ZLayer.service[Spoon].project(_ =&gt; new Chocolate {})
+}
+
+trait Flour
+
+object Flour {
+  val live: ZLayer[Spoon, Nothing, Flour] =
+    ZLayer.service[Spoon].project(_ =&gt; new Flour {})
+}
+</code></pre><p>The <code>Cake</code> service has the following dependency graph:</p><pre><code>          Cake
+          /   \
+   Chocolate   Flour
+       |         |
+     Spoon     Spoon
+</code></pre><p>Now we can write an application that uses the <code>Cake</code> service as below:</p><pre><code class="language-scala">import zio._
+
+import java.io.IOException
+
+val myApp: ZIO[Cake, IOException, Unit] = for {
+  cake &lt;- ZIO.service[Cake]
+  _    &lt;- Console.printLine(s&quot;Yay! I baked a cake with flour and chocolate: $cake&quot;)
+} yield ()
+</code></pre><p>The type of <code>myApp</code> indicates we should provide <code>Cake</code> to this ZIO application to run it. Let&#x27;s give it that and see what happens:</p><pre><code class="language-scala">object MainApp extends ZIOAppDefault {
+  def run =
+    myApp.provide(Cake.live)
+}
+
+// error:
+// 
+// ──── ZLAYER ERROR ────────────────────────────────────────────────────
+// 
+//  Please provide layers for the following 2 types:
+// 
+//    Required by Cake.live
+//    1. Chocolate
+//    2. Flour
+//    
+// ──────────────────────────────────────────────────────────────────────
+</code></pre><p>Here are the errors that will be printed:</p><pre><code>──── ZLAYER ERROR ────────────────────────────────────────────────────
+
+ Please provide layers for the following 2 types:
+
+   Required by Cake.live
+   1. Chocolate
+   2. Flour
+   
+──────────────────────────────────────────────────────────────────────
+</code></pre><p>It says that we missed providing <code>Chocolate</code> and <code>Flour</code> layers. Now let&#x27;s add these two missing layers:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  def run =
+    myApp.provide(
+      Cake.live,
+      Chocolate.live,
+      Flour.live
+    )
+}
+
+// error:
+// 
+// ──── ZLAYER ERROR ────────────────────────────────────────────────────
+// 
+// Please provide a layer for the following type:
+// 
+// Required by Flour.live
+// 1. Spoon
+// 
+// Required by Chocolate.live
+// 1. Spoon
+// 
+// ──────────────────────────────────────────────────────────────────────
+</code></pre><p>Again, the compiler asks us to provide another dependency called <code>Spoon</code>:</p><pre><code>──── ZLAYER ERROR ────────────────────────────────────────────────────
+
+Please provide a layer for the following type:
+
+Required by Flour.live
+1. Spoon
+
+Required by Chocolate.live
+1. Spoon
+
+──────────────────────────────────────────────────────────────────────
+</code></pre><p>Finally, our application compiles without any errors: </p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  def run =
+    myApp.provide(
+      Cake.live,
+      Chocolate.live,
+      Flour.live,
+      Spoon.live  
+    )
+}
+</code></pre><p>Note that the order of dependencies doesn&#x27;t matter. We can provide them in any order.</p><p>Now, let&#x27;s compare the automatic layer construction with the manual one:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val layers: ULayer[Cake] =
+      (((Spoon.live &gt;&gt;&gt; Chocolate.live) ++ (Spoon.live &gt;&gt;&gt; Flour.live)) &gt;&gt;&gt; Cake.live)
+
+  def run = myApp.provideLayer(layers)
+
+}
+</code></pre><h3>Automatically Assembling Layers</h3><ol><li><strong>ZLayer.make<!-- -->[R]</strong> — Using <code>ZLayer.make[R]</code>, we can provide a type <code>R</code> and then provide individual layers as arguments, it will automatically assemble these layers to create a layer of type <code>R</code>.</li></ol><p>For example, we can create a <code>Cake</code> layer as below:</p><pre><code class="language-scala">import zio._
+
+val cakeLayer: ZLayer[Any, Nothing, Cake] =
+  ZLayer.make[Cake](
+    Cake.live,
+    Chocolate.live,
+    Flour.live,
+    Spoon.live
+  )
+</code></pre><p>We can also create a layer for intersections of services:</p><pre><code class="language-scala">import zio._
+
+val chocolateAndFlourLayer: ZLayer[Any, Nothing, Chocolate &amp; Flour] =
+  ZLayer.make[Chocolate &amp; Flour](
+    Chocolate.live,
+    Flour.live,
+    Spoon.live
+  )
+</code></pre><ol start="2"><li><strong>ZLayer.makeSome<!-- -->[R0, R]</strong> — Automatically constructs a layer for the provided type <code>R</code>, leaving a remainder <code>R0</code>:</li></ol><pre><code class="language-scala">import zio._
+
+val cakeLayer: ZLayer[Spoon, Nothing, Cake] =
+  ZLayer.makeSome[Spoon, Cake](
+    Cake.live,
+    Chocolate.live,
+    Flour.live
+  )
+</code></pre><h3>ZLayer Debugging</h3><p>To debug ZLayer construction, we have two built-in layers, i.e., <code>ZLayer.Debug.tree</code> and <code>ZLayer.Debug.mermaid</code>. </p><p>Let&#x27;s include the <code>ZLayer.Debug.tree</code> layer into the layer construction:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  def run =
+    myApp.provide(
+      Cake.live,
+      Chocolate.live,
+      Flour.live,
+      Spoon.live,
+      ZLayer.Debug.tree
+    )
+}
+</code></pre><p>The following debug messages will be generated by the compiler:</p><pre><code>[info]   ZLayer Wiring Graph
+[info]
+[info] ◉ Cake.live
+[info] ├─◑ Chocolate.live
+[info] │ ╰─◑ Spoon.live
+[info] ╰─◑ Flour.live
+[info]   ╰─◑ Spoon.live
+[info] 
+</code></pre><p>If we use the <code>ZLayer.Debug.mermaid</code> layer, it will generate the following debug messages:</p><pre><code>[info]   ZLayer Wiring Graph  
+[info] 
+[info] ◉ Cake.live
+[info] ├─◑ Chocolate.live
+[info] │ ╰─◑ Spoon.live
+[info] ╰─◑ Flour.live
+[info]   ╰─◑ Spoon.live
+[info] 
+[info] Mermaid Live Editor Link
+[info] https://mermaid-js.github.io/mermaid-live-editor/edit/#eyJjb2RlIjoiZ3JhcGhcbiAgICBDb25zb2xlLmxpdmVcbiAgICBDYWtlLmxpdmUgLS0+IENob2NvbGF0ZS5saXZlXG4gICAgQ2FrZS5saXZlIC0tPiBGbG91ci5saXZlXG4gICAgRmxvdXIubGl2ZSAtLT4gU3Bvb24ubGl2ZVxuICAgIFNwb29uLmxpdmVcbiAgICBDaG9jb2xhdGUubGl2ZSAtLT4gU3Bvb24ubGl2ZVxuICAgICIsIm1lcm1haWQiOiAie1xuICBcInRoZW1lXCI6IFwiZGVmYXVsdFwiXG59IiwgInVwZGF0ZUVkaXRvciI6IHRydWUsICJhdXRvU3luYyI6IHRydWUsICJ1cGRhdGVEaWFncmFtIjogdHJ1ZX0=
+</code></pre><h2>Dependency Propagation</h2><p>When we write an application, our application has a lot of dependencies. We need a way to provide implementations and to feed and propagate all dependencies throughout the whole application. We can solve the propagation problem by using <em>ZIO environment</em>.</p><p>During the development of an application, we don&#x27;t care about implementations. Incrementally, when we use various effects with different requirements on their environment, all parts of our application compose together, and at the end of the day we have a ZIO effect which requires some services as an environment. Before running this effect by <code>unsafeRun</code> we should provide an implementation of these services into the ZIO Environment of that effect.</p><p>ZIO has some facilities for doing this. <code>ZIO#provide</code> is the core function that allows us to <em>feed</em> an <code>R</code> to an effect that requires an <code>R</code>.</p><p>Notice that the act of <code>provide</code>ing an effect with its environment, eliminates the environment dependency in the resulting effect type, represented by type <code>Any</code> of the resulting environment.</p><h4>Using <code>ZIO#provideEnvironment</code> Method</h4><p>The <code>ZIO#provideEnvironment</code> takes an instance of <code>ZEnvironment[R]</code> and provides it to the <code>ZIO</code> effect which eliminates its dependency on <code>R</code>:</p><pre><code class="language-scala">trait ZIO[-R, +E, +A] {
+  def provideEnvironment(r: =&gt; ZEnvironment[R]): IO[E, A]
+}
+</code></pre><p>This is similar to dependency injection, and the <code>provide*</code> function can be thought of as <em>inject</em>.</p><p>Assume we have the following services:</p><pre><code class="language-scala">trait Logging {
+  def log(str: String): UIO[Unit]
+}
+
+object Logging {
+  def log(line: String) = ZIO.serviceWithZIO[Logging](_.log(line))
+}
+</code></pre><p>Let&#x27;s write a simple program using <code>Logging</code> service:</p><pre><code class="language-scala">val app: ZIO[Logging, Nothing, Unit] = Logging.log(&quot;Application Started!&quot;)
+</code></pre><p>We can <code>provide</code> implementation of <code>Logging</code> service into the <code>app</code> effect:</p><pre><code class="language-scala">val loggingImpl = new Logging {
+  override def log(line: String): UIO[Unit] =
+    ZIO.succeed(println(line))
+}
+
+val effect = app.provideEnvironment(ZEnvironment(loggingImpl))
+</code></pre><p>Most of the time, we don&#x27;t use <code>ZIO#provideEnvironment</code> directly to provide our services; instead, we use <code>ZLayer</code> to construct the dependency graph of our application, then we use methods like <code>ZIO#provide</code>, <code>ZIO#provideSome</code> and <code>ZIO#provideCustom</code> to propagate dependencies into the environment of our ZIO effect.</p><h4>Using <code>ZIO#provide</code> Method</h4><p>Unlike the <code>ZIO#provideEnvironment</code> which takes a <code>ZEnvironment[R]</code>, the <code>ZIO#provide</code> takes a <code>ZLayer</code> to the ZIO effect and translates it to another level.</p><p>Assume we have written this piece of program that requires <code>Clock</code> and <code>Console</code> services:</p><pre><code class="language-scala">import zio.Clock._
+import zio.Console._
+import zio.Random._
+
+val myApp: ZIO[Any, Nothing, Unit] = for {
+  random  &lt;- nextInt 
+  _       &lt;- printLine(s&quot;A random number: $random&quot;).orDie
+  current &lt;- currentDateTime
+  _       &lt;- printLine(s&quot;Current Data Time: $current&quot;).orDie
+} yield ()
+</code></pre><p>We provide implementations of <code>Random</code>, <code>Console</code> and <code>Clock</code> services to the <code>myApp</code> effect by using <code>ZIO#provide</code> method:</p><pre><code class="language-scala">val mainEffect: ZIO[Any, Nothing, Unit] = 
+  myApp
+</code></pre><p>As we see, the type of our effect converted from <code>ZIO[Random &amp; Console &amp; Clock, Nothing, Unit]</code> which requires three services to <code>ZIO[Any, Nothing, Unit]</code> effect which doesn&#x27;t require any services.</p><h4>Using <code>ZIO#provideSome</code> Method</h4><p>Sometimes we have written a program, and we don&#x27;t want to provide all its requirements. In these cases, we can use <code>ZIO#provideSome</code> to partially apply some layers to the <code>ZIO</code> effect.</p><p>In the previous example, if we just want to provide the <code>Console</code>, we should use <code>ZIO#provideSome</code>:</p><pre><code class="language-scala">val mainEffectSome: ZIO[Any, Nothing, Unit] = 
+  myApp
+</code></pre><blockquote><p><strong>Note:</strong></p><p>When using <code>ZIO#provideSome[R0]</code>, we should provide the remaining type as <code>R0</code> type parameter. This workaround helps the compiler to infer the proper types.</p></blockquote><h2>Environment Scope</h2><p>We can create a ZIO application by providing a local or a global environment, or a combination:</p><h3>Global Environment</h3><p>It is usual when writing ZIO applications to provide layers at the end of the world. Then we provide layers to the whole ZIO application all at once. This pattern uses a single global environment for all ZIO applications:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  val myApp: ZIO[ServiceA &amp; ServiceB &amp; ServiceC &amp; ServiceD, Throwable, Unit] = ???
+    
+  def run = myApp.provide(a, b, c, d)
+}
+</code></pre><h3>Local Environment</h3><p>Occasionally, we may need to provide different environments for different parts of our application, or it may be necessary to provide a single global environment for the entire application except for some inner layers. </p><p>Providing a layer locally is analogous to overriding a method in an object-oriented paradigm. So we can think of that as overriding the global environment:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+  def myApp: ZIO[A &amp; B &amp; C, Throwable, Unit] = {
+    def innerApp1: ZIO[A &amp; B &amp; C, Throwable, Unit] = ???
+    def innerApp2: ZIO[A &amp; C,     Throwable, Unit] = ???
+
+    innerApp1.provideSomeLayer[A &amp; B](localC) *&gt; innerApp2
+  }
+
+  def run = myApp.provide(globalA, globalB, globalC)
+}
+</code></pre><p>ZIO Test&#x27;s <a href="../test/environment/live.md">Live service</a> uses this pattern to provide real environment to a single part of an effect.</p><h2>Layer Memoization</h2><p>Layer memoization allows a layer to be created once and used multiple times in the dependency graph. So if we use the same layer twice, e.g. <code>(a &gt;&gt;&gt; b) ++ (a &gt;&gt;&gt; c)</code>, then the <code>a</code> layer will be allocated only once.</p><h3>Layers are Memoized by Default when Providing Globally</h3><p>One important feature of a ZIO application is that layers are shared by default, meaning that if the same layer is used twice, and if we provide the layer <a href="#global-environment">globally</a> the layer will only be allocated a single time. For every layer in our dependency graph, there is only one instance of it that is shared between all the layers that depend on it.</p><p>For example, assume we have the three <code>A</code>, <code>B</code>, and <code>C</code> services. The implementation of both <code>B</code> and <code>C</code> are dependent on the <code>A</code> service:</p><pre><code class="language-scala">import zio._
+
+trait A
+trait B
+trait C
+
+case class BLive(a: A) extends B
+case class CLive(a: A) extends C
+
+val a: ZLayer[Any, Nothing, A] =
+  ZLayer(ZIO.succeed(new A {}).debug(&quot;initialized&quot;))
+
+val b: ZLayer[A, Nothing, B] =
+  ZLayer {
+    for {
+      a &lt;- ZIO.service[A]
+    } yield BLive(a)
+  }
+
+val c: ZLayer[A, Nothing, C] =
+  ZLayer {
+    for {
+      a &lt;- ZIO.service[A]
+    } yield CLive(a)
+  }
+</code></pre><p>Although both <code>b</code> and <code>c</code> layers require the <code>a</code> layer, the <code>a</code> layer is instantiated only once. It is shared with both <code>b</code> and <code>c</code>:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[B &amp; C, Nothing, Unit] =
+    for {
+      _ &lt;- ZIO.service[B]
+      _ &lt;- ZIO.service[C]
+    } yield ()
+    
+  // alternative: myApp.provideLayer((a &gt;&gt;&gt; b) ++ (a &gt;&gt;&gt; c))
+  def run = myApp.provide(a, b, c) 
+}
+</code></pre><h4>Acquiring a Fresh Version</h4><p>If we don&#x27;t want to share a module, we should create a fresh, non-shared version of it through <code>ZLayer#fresh</code>.</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[B &amp; C, Nothing, Unit] =
+    for {
+      _ &lt;- ZIO.service[B]
+      _ &lt;- ZIO.service[C]
+    } yield ()
+
+  def run = myApp.provideLayer((a.fresh &gt;&gt;&gt; b) ++ (a.fresh &gt;&gt;&gt; c))
+}
+</code></pre><h3>Layers are not Memoized When Providing Locally</h3><p>If we don&#x27;t provide a layer globally but instead provide them <a href="#local-environment">locally</a>, that layer doesn&#x27;t support memoization by default.</p><p>In the following example, we provided the <code>A</code> layer two times locally and the ZIO doesn&#x27;t memoize the construction of the <code>A</code> layer. So, it will be initialized two times:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[Any, Nothing, Unit] =
+    for {
+      _ &lt;- ZIO.service[A].provide(a) // providing locally
+      _ &lt;- ZIO.service[A].provide(a) // providing locally
+    } yield ()
+
+  def run = myApp
+}
+</code></pre><h4>Manual Memoization</h4><p>We can memoize the <code>A</code> layer manually using the <code>ZLayer#memoize</code> operator. It will return a scoped effect that, if evaluated, will return the lazily computed result of this layer:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val myApp: ZIO[Any, Nothing, Unit] =
+    ZIO.scoped {
+      a.memoize.flatMap { aLayer =&gt;
+        for {
+          _ &lt;- ZIO.service[A].provide(aLayer)
+          _ &lt;- ZIO.service[A].provide(aLayer)
+        } yield ()
+      }
+    }
+    
+  def run = myApp
+}
+</code></pre><h2>Other Operators</h2><h3>Converting a Layer to a Scoped Value</h3><p>Every <code>ZLayer</code> can be converted to a scoped <code>ZIO</code> by using <code>ZLayer.build</code>:</p><pre><code class="language-scala">import zio._
+
+trait Database {
+  def close: UIO[Unit]
+}
+
+object Database {
+  def connect: ZIO[Any, Throwable, Database] = ???
+}
+
+val database: ZLayer[Any, Throwable, Database] =
+  ZLayer.scoped {
+    ZIO.acquireRelease {
+      Database.connect.debug(&quot;connecting to the database&quot;)
+    } { database =&gt;
+      database.close
+    }
+  }
+
+val scopedDatabase: ZIO[Scope, Throwable, ZEnvironment[Database]] =
+  database.build
+</code></pre><h3>Falling Back to an Alternate Layer</h3><p>If a layer fails, we can provide an alternative layer by using <code>ZLayer#orElse</code> so it will fall back to the second layer:</p><pre><code class="language-scala">import zio._
+
+trait Database
+
+val postgresDatabaseLayer: ZLayer[Any, Throwable, Database] = ???
+val inmemoryDatabaseLayer: ZLayer[Any, Throwable, Database] = ???
+
+val databaseLayer: ZLayer[Any, Throwable, Database] =
+  postgresDatabaseLayer.orElse(inmemoryDatabaseLayer)
+</code></pre><h3>Converting a Layer to a ZIO Application</h3><p>Sometimes our entire application is a ZIO Layer, e.g. an HTTP Server, so by calling the <code>ZLayer#launch</code> we can convert that to a ZIO application. This will build the layer and use it until it is interrupted.</p><pre><code class="language-scala">object MainApp extends ZIOAppDefault {
+
+  val httpServer: ZLayer[Any, Nothing, HttpServer] =
+    ZLayer.make[HttpServer](
+      JsonParserLive.layer,
+      TemplateEngineLive.layer 
+    )
+
+  def run = httpServer.launch
+
+}
+</code></pre><h3>Retrying</h3><p>We can retry constructing a layer in case of failure:</p><pre><code class="language-scala">import zio._
+
+val databaseLayer: ZLayer[Any, Throwable, DatabaseConnection]   = ???
+
+val retriedLayer : ZLayer[Clock, Throwable, DatabaseConnection] = databaseLayer.retry(Schedule.fibonacci(1.second))
+</code></pre><h3>Layer Projection</h3><p>We can project out a part of <code>ZLayer</code> by providing a projection function to the <code>ZLayer#project</code> method:</p><pre><code class="language-scala">import zio._
+
+case class Connection(host: String, port: Int)  
+case class Login(user: String, password: String)
+
+case class DBConfig(
+  connection: Connection, 
+  login: Login
+)
+
+val connection: ZLayer[DBConfig, Nothing, Connection] = 
+  ZLayer.service[DBConfig].project(_.connection)
+</code></pre><h3>Tapping</h3><p>We can perform a specified effect based on the success or failure result of the layer using <code>ZLayer#tap</code>/<code>ZLayer#tapError</code>. This would not change the layer&#x27;s signature:</p><pre><code class="language-scala">import zio._
+
+case class AppConfig(host: String, port: Int)
+
+val config: ZLayer[Any, Throwable, AppConfig] =
+  ZLayer.fromZIO(
+    ZIO.attempt(???) // reading config from a file
+  )
+
+val res: ZLayer[Any, Throwable, AppConfig] =
+  config
+    .tap(cnf =&gt; ZIO.debug(s&quot;layer acquisition succeeded with $cnf&quot;))
+    .tapError(err =&gt; ZIO.debug(s&quot;error occurred during reading the config $err&quot;))
+</code></pre><h2>Examples</h2><h3>An Example of a ZIO Application with a Simple Dependency</h3><p>This application demonstrates a ZIO program with a single dependency on a simple <code>AppConfig</code>:</p><pre><code class="language-scala">import zio._
+
+case class AppConfig(poolSize: Int)
+
+object MainApp extends ZIOAppDefault {
+
+  // Define our simple ZIO program
+  val zio: ZIO[AppConfig, Nothing, Unit] = 
+    for {
+      config &lt;- ZIO.service[AppConfig]
+      _      &lt;- ZIO.succeed(println(s&quot;Application started with config: $config&quot;))
+    } yield ()
+
+  // Create a ZLayer that produces an AppConfig and can be used to satisfy the AppConfig 
+  // dependency that the program has
+  val defaultConfig: ULayer[AppConfig] = ZLayer.succeed(AppConfig(10))
+
+  // Run the program, providing the `defaultConfig`
+  def run = zio.provide(defaultConfig)
+}
+</code></pre><h3>An Example of a ZIO Application with Multiple Dependencies</h3><p>In the following example, our ZIO application has several dependencies:</p><ul><li><code>zio.Clock</code></li><li><code>zio.Console</code></li><li><code>B</code></li></ul><p>And also the <code>B</code> service depends upon the <code>A</code> service:</p><pre><code class="language-scala">import zio._
+
+import java.io.IOException
+
+trait A {
+  def letsGoA(v: Int): UIO[String]
+}
+
+object A {
+  def letsGoA(v: Int): URIO[A, String] = ZIO.serviceWithZIO(_.letsGoA(v))
+}
+
+case class ALive() extends A {
+  override def letsGoA(v: Int): UIO[String] = ZIO.succeed(s&quot;done: v = $v &quot;)
+}
+
+object ALive {
+  val layer: ULayer[A] = ZLayer.succeed(ALive())
+}
+
+trait B {
+  def letsGoB(v: Int): UIO[String]
+}
+
+object B {
+  def letsGoB(v: Int): URIO[B, String] = ZIO.serviceWithZIO(_.letsGoB(v))
+}
+
+case class BLive(serviceA: A) extends B {
+  def letsGoB(v: Int): UIO[String] = serviceA.letsGoA(v)
+}
+
+object BLive {
+  val layer: ZLayer[A, Nothing, BLive] = ZLayer(ZIO.service[A].map(BLive(_)))
+}
+
+
+object MainApp extends ZIOAppDefault {
+
+  val program: ZIO[B, IOException, Unit] =
+    for {
+      _ &lt;- Console.printLine(s&quot;Welcome to ZIO!&quot;)
+      _ &lt;- Clock.sleep(1.second)
+      r &lt;- B.letsGoB(10)
+      _ &lt;- Console.printLine(r)
+    } yield ()
+
+  def run = program.provide(ALive.layer, BLive.layer)
+
+}
+</code></pre><h3>An Example of Manually Generating a Dependency Graph</h3><p>Suppose we have defined the ‍‍<code>UserRepo</code>, <code>DocumentRepo</code>, <code>Database</code>, <code>BlobStorage</code>, and <code>Cache</code> services and their respective implementations as follows:</p><pre><code class="language-scala">import zio._
+
+case class User(email: String, name: String)
+
+trait UserRepo {
+  def save(user: User): Task[Unit]
+
+  def get(email: String): Task[User]
+}
+
+object UserRepo {
+  def save(user: User): ZIO[UserRepo, Throwable, Unit] =
+    ZIO.serviceWithZIO(_.save(user))
+
+  def get(email: String): ZIO[UserRepo, Throwable, User] =
+    ZIO.serviceWithZIO(_.get(email))
+}
+
+case class UserRepoLive(cache: Cache, database: Database) extends UserRepo {
+  override def save(user: User): Task[Unit] = ???
+
+  override def get(email: String): Task[User] = ???
+}
+
+object UserRepoLive {
+  val layer: URLayer[Cache &amp; Database, UserRepo] =
+    ZLayer {
+      for {
+        cache    &lt;- ZIO.service[Cache]
+        database &lt;- ZIO.service[Database]
+      } yield UserRepoLive(cache, database)
+    }
+}
+
+trait Database
+
+case class DatabaseLive() extends Database
+
+object DatabaseLive {
+  val layer: ZLayer[Any, Nothing, Database] =
+    ZLayer.succeed(DatabaseLive())
+}
+
+trait Cache {
+  def save(key: String, value: Array[Byte]): Task[Unit]
+
+  def get(key: String): Task[Array[Byte]]
+
+  def remove(key: String): Task[Unit]
+}
+
+class InmemeoryCache() extends Cache {
+  override def save(key: String, value: Array[Byte]): Task[Unit] = ???
+
+  override def get(key: String): Task[Array[Byte]] = ???
+
+  override def remove(key: String): Task[Unit] = ???
+}
+
+object InmemoryCache {
+  val layer: ZLayer[Any, Throwable, Cache] =
+    ZLayer(ZIO.attempt(new InmemeoryCache).debug(&quot;initialized&quot;))
+}
+
+class PersistentCache() extends Cache {
+  override def save(key: String, value: Array[Byte]): Task[Unit] = ???
+
+  override def get(key: String): Task[Array[Byte]] = ???
+
+  override def remove(key: String): Task[Unit] = ???
+}
+
+object PersistentCache {
+  val layer: ZLayer[Any, Throwable, Cache] =
+    ZLayer(ZIO.attempt(new PersistentCache).debug(&quot;initialized&quot;))
+}
+
+case class Document(title: String, author: String, body: String)
+
+trait DocumentRepo {
+  def save(document: Document): Task[Unit]
+
+  def get(id: String): Task[Document]
+}
+
+object DocumentRepo {
+  def save(document: Document): ZIO[DocumentRepo, Throwable, Unit] =
+    ZIO.serviceWithZIO(_.save(document))
+
+  def get(id: String): ZIO[DocumentRepo, Throwable, Document] =
+    ZIO.serviceWithZIO(_.get(id))
+}
+
+case class DocumentRepoLive(cache: Cache, blobStorage: BlobStorage) extends DocumentRepo {
+  override def save(document: Document): Task[Unit] = ???
+
+  override def get(id: String): Task[Document] = ???
+}
+
+object DocumentRepoLive {
+  val layer: ZLayer[Cache &amp; BlobStorage, Nothing, DocumentRepo] =
+    ZLayer {
+      for {
+        cache       &lt;- ZIO.service[Cache]
+        blobStorage &lt;- ZIO.service[BlobStorage]
+      } yield DocumentRepoLive(cache, blobStorage)
+    }
+}
+
+trait BlobStorage {
+  def store(key: String, value: Array[Byte]): Task[Unit]
+}
+
+case class BlobStorageLive() extends BlobStorage {
+  override def store(key: String, value: Array[Byte]): Task[Unit] = ???
+}
+
+object BlobStorageLive {
+  val layer: URLayer[Any, BlobStorage] =
+    ZLayer.succeed(BlobStorageLive())
+}
+</code></pre><p>And then assume we have the following ZIO application:</p><pre><code class="language-scala">import zio._
+
+def myApp: ZIO[DocumentRepo &amp; UserRepo, Throwable, Unit] =
+  for {
+    _ &lt;- UserRepo.save(User(&quot;john@doe&quot;, &quot;john&quot;))
+    _ &lt;- DocumentRepo.save(Document(&quot;introduction to zio&quot;, &quot;john&quot;, &quot;&quot;))
+    _ &lt;- UserRepo.get(&quot;john@doe&quot;).debug(&quot;retrieved john@doe user&quot;)
+    _ &lt;- DocumentRepo.get(&quot;introduction to zio&quot;).debug(&quot;retrieved article about zio&quot;)
+  } yield ()
+</code></pre><p>The <code>myApp</code> requires <code>DocumentRepo</code> and <code>UserRepo</code> services to run. So we need to create a <code>ZLayer</code> which requires no services and produces <code>DocumentRepo</code> and <code>UserRepo</code>. We can manually create this layer using <a href="#vertical-and-horizontal-composition">vertical and horizontal layer composition</a>: </p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val layers: ZLayer[Any, Any, DocumentRepo with UserRepo] =
+    (BlobStorageLive.layer ++ InmemoryCache.layer ++ DatabaseLive.layer) &gt;&gt;&gt;
+      (DocumentRepoLive.layer &gt;+&gt; UserRepoLive.layer)
+
+  def run = myApp.provideLayer(layers)
+}
+</code></pre><h3>An Example of Automatically Generating a Dependency Graph</h3><p>Instead of creating the required layer manually, we can use the <code>ZIO#provide</code>. ZIO internally creates the dependency graph automatically based on all dependencies provided:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  def run =
+    myApp.provide(
+      InmemoryCache.layer,
+      DatabaseLive.layer,
+      UserRepoLive.layer,
+      BlobStorageLive.layer,
+      DocumentRepoLive.layer
+    )
+    
+}
+</code></pre><h3>An Example of Providing Different Implementations of the Same Service</h3><p>Let&#x27;s say we want to provide different versions of the same service to different services. In this example, both <code>UserRepo</code> and <code>DocumentRepo</code> services require the <code>Cache</code> service. However, we want to provide different cache implementations for these two services. Our goal is to provide an <code>InmemoryCache</code> layer for <code>UserRepo</code> and a <code>PersistentCache</code> layer for the <code>DocumentRepo</code> service:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val layers: ZLayer[Any, Throwable, UserRepo with DocumentRepo] =
+    ((InmemoryCache.layer ++ DatabaseLive.layer) &gt;&gt;&gt; UserRepoLive.layer) ++
+      ((PersistentCache.layer ++ BlobStorageLive.layer) &gt;&gt;&gt; DocumentRepoLive.layer)
+
+  def run = myApp.provideLayer(layers)
+}
+</code></pre><h3>An Example of How to Get Fresh Layers</h3><p>Having covered the topic of <a href="#acquiring-a-fresh-version">acquiring fresh layers</a>, let&#x27;s see an example of using the <code>ZLayer#fresh</code> operator.</p><p><code>DocumentRepo</code> and <code>UserRepo</code> services are dependent on an in-memory cache service. On the other hand, let&#x27;s assume the cache service is quite simple, and we might be prone to cache conflicts between services. While sharing the cache service may cause some problems for our business logic, we should separate the cache service for both <code>DocumentRepo</code> and <code>UserRepo</code>:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  val layers: ZLayer[Any, Throwable, UserRepo &amp; DocumentRepo] =
+    ((InmemoryCache.layer.fresh ++ DatabaseLive.layer) &gt;&gt;&gt; UserRepoLive.layer) ++
+      ((InmemoryCache.layer.fresh ++ BlobStorageLive.layer) &gt;&gt;&gt; DocumentRepoLive.layer)
+
+  def run = myApp.provideLayer(layers)
+}
+</code></pre><h3>An Example of Pass-through Dependencies</h3><p>Notice that in the previous examples, both <code>UserRepo</code> and <code>DocuemntRepo</code> have some <a href="#hidden-versus-passed-through-dependencies">hidden dependencies</a>, such as <code>Cache</code>, <code>Database</code>, and <code>BlobStorage</code>.  So these hidden dependencies are no longer expressed in the type signature of the <code>layers</code>. From the perspective of a caller, <code>layers</code> just outputs a <code>UserRepo</code> and <code>DocuemntRepo</code> and requires no inputs. The caller does not need to be concerned with the internal implementation details of how the <code>UserRepo</code> and <code>DocumentRepo</code> are constructed.</p><p>An upstream dependency that is used by many other services can be &quot;passed-through&quot; and included in a layer&#x27;s output. This can be done with the <code>&gt;+&gt;</code> operator, which provides the output of one layer to another layer, returning a new layer that outputs the services of <em>both</em>.</p><p>The following example shows how to passthrough all dependencies to the final layer:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  // passthrough all dependencies
+  val layers: ZLayer[Any, Throwable, Database &amp; BlobStorage &amp; Cache &amp; DocumentRepo &amp; UserRepo] =
+    DatabaseLive.layer &gt;+&gt;
+      BlobStorageLive.layer &gt;+&gt;
+      InmemoryCache.layer &gt;+&gt;
+      DocumentRepoLive.layer &gt;+&gt;
+      UserRepoLive.layer
+
+  // providing all passthrough dependencies to the ZIO application
+  def run = myApp.provideLayer(layers)
+}
+</code></pre><h3>An Example of Updating Hidden Dependencies</h3><p>One of the use cases of having explicit all dependencies in the final layer is that we can <a href="#updating-local-dependencies">update</a> those hidden layers using <code>ZLayer#update</code>. In the following example, we are replacing the <code>InmemoryCache</code> with another implementation called <code>PersistentCache</code>:</p><pre><code class="language-scala">import zio._
+
+object MainApp extends ZIOAppDefault {
+
+  def myApp: ZIO[DocumentRepo &amp; UserRepo, Nothing, Unit] =
+    for {
+      _ &lt;- ZIO.service[UserRepo]
+      _ &lt;- ZIO.service[DocumentRepo]
+    } yield ()
+
+  val layers: ZLayer[Any, Throwable, Database &amp; BlobStorage &amp; Cache &amp; DocumentRepo &amp; UserRepo] =
+    DatabaseLive.layer &gt;+&gt;
+      BlobStorageLive.layer &gt;+&gt;
+      InmemoryCache.layer &gt;+&gt;
+      DocumentRepoLive.layer &gt;+&gt;
+      UserRepoLive.layer
+
+  def run =
+    myApp.provideLayer(
+      layers.update[Cache](_ =&gt; new PersistentCache)
+    )
+}
+</code></pre></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/zio/2-0-0/datatypes/contextual/zlayer";window.___webpackCompilationHash="cdece7bd87ec0e38633f";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0704c8948e63b1196955.js"],"app":["/app-8399cd578ff86df79336.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-components-simple-js-900cac777aa246c3185a.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-404-js-b44617773e223797ea52.js"],"component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js":["/component---node-modules-atooni-gatsby-theme-ziodoc-src-pages-index-js-f82da7fc8f1ed5d041f7.js"],"component---src-pages-foo-md":["/component---src-pages-foo-md-3c304a0b5d5a13435790.js"]};/*]]>*/</script><script src="/polyfill-0704c8948e63b1196955.js" nomodule=""></script><script src="/app-8399cd578ff86df79336.js" async=""></script><script src="/1a48c3c1-3aa89e0c36dddf1a6d26.js" async=""></script><script src="/framework-ef126061ffea8930f2ad.js" async=""></script><script src="/webpack-runtime-90acb813f0122dad9372.js" async=""></script></body></html>
