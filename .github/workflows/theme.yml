@@ -1,0 +1,41 @@
+name: ZIO Site Builds
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: true
+      matrix:
+        sites: ["gatsby-theme-ziodoc", "example"]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: |
+          cd ${{ matrix.sites }}
+          yarn install 
+          npx gatsby build --prefix-paths
+        name: Gatsby Build
+      - name: Cache Site Builds
+        uses: actions/cache@v3
+        with:
+          key: build-${{ matrix.sites }}-${{ github.sha }}
+          path: ./${{ matrix.sites }}/public
+
+  publish:
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: ./example/public
+          key: build-example-${{ github.sha }}
+      - name: Release to GitHub Pages
+        if: github.event_name == 'push'
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: ./example/public
