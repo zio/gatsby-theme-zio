@@ -40,10 +40,10 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
-"@atooni/gatsby-theme-ziodoc@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@atooni/gatsby-theme-ziodoc/-/gatsby-theme-ziodoc-0.0.2.tgz#ae55348463396eaec5c6d845d1d1b8909275fa25"
-  integrity sha512-sgCMt7PIv3i4DvHkMcGg5ZnJIAGCtCZKvAg6iZlHAj0pJjE+Pi9XqDwykbWSGAz46slt0gpxCvyhgRLkpmtJ9A==
+"@atooni/gatsby-theme-ziodoc@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@atooni/gatsby-theme-ziodoc/-/gatsby-theme-ziodoc-0.0.3.tgz#b7480620fb0228c06770e7f4ab12b35f8a89e150"
+  integrity sha512-ftamwh+l7Ck5d1WyuEe++87Y2BuPdlWnxg4yRPVvqoZrFAeybEmYdkjuJ7o4pRVbOVuoCPORDzQ6rQGVPpm4qQ==
   dependencies:
     "@mdx-js/mdx" v1
     "@mdx-js/react" v1
@@ -59,6 +59,8 @@
     gatsby-plugin-sharp "^4.17.0"
     gatsby-source-filesystem "^4.17.0"
     gatsby-transformer-sharp "^4.17.0"
+    prism-themes "^1.9.0"
+    prismjs "^1.28.0"
     prop-types "^15.8.1"
     react "^18.1.0"
     react-dom "^18.1.0"
@@ -69,10 +71,10 @@
   resolved "https://registry.npmjs.org/@atooni/zio-core/-/zio-core-2.0.1.tgz"
   integrity sha512-Olduz6oHkmsCGqUJlAPz8n0/k6QVUTowz5YZbS92/FQTSR8zpbtPhpBm5H2qJ15GuisaEMDRfoIwITnLOFd6nA==
 
-"@atooni/zio-core@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@atooni/zio-core/-/zio-core-1.0.1.tgz"
-  integrity sha512-kMmcX0l212BWQ81qH0UNO8QCrIHmSFo3AUACLjWR7M5gG0nzfO91jQbhfcvQTwN6yEwJ2YhCmND3Kve8OPw7mA==
+"@atooni/zio-core@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@atooni/zio-core/-/zio-core-1.0.2.tgz#74089005d4cc485f6431d7d0567a864b08f2bd62"
+  integrity sha512-45f6jJwBn//fqMLIsaMQdeFeXvBtCQerzSnhbJyE2CiCEeRt/ld3dQbWbtirZ0z/vvGnxpDphP7SwS3k7ZNOMw==
 
 "@atooni/zio-metrics-connectors@2.0.0":
   version "2.0.0"
@@ -9789,6 +9791,16 @@ pretty-error@^2.1.2:
   dependencies:
     lodash "^4.17.20"
     renderkid "^2.0.4"
+
+prism-themes@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/prism-themes/-/prism-themes-1.9.0.tgz#19c034f3205f1e28d75d89728e54ccd745f7e3dd"
+  integrity sha512-tX2AYsehKDw1EORwBps+WhBFKc2kxfoFpQAjxBndbZKr4fRmMkv47XN0BghC/K1qwodB1otbe4oF23vUTFDokw==
+
+prismjs@^1.28.0:
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.28.0.tgz#0d8f561fa0f7cf6ebca901747828b149147044b6"
+  integrity sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==
 
 probe-image-size@^7.2.3:
   version "7.2.3"
