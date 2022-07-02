@@ -1,4 +1,5 @@
-import * as React from "react";
+import * as React from "react"
+import { withPrefix } from "gatsby"
 
 const links = [
   { name: "Blog", target: "#"},
@@ -18,7 +19,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="w-full my-2 relative flex flex-row justify-between">
-        <img src="/theme/img/navbar_brand.png" alt="Home" className="h-8 w-auto"/>
+        <img src={`${withPrefix("/theme/img/navbar_brand.png")}`} alt="Home" className="h-8 w-auto"/>
         <div className="flex-row my-auto mr-8">
           {inner}
         </div>
