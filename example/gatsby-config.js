@@ -4,7 +4,15 @@ const config = {
     title: "ZIO Sample Site"
   },
   plugins: [
-    '@atooni/gatsby-theme-ziodoc'
+    '@atooni/gatsby-theme-ziodoc',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { 
+        name: "zio",
+        path: `${__dirname}/node_modules/@atooni/zio-core/src/docs`,
+      }
+    }
+
   ]
 }
 

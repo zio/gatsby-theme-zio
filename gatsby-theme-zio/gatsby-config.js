@@ -29,13 +29,6 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
       }
-    },
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: { 
-        path: `${__dirname}/src/docs`,
-        
-      }
     }
   ],
 }
