@@ -2,7 +2,7 @@
   "name": "@atooni/gatsby-theme-ziodoc",
   "private": false,
   "description": "A Gatsby theme for ZIO micro sites",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Andreas Gies <andreas.gies@ziverge.com>",
   "dependencies": {
     "@mdx-js/mdx": "v1",

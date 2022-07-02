@@ -40,10 +40,10 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
-"@atooni/gatsby-theme-ziodoc@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@atooni/gatsby-theme-ziodoc/-/gatsby-theme-ziodoc-0.0.3.tgz#b7480620fb0228c06770e7f4ab12b35f8a89e150"
-  integrity sha512-ftamwh+l7Ck5d1WyuEe++87Y2BuPdlWnxg4yRPVvqoZrFAeybEmYdkjuJ7o4pRVbOVuoCPORDzQ6rQGVPpm4qQ==
+"@atooni/gatsby-theme-ziodoc@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@atooni/gatsby-theme-ziodoc/-/gatsby-theme-ziodoc-0.0.4.tgz#a30fe614489d4bf5b53c6fb7ea8898280df4624c"
+  integrity sha512-wQgmueKqsFPPSJWGVf1YDWfbo7BUzWW3VQENBTXH9ttV1T93UwkvIfhazc5nHdJnVTlR2g26fvPOZzN72XqebA==
   dependencies:
     "@mdx-js/mdx" v1
     "@mdx-js/react" v1
