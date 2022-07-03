@@ -100,7 +100,7 @@ const linify = (tokens) => {
     } else { 
       eatLines(token.content)
     }
-  } 
+  } // end of eatLines
 
   tokens.forEach( (t) => { 
     eatLines(t)
@@ -111,31 +111,53 @@ const linify = (tokens) => {
 
 const CodeBlock = (props) => {
 
-  // We will stick the tokenized data into the state
+  const [extraLanguages] = React.useState(["bash", "java", "scala"])
+  const [language] = React.useState(props.className?.replace(/language-/g, '') || '')
+  const [nonum] = React.useState(props.nonum?.valueOf() || false)
+  const [grammar, setGrammar] = React.useState(undefined)
 
-  const tokenize = () => {
-    // Now we should have all languages, so we can try to tokenize the code block
-    const grammar = Prism.languages[language]
-    const tokens = 
-      grammar ? Prism.tokenize(props.children, grammar) : [props.children]
 
+  const highlightCode = (g, content, useNums) => { 
+    const tokens = Prism.tokenize(content, g)
     const lines = linify(tokens)
-    return lines 
+    const nodes = lines.map( (l, i) => lineToReactNode(l, i, useNums))
+    return nodes
   }
 
-  // Figure out the Prism language to use 
-  const language = props.className?.replace(/language-/g, '') || ''
-  const nonum = props.nonum?.valueOf() || false
-  const data = tokenize()
+  React.useEffect( () => {
+    const loadGrammar = (lang, langs) => {
+      const g = Prism.languages[lang]
+      if (g) {
+        //console.log(`Found grammar for ${lang}`)
+        setGrammar(g)
+      } else { 
+        if (langs.length > 0) { 
+          const l = langs.shift()
+          import(`prismjs/components/prism-${l}`).then(
+            () => { 
+              //console.log(`loaded language ${l}`)
+              loadGrammar(lang, langs)
+            },
+            () => {
+              //console.log(`failed to load language ${l}`)
+              loadGrammar(lang, langs)
+            }
+          )
+        }
+      }
+    }
+  
+    //console.log(`Language = ${language}, extras=${extraLanguages}`)
+    loadGrammar(language, extraLanguages)
+  }, [language, extraLanguages])
   
   return(
     <div className="w-11/12 my-2 mx-auto">
       <pre className={`language-${language} rounded-xl`}>
-         {data.length ? data.map( (l, i) => lineToReactNode(l, i, nonum)) : props.children}
+         { grammar ? highlightCode(grammar, props.children, nonum) :  props.children }
       </pre>
     </div>
   )
 }
 
 export default CodeBlock
-

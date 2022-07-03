@@ -5,7 +5,6 @@ import "prism-themes/themes/prism-material-dark.css"
 import Root from "./src/components/root"
 
 Prism.manual = true
-console.log(Prism.languages)
 
 export const wrapRootElement = ({element}) => {
   return(
