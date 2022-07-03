@@ -1,0 +1,2 @@
+(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[23500],{23500:function(){Prism.languages.properties={comment:/^[ \t]*[#!].*$/m,value:{pattern:/(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?: *[=:] *(?! )| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m,lookbehind:!0,alias:"attr-value"},key:{pattern:/^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+(?= *[=:]| )/m,alias:"attr-name"},punctuation:/[=:]/}}}]);
+//# sourceMappingURL=23500-2cc0e282c4467d418bca.js.map

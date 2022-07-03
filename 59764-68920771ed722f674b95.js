@@ -1,0 +1,2 @@
+(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[59764],{59764:function(){var e;(e=Prism).languages.etlua={delimiter:{pattern:/^<%[-=]?|-?%>$/,alias:"punctuation"},"language-lua":{pattern:/[\s\S]+/,inside:e.languages.lua}},e.hooks.add("before-tokenize",(function(a){e.languages["markup-templating"].buildPlaceholders(a,"etlua",/<%[\s\S]+?%>/g)})),e.hooks.add("after-tokenize",(function(a){e.languages["markup-templating"].tokenizePlaceholders(a,"etlua")}))}}]);
+//# sourceMappingURL=59764-68920771ed722f674b95.js.map

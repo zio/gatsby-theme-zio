@@ -1,0 +1,2 @@
+(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[45204],{45204:function(){!function(e){function a(a,n){e.languages[a]&&e.languages.insertBefore(a,"comment",{"doc-comment":n})}var n=e.languages.markup.tag,s={pattern:/\/\/\/.*/,greedy:!0,alias:"comment",inside:{tag:n}},t={pattern:/'''.*/,greedy:!0,alias:"comment",inside:{tag:n}};a("csharp",s),a("fsharp",s),a("vbnet",t)}(Prism)}}]);
+//# sourceMappingURL=45204-8eb4fe280509a1d43ac2.js.map

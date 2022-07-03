@@ -1,0 +1,2 @@
+(self.webpackChunkzio_sample_site=self.webpackChunkzio_sample_site||[]).push([[90965],{90965:function(){!function(e){var a=e.util.clone(e.languages.typescript);e.languages.tsx=e.languages.extend("jsx",a),delete e.languages.tsx.parameter,delete e.languages.tsx["literal-property"];var t=e.languages.tsx.tag;t.pattern=RegExp("(^|[^\\w$]|(?=</))(?:"+t.pattern.source+")",t.pattern.flags),t.lookbehind=!0}(Prism)}}]);
+//# sourceMappingURL=90965-504b2ed1d8bcedeeed14.js.map
