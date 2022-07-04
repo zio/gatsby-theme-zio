@@ -25,6 +25,14 @@ module.exports = {
         path: `${__dirname}/src/docs/`
       }
     },
+    // Configure a sample sub site for testing the theme
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `zio`,
+        path: `${__dirname}/node_modules/@atooni/zio-core/src/docs/`
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

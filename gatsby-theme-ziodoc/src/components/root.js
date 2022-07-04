@@ -1,7 +1,7 @@
 import * as React from "react"
 import NavBar from "./navbar"
 import Footer from "./footer"
-import MDXDesign from "./mdxdesign/design"
+import MDXDesign from "./mdxrender/design"
 
 const Root = (props) => { 
   return(

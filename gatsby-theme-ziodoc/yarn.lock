@@ -40,6 +40,11 @@
     signedsource "^1.0.0"
     yargs "^15.3.1"
 
+"@atooni/zio-core@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@atooni/zio-core/-/zio-core-1.0.2.tgz#74089005d4cc485f6431d7d0567a864b08f2bd62"
+  integrity sha512-45f6jJwBn//fqMLIsaMQdeFeXvBtCQerzSnhbJyE2CiCEeRt/ld3dQbWbtirZ0z/vvGnxpDphP7SwS3k7ZNOMw==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"

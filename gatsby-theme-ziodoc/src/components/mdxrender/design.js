@@ -1,6 +1,7 @@
 import * as React from "react"
 import { MDXProvider} from "@mdx-js/react"
 import CodeBlock from "./Codeblock"
+import * as Utils from "../../utils"
 
 const H1 = ({children}) => { return <Heading level={1}>{children}</Heading> }
 const H2 = ({children}) => { return <Heading level={2}>{children}</Heading> }
@@ -19,12 +20,16 @@ const Heading = ({level, children}) => {
   const style = `${size} font-semibold my-2`
 
   const Elem = `h${level}`
-  
-  return(
-    <Elem className={style}>
-      {children}
-    </Elem>
-  )
+  const inner = <Elem className={style}>{children}</Elem>
+
+  if (level < 4) { 
+    const link = Utils.slugify(children)
+    return(
+      <a id={link}>{inner}</a>
+    )
+  } else {
+    return inner
+  }
 }
 
 const UL = ({orig, children}) => { 

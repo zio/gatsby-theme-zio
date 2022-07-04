@@ -5,6 +5,7 @@
   "version": "0.0.9",
   "author": "Andreas Gies <andreas.gies@ziverge.com>",
   "dependencies": {
+    "@atooni/zio-core": "^1.0.2",
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
     "gatsby": "^4.17.2",

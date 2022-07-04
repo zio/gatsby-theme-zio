@@ -1,7 +1,8 @@
 const fs = require("fs")
 const path = require("path")
+const utils = require("./src/utils")
 
-const mdxComponent = findFile("./src/components/simple.js")
+const mdxComponent = findFile("./src/components/mdxcontent/MdxContent.js")
 const projectFile = findFile("./projects.json")
 
 const projects = JSON.parse(fs.readFileSync(projectFile, "utf-8")).projects
@@ -29,27 +30,10 @@ function findFile(fn) {
 function prjSlug(srcInstance, baseSlug) {
   const prj = projects.find( (p) => p.sourceInstance === srcInstance )
   if (typeof prj !== "undefined") { 
-    return slugify(`${prj.projectName}/${prj.version}/${baseSlug}`)
+    return "/" + utils.slugify(`${prj.projectName}/${prj.version}/${baseSlug}`)
   } else {  
-    return slugify(baseSlug)
+    return "/" + utils.slugify(baseSlug)
   }
-}
-
-/**
- * Turn a given string into a useful slug that can be used as part of a URL.
- * 
- * @param str The input string.
- * @returns The slugified string
- */
-const slugify = (str) => { 
-  const basePath = '/';
-
-  const slug = str
-    .toLowerCase()
-    .replace(/[^a-z0-9\/]+/g, '-')
-    .replace(/(^-\-$)+/g, '')
-
-    return `/${basePath}/${slug}`.replace(/\/\/+/g, '/')
 }
 
 // Make sure the path src/docs exists.

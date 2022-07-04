@@ -1,9 +1,14 @@
 {
   "projects": [
     {
-      "projectName": "Foo",
-      "version": "2.0.0",
+      "projectName": "site",
+      "version": "1.0.0",
       "sourceInstance": "docs"
+    },
+    {
+      "projectName": "zio",
+      "version": "1.0.0",
+      "sourceInstance": "zio"
     }
   ]
 }
