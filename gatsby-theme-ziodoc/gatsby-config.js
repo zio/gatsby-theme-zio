@@ -1,14 +1,22 @@
 module.exports = {
   pathPrefix: "/gatsby-theme-zio",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@zio`,
+    title: `ZIO Gatsby Theme`,
+    description: `A Gatsby theme for creating ZIO documentation sites`,
+    author: `@atooni`,
     siteUrl: `https://zio.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-postcss',
+    'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/data/`
+      }
+    },
      // Configure the file system plugin for standard pages
     {
       resolve: `gatsby-source-filesystem`,

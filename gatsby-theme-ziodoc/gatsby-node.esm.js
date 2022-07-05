@@ -1,89 +1,93 @@
 import * as fs from "fs"
 import * as path from "path"
-import * as prj from "./src/utils/projects"
+import * as utils from "./src/utils"
 
-const mdxComponent = path.resolve("./src/components/mdxcontent/MdxContent.js")
-
-// Make sure the path src/docs exists.
+// Make sure the data directory exists.
 exports.onPreBootstrap = ({reporter}) => {
-  const docsPath = 'src/docs';
+  const dataPath = 'data';
 
-  if (!fs.existsSync(docsPath)) { 
-    reporter.info(`Creating directory ${docsPath}.`);
-    fs.mkdirSync(docsPath, {recursive: true});
+  if (!fs.existsSync(dataPath)) { 
+    reporter.info(`Creating directory ${dataPath}.`);
+    fs.mkdirSync(dataPath, {recursive: true});
   } else { 
-    reporter.info(`Using existing src/docs directory`);
+    reporter.info(`Using existing <${dataPath}> directory`);
   }
 }
 
-exports.onCreateNode = (params) => { 
-
-  const node = params.node
-  const { createNodeField } = params.actions
-
-  if (node.internal.type && node.internal.type === `File`) {
-
-    const src = `${node.sourceInstanceName}`
-    const relFile = `${node.relativeDirectory}/${node.name}`
-    const slug = prj.projectSlug(src, relFile)
-    const project = prj.projectBySourceInstance(src)
-
-    if (project) { 
-      createNodeField({
-        node,
-        name: 'project',
-        value: project
-      })
-    }
-
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
-  }
-}
-
-exports.createPages = async ({ graphql, actions, reporter}) => {
+export const createPages = ({ graphql, actions, reporter}) => {
  
   const { createPage } = actions
+  const MdxComponent = path.resolve("./src/components/mdxcontent/MdxContent.js")
 
-  const createSubSitePages = async (
-    prj
-  ) => {
-    return await graphql(`
-      {
-        allFile(filter: {sourceInstanceName: {eq: "${prj.sourceInstance}"}}) {
-          nodes {
-            fields {
-              slug
-            }
-            children {
-              ... on Mdx {
-                id
-                fileAbsolutePath
-                slug
+  return new Promise( (resolve, reject) => {
+    resolve(
+      graphql(`
+        {
+          allFile {
+            nodes {
+              relativeDirectory
+              relativePath
+              name
+              internal {
+                mediaType
               }
+              children {
+                ... on Mdx {
+                  id
+                  fileAbsolutePath
+                }
+              }
+              sourceInstanceName
+            }
+          }
+          allProjectYaml {
+            nodes {
+              id
+              name
+              version
+              sourceInstance
+            }
+          }
+          allSitePlugin(filter: {name: {eq: "gatsby-source-filesystem"}}) {
+            nodes {
+              pluginOptions
+              name
             }
           }
         }
-      }
-    `)
-  }
+      `)
+    )
+  }).then( result => {
+    // The array of all projects
+    const projects = result.data.allProjectYaml.nodes
+    // From the file source plugins we just need the pluginOptions
+    const plugins = result.data.allSitePlugin.nodes.map(p => p.pluginOptions)
 
-  prj.projects.forEach(async (p) => { 
-    reporter.info(`Processing project ${JSON.stringify(p)}`)
-    const pages = await createSubSitePages(p)
-    pages.data.allFile.nodes.forEach((n) => {
-      if (n.children.length >= 1) {
-        reporter.info(`Creating page ${n.fields.slug}`)
-        const mdxChild = n.children[0]
+    // extract the pluginOptions by src instance name
+    const src = inst => { return plugins.find(p => p.name === inst) }
+
+    // get the project by src instance name
+    const project = inst => { return projects.find(p => p.sourceInstance === inst) } 
+
+    const mdxFiles = result.data.allFile.nodes.filter(f => f.internal.mediaType === "text/markdown" || f.internal.mediaType === "text/mdx")
+
+    mdxFiles.forEach( file => {
+      if (file.children.length >= 1) {
+        const prj = project(file.sourceInstanceName)
+        const mdxChild = file.children.shift()
+
+        // in case we do have an index page we will serve that at the address of the directory name 
+        const basePath = prj ? `${prj.name}/${prj.version}` : ''
+        const slug =  (utils.slugify(`${basePath}/${file.relativeDirectory}/${file.name}`)).replace(/\/index$/, '')
+
+        const source = src(file.sourceInstanceName)
+        reporter.info(`Creating page ${slug} -- ${basePath}`)
         createPage({
-          path: `${n.fields.slug}`,
-          component : mdxComponent,
+          path: slug,
+          component: MdxComponent,
           context: {
             filePath: mdxChild.fileAbsolutePath
-          },
+          }
         })
       }
     })
