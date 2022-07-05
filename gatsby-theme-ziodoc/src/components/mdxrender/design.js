@@ -3,12 +3,12 @@ import { MDXProvider} from "@mdx-js/react"
 import CodeBlock from "./Codeblock"
 import * as Utils from "../../utils"
 
-const H1 = ({children}) => { return <Heading level={1}>{children}</Heading> }
-const H2 = ({children}) => { return <Heading level={2}>{children}</Heading> }
-const H3 = ({children}) => { return <Heading level={3}>{children}</Heading> }
-const H4 = ({children}) => { return <Heading level={4}>{children}</Heading> }
-const H5 = ({children}) => { return <Heading level={5}>{children}</Heading> }
-const H6 = ({children}) => { return <Heading level={6}>{children}</Heading> }
+export const H1 = ({children}) => { return <Heading level={1}>{children}</Heading> }
+export const H2 = ({children}) => { return <Heading level={2}>{children}</Heading> }
+export const H3 = ({children}) => { return <Heading level={3}>{children}</Heading> }
+export const H4 = ({children}) => { return <Heading level={4}>{children}</Heading> }
+export const H5 = ({children}) => { return <Heading level={5}>{children}</Heading> }
+export const H6 = ({children}) => { return <Heading level={6}>{children}</Heading> }
 
 const LI = ({children}) => { 
   return <li className="mb-2">{children}</li> 

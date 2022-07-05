@@ -4,7 +4,7 @@
  * @param str The input string.
  * @returns The slugified string
  */
-exports.slugify = (str) => { 
+export const slugify = (str) => { 
   const slug = str
     .toLowerCase()
     .replace(/[^a-z0-9/]+/g, '-')
@@ -12,3 +12,4 @@ exports.slugify = (str) => {
 
     return `${slug}`.replace(/\/\/+/g, '/')
 }
+
