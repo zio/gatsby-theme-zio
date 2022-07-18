@@ -35,9 +35,9 @@ The object passed into the `MDXProvider` is basically a map from `MD syntax elem
 The most interesting here is the `Codeblock` component that encapsulates the source code rendering with [Prism.js](https://prismjs.com/). `Codeblock` supports linenumbers in the displayed code. These can be turned off with `nonum=true` as parameter on the definition line of the code block, for example:
 
 ```
-\`\`\`scala nonum=true
-... code comes here
-\`\`\`
+  ```scala nonum=true
+  ... code comes here
+  
 ```
 
 ![Sample](../img/SamplePage.png)
