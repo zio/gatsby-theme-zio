@@ -134,25 +134,18 @@ module.exports = config;
 - Provide project meta data to gatsby in `projects.json´
 
 ```
-{
-  "projects": [
-    {
-      "projectName": "ZIO",
-      "version": "1.0.0",
-      "sourceInstance": "zio"
-    },
-    {
-      "projectName": "ZIO",
-      "version": "2.0.0",
-      "sourceInstance": "zio-2"
-    },
-    {
-      "projectName": "ZIO Metrics Connectors",
-      "version": "2.0.0",
-      "sourceInstance": "metrics-connectors"
-    }
-  ]
-}
+- name: "site"
+  version: "1.0.0"
+  sourceInstance: "docs"
+- name: "ZIO"
+  version: "1.0.0"
+  sourceInstance: "zio"
+- name: "ZIO"
+  version: "1.0.0"
+  sourceInstance: "zio-2"
+- name: "ZIO Metrics Connectors"
+  version: "2.0.0"
+  sourceInstance: "metrics-connectors"
 ```
 
 ### Deploy to GH Pages (as a standalone doc site)

@@ -4,3 +4,10 @@
 - name: "zio"
   version: "1.0.0"
   sourceInstance: "zio"
+- name: "zio"
+  version: "1.0.0"
+  sourceInstance: "zio-2"
+- name: "metrics connectors"
+  version: "2.0.0"
+  sourceInstance: "metrics-connectors"
+
