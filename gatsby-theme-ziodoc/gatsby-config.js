@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `zio`,
-        path: `${__dirname}/node_modules/@atooni/zio-core/src/docs/`
+        path: `${__dirname}/node_modules/@atooni/zio-core/`
       }
     },
     {

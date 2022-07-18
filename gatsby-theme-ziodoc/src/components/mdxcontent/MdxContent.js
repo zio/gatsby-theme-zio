@@ -5,9 +5,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import MdxToc from "./MdxToc"
 import * as Components from "../mdxrender/design"
 
-const Simple = ({data}) => {
+const Simple = (props) => {
 
-  const page = data.mdx;
+  console.log(JSON.stringify(props, null ,2))
+  const page = props.data.mdx;
 
   return (
     
@@ -42,6 +43,10 @@ export const query = graphql`
       id
       slug
       body
+      frontmatter{
+        id
+        title
+      }
       tableOfContents(maxDepth: 3)
     }
   }
